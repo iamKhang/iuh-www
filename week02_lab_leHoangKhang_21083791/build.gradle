@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'application'
+}
+
+group 'vn.edu.iud.fit.lehoangkhang'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'jakarta.platform:jakarta.jakartaee-api:9.1.0'
+    implementation 'org.glassfish.jersey.core:jersey-server:3.0.0'
+//    Hibernate
+    implementation 'org.hibernate:hibernate-core:5.5.7.Final'
+//    MariaDB
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.3'
+    providedCompile 'org.glassfish:javax.faces:2.3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+war {
+    archiveFileName = 'week02_lab_leHoangKhang_21083791-1.0-SNAPSHOT.war'
+}
