@@ -6,6 +6,10 @@
     background: #2a2b38;
 }
 
+li {
+    list-style: none;
+}
+
 /*Inputs*/
 .field {
     margin-top: .5rem;

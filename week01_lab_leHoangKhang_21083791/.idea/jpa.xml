@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="maria" />
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="maria">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/vn/edu/iud/fit/lehoangkhang/week01_lab_lehoangkhang_21083791/entities" />
+    <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="842b8086-2b7a-439f-8362-bbdc520095f8" />
+  </component>
 </project>
