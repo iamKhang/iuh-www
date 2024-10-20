@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách ứng viên</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Danh sách ứng viên</h1>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Email</th>
+            <th>Địa chỉ</th>
+            <th>Kỹ năng</th>
+            <th>Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="candidate : ${candidates}">
+            <td th:text="${candidate.firstName} + ' ' + ${candidate.middleName} + ' ' + ${candidate.lastName}"></td>
+            <td th:text="${candidate.email}"></td>
+            <td th:text="${candidate.address}"></td>
+            <td th:text="${candidate.skillName}"></td> <!-- Bạn cần ánh xạ tên kỹ năng từ CandidateSkill -->
+            <td>
+                <a th:href="@{/candidates/edit/{id}(id=${candidate.id})}" class="btn btn-primary">Sửa</a>
+                <a th:href="@{/candidates/delete/{id}(id=${candidate.id})}" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/candidates/new" class="btn btn-success">Thêm ứng viên mới</a>
+</div>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>

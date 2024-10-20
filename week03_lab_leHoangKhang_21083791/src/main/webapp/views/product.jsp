@@ -72,5 +72,11 @@
     </button>
 </form>
 
+<script>
+
+<%--    FETCH ADD--%>
+
+</script>
+
 </body>
 </html>

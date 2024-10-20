@@ -22,16 +22,10 @@ public class NavigationController {
     @Produces("text/html")
     public void navigateToProduct(@Context HttpServletRequest request, @Context HttpServletResponse response) {
         try {
-            // Lấy danh sách sản phẩm từ backend thông qua ProductModel
             List<ProductDTO> products = productModel.getAllProducts();
-
-            // Đặt danh sách sản phẩm vào request scope
             request.setAttribute("products", products);
-
-            // Forward đến product.jsp
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/product.jsp");
             dispatcher.forward(request, response);
-
         } catch (Exception e) {
             e.printStackTrace();
             try {
@@ -47,13 +41,8 @@ public class NavigationController {
     @Produces("text/html")
     public void navigateToPriceManagerment(@Context HttpServletRequest request, @Context HttpServletResponse response) {
         try {
-            // Lấy danh sách sản phẩm từ backend thông qua ProductModel
             List<ProductDTO> products = productModel.getAllProducts();
-
-            // Đặt danh sách sản phẩm vào request scope
             request.setAttribute("products", products);
-
-            // Forward đến product.jsp
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/price_management.jsp");
             dispatcher.forward(request, response);
 
@@ -72,7 +61,6 @@ public class NavigationController {
     @Produces("text/html")
     public void navigateToAddProduct(@Context HttpServletRequest request, @Context HttpServletResponse response) {
         try {
-            // Forward đến add_product.jsp
             RequestDispatcher dispatcher = request.getRequestDispatcher("/views/add_product.jsp");
             dispatcher.forward(request, response);
 

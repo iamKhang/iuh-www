@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Xin chào!</h1>
+    <p class="lead">Chào mừng bạn đến với hệ thống quản lý ứng viên và công việc.</p>
+    <div class="mt-4">
+        <a href="/candidates" class="btn btn-primary">Danh sách ứng viên</a>
+        <a href="/jobs" class="btn btn-primary">Danh sách công việc</a>
+        <a href="/candidates/new" class="btn btn-success">Thêm ứng viên mới</a>
+        <a href="/jobs/new" class="btn btn-success">Thêm công việc mới</a>
+    </div>
+</div>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
