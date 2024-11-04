@@ -53,8 +53,6 @@ public class Week08Lab05LeHoangKhang21083791Application {
             } else {
                 System.out.println("Addresses already exist in the database. Skipping address initialization.");
             }
-
-            // Kiểm tra và thêm dữ liệu cho Candidate
             if (candidateRepository.count() == 0) {
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.registerModule(new com.fasterxml.jackson.datatype.jsr310.JavaTimeModule());
@@ -65,18 +63,14 @@ public class Week08Lab05LeHoangKhang21083791Application {
 
                 try {
                     List<Candidate> candidates = mapper.readValue(candidateInputStream, candidateTypeReference);
-                    long addressId = 1; // Giả sử addressId bắt đầu từ 1
+                    long addressId = 1;
                     for (Candidate candidate : candidates) {
-                        candidate.setId(null); // Đặt id là null để tránh lỗi trùng lặp id
-
-                        // Gán Address cho Candidate (nếu có)
+                        candidate.setId(null);
                         Address address = addressRepository.findById(addressId).orElse(null);
                         candidate.setAddress(address);
 
                         candidateRepository.save(candidate);
                         System.out.println("Saved candidate: " + candidate.getFullName());
-
-                        // Tăng id của địa chỉ lên 1, quay về 1 nếu vượt quá số lượng address hiện có
                         addressId = (addressId % 200) + 1;
                     }
                     System.out.println("All candidates from JSON saved successfully!");
