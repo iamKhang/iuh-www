@@ -18,4 +18,8 @@ public class CandidateService {
         Pageable pageable = PageRequest.of(page, size);
         return candidateRepository.findAll(pageable);
     }
+
+    public void saveCandidate(Candidate candidate) {
+        candidateRepository.save(candidate);
+    }
 }
