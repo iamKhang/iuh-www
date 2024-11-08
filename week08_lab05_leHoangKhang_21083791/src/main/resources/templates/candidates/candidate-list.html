@@ -64,9 +64,28 @@
       <li class="page-item" th:classappend="${candidatePage.hasPrevious()} ? '' : 'disabled'">
         <a class="page-link" th:href="@{/candidates(page=${candidatePage.number}, size=${candidatePage.size})}">Previous</a>
       </li>
-      <li class="page-item" th:each="pageNumber : ${pageNumbers}" th:classappend="${pageNumber == candidatePage.number + 1} ? 'active'">
+
+      <!-- Display first page and ellipsis if current page is beyond a threshold -->
+      <li class="page-item" th:if="${candidatePage.number > 3}">
+        <a class="page-link" th:href="@{/candidates(page=1, size=${candidatePage.size})}">1</a>
+      </li>
+      <li class="page-item disabled" th:if="${candidatePage.number > 3}">
+        <span class="page-link">...</span>
+      </li>
+
+      <!-- Display pages around the current page -->
+      <li class="page-item" th:each="pageNumber : ${#numbers.sequence(candidatePage.number - 1, candidatePage.number + 1)}" th:if="${pageNumber > 0 && pageNumber <= candidatePage.totalPages}" th:classappend="${pageNumber == candidatePage.number + 1} ? 'active'">
         <a class="page-link" th:href="@{/candidates(page=${pageNumber}, size=${candidatePage.size})}" th:text="${pageNumber}"></a>
       </li>
+
+      <!-- Display last page and ellipsis if current page is far from the last page -->
+      <li class="page-item disabled" th:if="${candidatePage.number < candidatePage.totalPages - 3}">
+        <span class="page-link">...</span>
+      </li>
+      <li class="page-item" th:if="${candidatePage.number < candidatePage.totalPages - 3}">
+        <a class="page-link" th:href="@{/candidates(page=${candidatePage.totalPages}, size=${candidatePage.size})}" th:text="${candidatePage.totalPages}"></a>
+      </li>
+
       <li class="page-item" th:classappend="${candidatePage.hasNext()} ? '' : 'disabled'">
         <a class="page-link" th:href="@{/candidates(page=${candidatePage.number + 2}, size=${candidatePage.size})}">Next</a>
       </li>

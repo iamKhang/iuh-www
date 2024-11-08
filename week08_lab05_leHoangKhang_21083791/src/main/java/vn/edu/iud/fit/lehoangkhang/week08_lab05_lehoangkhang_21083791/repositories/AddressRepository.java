@@ -6,4 +6,5 @@ import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Add
 
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Long> {
+
 }

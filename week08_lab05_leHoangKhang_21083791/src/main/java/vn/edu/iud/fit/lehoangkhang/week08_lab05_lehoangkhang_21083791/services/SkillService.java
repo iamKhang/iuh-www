@@ -15,4 +15,8 @@ public class SkillService {
     public List<Skill> getAllSkills() {
         return skillRepository.findAll();
     }
+
+    public List<Skill> getSkillsByType(String type) {
+        return skillRepository.findBySkillName(type);
+    }
 }

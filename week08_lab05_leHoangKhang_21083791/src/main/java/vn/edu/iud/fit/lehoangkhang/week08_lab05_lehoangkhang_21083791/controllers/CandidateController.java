@@ -34,7 +34,7 @@ public class CandidateController {
     @GetMapping("/candidates")
     public String showCandidateList(
             @RequestParam(value = "page", defaultValue = "1") int page,
-            @RequestParam(value = "size", defaultValue = "10") int size,
+            @RequestParam(value = "size", defaultValue = "30") int size,
             Model model) {
         Page<Candidate> candidatePage = candidateService.getCandidates(page - 1, size);
 

@@ -10,3 +10,7 @@
          ![Candidate List Screenshot](./assets/1_list_candidate.png)
 **3. Thêm ứng viên mới**
 ![Add Candidate Screenshot](./assets/add-candidate.png)
+**4. Thêm Job mới**
+![Add Job Screenshot](./assets/add-job.png)
+**5. Hiển thị danh sách Job có trong hệ thống**
+![Job List Screenshot](./assets/list-all-job.png)
