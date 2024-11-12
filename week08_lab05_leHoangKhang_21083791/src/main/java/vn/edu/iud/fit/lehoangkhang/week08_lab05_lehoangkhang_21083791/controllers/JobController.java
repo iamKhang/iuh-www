@@ -1,7 +1,8 @@
 package vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -10,8 +11,8 @@ import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Com
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Job;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.JobSkill;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Skill;
-import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.CompanyService;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.JobService;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.CompanyService;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.SkillService;
 
 import java.util.ArrayList;
@@ -47,6 +48,7 @@ public class JobController {
         return "jobs/job-list";
     }
 
+//    @PreAuthorize("hasRole('EMPLOYER')")
     @GetMapping("/add")
     public String showAddJobForm(Model model) {
         Job job = new Job();
@@ -58,6 +60,7 @@ public class JobController {
         return "jobs/add-job";
     }
 
+//    @PreAuthorize("hasRole('EMPLOYER')")
     @PostMapping("/add")
     public String addJob(@ModelAttribute Job job) {
         Company company = companyService.findById(1L); // Default to company with ID 1

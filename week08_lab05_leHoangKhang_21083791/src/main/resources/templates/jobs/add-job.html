@@ -1,105 +1,123 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.w3.org/1999/xhtml"
+>
+  <head>
     <title>Thêm Job</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <style>
-        .btn-center {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .template {
-            display: none;
-        }
+      .btn-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .template {
+        display: none;
+      }
     </style>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Dashboard</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/candidates">View Candidates</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/candidates/add">Add Candidate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/jobs">View Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/jobs/add">Post Job</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/match">Match Candidates</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="container mt-5">
-    <h2>Thêm Job Mới</h2>
-    <form th:action="@{/jobs/add}" th:object="${job}" method="post">
-
+  </head>
+  <body>
+    <div th:replace="fragments/header :: header"></div>
+    <div class="container mt-5">
+      <h2>Thêm Job Mới</h2>
+      <form th:action="@{/jobs/add}" th:object="${job}" method="post">
         <!-- Thông tin công việc -->
         <div class="form-group">
-            <label for="name">Tên Công Việc</label>
-            <input type="text" th:field="*{name}" class="form-control" placeholder="Tên công việc" required>
+          <label for="name">Tên Công Việc</label>
+          <input
+            type="text"
+            th:field="*{name}"
+            class="form-control"
+            placeholder="Tên công việc"
+            required
+          />
         </div>
         <div class="form-group">
-            <label for="description">Mô Tả Công Việc</label>
-            <textarea th:field="*{description}" class="form-control" placeholder="Mô tả công việc" required></textarea>
+          <label for="description">Mô Tả Công Việc</label>
+          <textarea
+            th:field="*{description}"
+            class="form-control"
+            placeholder="Mô tả công việc"
+            required
+          ></textarea>
         </div>
 
         <!-- Kỹ năng công việc -->
         <h4>Kỹ năng công việc</h4>
         <div id="jobSkills">
-            <!-- This is the template for each JobSkill entry -->
-            <div class="form-row skill-item template">
-                <div class="form-group col-md-4">
-                    <label for="skill">Kỹ năng</label>
-                    <select name="jobSkills[__index__].skill.id" class="form-control" disabled>
-                        <option th:each="skill : ${skills}" th:value="${skill.id}" th:text="${skill.skillName}">Kỹ năng</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="skillLevel">Cấp độ</label>
-                    <select name="jobSkills[__index__].skillLevel" class="form-control" disabled>
-                        <option value="BEGINNER">Beginner</option>
-                        <option value="INTERMEDIATE">Intermediate</option>
-                        <option value="PROFESSIONAL">Professional</option>
-                        <option value="ADVANCED">Advanced</option>
-                        <option value="MASTER">Master</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="moreInfo">Thông tin thêm</label>
-                    <input type="text" name="jobSkills[__index__].moreInfo" class="form-control" placeholder="Thông tin thêm" disabled>
-                </div>
-                <div class="form-group col-md-1 d-flex align-items-end">
-                    <button type="button" class="btn btn-danger btn-sm" onclick="removeElement(this)">Xóa</button>
-                </div>
+          <!-- This is the template for each JobSkill entry -->
+          <div class="form-row skill-item template">
+            <div class="form-group col-md-4">
+              <label for="skill">Kỹ năng</label>
+              <select
+                name="jobSkills[__index__].skill.id"
+                class="form-control"
+                disabled
+              >
+                <option
+                  th:each="skill : ${skills}"
+                  th:value="${skill.id}"
+                  th:text="${skill.skillName}"
+                >
+                  Kỹ năng
+                </option>
+              </select>
             </div>
+            <div class="form-group col-md-4">
+              <label for="skillLevel">Cấp độ</label>
+              <select
+                name="jobSkills[__index__].skillLevel"
+                class="form-control"
+                disabled
+              >
+                <option value="BEGINNER">Beginner</option>
+                <option value="INTERMEDIATE">Intermediate</option>
+                <option value="PROFESSIONAL">Professional</option>
+                <option value="ADVANCED">Advanced</option>
+                <option value="MASTER">Master</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="moreInfo">Thông tin thêm</label>
+              <input
+                type="text"
+                name="jobSkills[__index__].moreInfo"
+                class="form-control"
+                placeholder="Thông tin thêm"
+                disabled
+              />
+            </div>
+            <div class="form-group col-md-1 d-flex align-items-end">
+              <button
+                type="button"
+                class="btn btn-danger btn-sm"
+                onclick="removeElement(this)"
+              >
+                Xóa
+              </button>
+            </div>
+          </div>
         </div>
-        <button type="button" class="btn btn-secondary" onclick="addJobSkill()">Thêm Kỹ Năng</button>
+        <button type="button" class="btn btn-secondary" onclick="addJobSkill()">
+          Thêm Kỹ Năng
+        </button>
 
         <!-- Nút lưu -->
         <div class="btn-center">
-            <button type="submit" class="btn btn-primary">Lưu Công Việc</button>
+          <button type="submit" class="btn btn-primary">Lưu Công Việc</button>
         </div>
-    </form>
-</div>
+      </form>
+    </div>
 
-<script>
-    let skillIndex = 0;
+    <script>
+      let skillIndex = 0;
 
-    function addJobSkill() {
+      function addJobSkill() {
         const jobSkills = document.getElementById("jobSkills");
         const template = document.querySelector("#jobSkills .template");
         const newSkill = template.cloneNode(true);
@@ -107,19 +125,21 @@
         newSkill.style.display = ""; // Show the element
 
         // Replace __index__ with the current skill index
-        Array.from(newSkill.querySelectorAll("select, input")).forEach(input => {
+        Array.from(newSkill.querySelectorAll("select, input")).forEach(
+          (input) => {
             input.name = input.name.replace("__index__", skillIndex);
             input.disabled = false;
-        });
+          }
+        );
 
         skillIndex++; // Increment the index for the next skill
         jobSkills.appendChild(newSkill);
-    }
+      }
 
-    function removeElement(button) {
-        const item = button.closest('.form-row');
+      function removeElement(button) {
+        const item = button.closest(".form-row");
         item.remove();
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>

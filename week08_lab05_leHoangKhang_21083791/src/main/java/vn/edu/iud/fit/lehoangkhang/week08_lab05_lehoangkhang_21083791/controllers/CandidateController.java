@@ -1,37 +1,44 @@
+// CandidateController.java
 package vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.controllers;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.SkillLevel;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Candidate;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.CandidateSkill;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Experience;
-import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Skill;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.CandidateService;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.RecommendationService;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.services.SkillService;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Controller
+@RequestMapping("/candidates")
 public class CandidateController {
 
-    @Autowired
-    private CandidateService candidateService;
+    private final CandidateService candidateService;
+    private final SkillService skillService;
+    private final RecommendationService recommendationService;
 
     @Autowired
-    private SkillService skillService;
+    public CandidateController(CandidateService candidateService, SkillService skillService, RecommendationService recommendationService) {
+        this.candidateService = candidateService;
+        this.skillService = skillService;
+        this.recommendationService = recommendationService;
+    }
 
-    @GetMapping("/candidates")
+    @GetMapping("")
     public String showCandidateList(
             @RequestParam(value = "page", defaultValue = "1") int page,
             @RequestParam(value = "size", defaultValue = "30") int size,
@@ -49,47 +56,81 @@ public class CandidateController {
         return "candidates/candidate-list";
     }
 
+    @PreAuthorize("hasRole('CANDIDATE')")
+    @GetMapping("/updateprofile")
+    public String showUpdateProfileForm(Model model, Principal principal) {
+        String phone = principal.getName(); // Giả sử phone là username
+        Candidate candidate = candidateService.findByPhone(phone);
+        if (candidate == null) {
+            return "redirect:/candidates";
+        }
 
-
-    @GetMapping("/candidates/add")
-    public String showAddCandidateForm(Model model) {
-        model.addAttribute("candidate", new Candidate());
-
-        // Lấy danh sách kỹ năng và cấp độ kỹ năng
-        List<Skill> skills = skillService.getAllSkills();
-        model.addAttribute("skills", skills);
+        model.addAttribute("candidate", candidate);
+        model.addAttribute("skills", skillService.getAllSkills());
         model.addAttribute("skillLevels", SkillLevel.values());
-
-        return "candidates/add-candidate";
+        return "candidates/update-profile";
     }
 
-    @PostMapping("/candidates/add")
-    public String addCandidate(@Valid @ModelAttribute("candidate") Candidate candidate, BindingResult result, Model model) {
+    @PreAuthorize("hasRole('CANDIDATE')")
+    @PostMapping("/updateprofile")
+    public String updateProfile(@Valid @ModelAttribute("candidate") Candidate candidate, BindingResult result, Model model, Principal principal) {
         if (result.hasErrors()) {
             model.addAttribute("skills", skillService.getAllSkills());
             model.addAttribute("skillLevels", SkillLevel.values());
-            return "candidates/add-candidate";
+            return "candidates/update-profile";
         }
 
+        String phone = principal.getName();
+        Candidate existingCandidate = candidateService.findByPhone(phone);
+        if (existingCandidate == null) {
+            return "redirect:/candidates";
+        }
+        existingCandidate.setFullName(candidate.getFullName());
+        existingCandidate.setPhone(candidate.getPhone());
+        existingCandidate.setEmail(candidate.getEmail());
+        existingCandidate.setDob(candidate.getDob());
+        if (existingCandidate.getAddress() != null) {
+            existingCandidate.getAddress().setCountry(candidate.getAddress().getCountry());
+            existingCandidate.getAddress().setCity(candidate.getAddress().getCity());
+            existingCandidate.getAddress().setStreet(candidate.getAddress().getStreet());
+            existingCandidate.getAddress().setNumber(candidate.getAddress().getNumber());
+            existingCandidate.getAddress().setZipcode(candidate.getAddress().getZipcode());
+        } else {
+            existingCandidate.setAddress(candidate.getAddress());
+        }
+
+        existingCandidate.getCandidateSkills().clear();
         if (candidate.getCandidateSkills() != null) {
-            System.out.printf("Candidate is null");
             for (CandidateSkill skill : candidate.getCandidateSkills()) {
-                skill.setCandidate(candidate);
+                skill.setCandidate(existingCandidate);
+                existingCandidate.getCandidateSkills().add(skill);
             }
         }
-
+        existingCandidate.getExperiences().clear();
         if (candidate.getExperiences() != null) {
-            for (Experience experience : candidate.getExperiences()) {
-                System.out.println("From date: " + experience.getFromDate());
-                System.out.println("To date: " + experience.getToDate());
-                experience.setCandidate(candidate);
+            for (Experience exp : candidate.getExperiences()) {
+                exp.setCandidate(existingCandidate);
+                existingCandidate.getExperiences().add(exp);
             }
         }
-
-        candidateService.saveCandidate(candidate);
+        candidateService.saveCandidate(existingCandidate);
         return "redirect:/candidates";
     }
 
+    @PreAuthorize("hasRole('CANDIDATE')")
+    @GetMapping("/recommendations")
+    public String showJobRecommendations(Model model, Principal principal) {
+        String phone = principal.getName();
+        System.out.println("Phone: " + phone);
+        Candidate candidate = candidateService.findByPhone(phone);
+        if (candidate == null) {
+            return "redirect:/candidates";
+        }
 
+        List<RecommendationService.JobRecommendation> recommendations = recommendationService.recommendJobsForCandidate(candidate.getId());
+        recommendations.forEach(r -> System.out.println(r.getJob().getName() + ": " + r.getScore()));
+        recommendations.forEach(r -> r.setScore(r.getScore() * 100));
+        model.addAttribute("recommendations", recommendations);
+        return "candidates/job-recommentdations";
+    }
 }
-

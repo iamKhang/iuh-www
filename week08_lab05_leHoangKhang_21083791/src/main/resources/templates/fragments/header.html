@@ -1,0 +1,48 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" xmlns:sec="http://www.w3.org/1999/xhtml" th:fragment="header">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/candidates">View Candidates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jobs">View Jobs</a>
+                </li>
+                <li class="nav-item" sec:authorize="hasRole('CANDIDATE')">
+                    <a class="nav-link" href="/candidates/updateprofile">Update Profile</a>
+                </li>
+                <li class="nav-item" sec:authorize="hasRole('CANDIDATE')">
+                    <a class="nav-link" href="/candidates/recommendations">Match with Jobs</a>
+                </li>
+                <li class="nav-item" sec:authorize="hasRole('EMPLOYER')">
+                    <a class="nav-link" href="/jobs/add">Post Job</a>
+                </li>
+                <li class="nav-item" sec:authorize="hasRole('EMPLOYER')">
+                    <a class="nav-link" href="/match/candidates">Match with Candidates</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-2 btn-primary" sec:authorize="!isAuthenticated()">
+                    <a class="btn btn-outline-light" href="/login">Đăng nhập</a>
+                </li>
+                <li class="nav-item mr-2 btn-primary" sec:authorize="!isAuthenticated()">
+                    <a class="btn btn-outline-light" href="/register">Đăng ký</a>
+                </li>
+
+                <!-- Logout button for authenticated users -->
+                <li class="nav-item btn-error" sec:authorize="isAuthenticated()">
+                    <form th:action="@{/logout}" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-outline-light">Đăng xuất</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

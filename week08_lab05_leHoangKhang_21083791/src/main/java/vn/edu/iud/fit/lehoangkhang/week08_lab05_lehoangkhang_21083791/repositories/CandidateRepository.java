@@ -6,4 +6,5 @@ import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Can
 
 @Repository
 public interface CandidateRepository extends JpaRepository<Candidate, Long> {
+    Candidate findByPhone(String phone);
 }

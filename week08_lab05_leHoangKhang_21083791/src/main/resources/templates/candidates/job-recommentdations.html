@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Job Recommendations</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .score {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<!-- Header Fragment -->
+<div th:replace="fragments/header :: header"></div>
+<div class="container my-5">
+    <h1 class="mb-4">Recommended Jobs for You</h1>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th scope="col">Job Name</th>
+                <th scope="col">Company</th>
+                <th scope="col" class="text-end">Similarity Score</th>
+                <th scope="col">Job Detail</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="recommendation : ${recommendations}">
+                <!-- Sử dụng cú pháp truy cập thuộc tính thay vì phương thức getter -->
+                <td th:text="${recommendation.job.name}">Job Name</td>
+                <td th:text="${recommendation.job.company.name}">Company Name</td>
+
+                <!-- Chỉnh sửa cú pháp formatDecimal -->
+                <td class="text-end" th:text="${#numbers.formatDecimal(recommendation.score * 100, 0, 2)} + '%'">0.00%</td>
+
+                <!-- Sửa cú pháp th:href để đảm bảo Thymeleaf hiểu đúng đường dẫn -->
+                <td class="text-center">
+                    <a th:href="@{/jobs/{id}(id=${recommendation.job.id})}" class="btn btn-primary btn-sm d-flex align-items-center justify-content-center">
+                        <i class="bi bi-eye me-2"></i>
+                        View Details
+                    </a>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies (Popper) CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -4,6 +4,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.JobSkill;
 
+import java.util.List;
+
 @Repository
 public interface JobSkillRepository extends JpaRepository<JobSkill, Long> {
+    List<JobSkill> findByJobId(Long id);
 }

@@ -22,4 +22,8 @@ public class CandidateService {
     public void saveCandidate(Candidate candidate) {
         candidateRepository.save(candidate);
     }
+
+    public Candidate findByPhone(String phone) {
+        return candidateRepository.findByPhone(phone);
+    }
 }
