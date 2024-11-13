@@ -1,0 +1,5043 @@
+[
+  {
+    "id": 1,
+    "fullName": "Đàm Thái An",
+    "phone": "0378207498",
+    "email": "damthai.an@gmail.com",
+    "dob": "1992-04-15",
+    "address": {
+      "id": 201,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Nguyen Trai",
+      "number": "123",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 1,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Có kinh nghiệm với Java.",
+        "skill_id": 2
+      },
+      {
+        "id": 2,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết sử dụng Spring Framework.",
+        "skill_id": 2
+      },
+      {
+        "id": 3,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 1,
+        "fromDate": "2015-06-01",
+        "toDate": "2018-08-31",
+        "companyName": "ABC Tech",
+        "role": "Lập trình viên",
+        "workDescription": "Phát triển các ứng dụng web sử dụng Java và Spring."
+      },
+      {
+        "id": 2,
+        "fromDate": "2018-09-01",
+        "toDate": "2023-04-30",
+        "companyName": "XYZ Solutions",
+        "role": "Kỹ sư Phân Tích Dữ Liệu",
+        "workDescription": "Thu thập, xử lý và phân tích dữ liệu để hỗ trợ quyết định kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fullName": "Dương Hoàng Lan Anh",
+    "phone": "0375229687",
+    "email": "lananh.duong@yahoo.com",
+    "dob": "1995-08-22",
+    "address": {
+      "id": 202,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Le Loi",
+      "number": "456",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 4,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về HTML và CSS.",
+        "skill_id": 8
+      },
+      {
+        "id": 5,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Có kinh nghiệm với JavaScript.",
+        "skill_id": 8
+      }
+    ],
+    "experiences": [
+      {
+        "id": 3,
+        "fromDate": "2020-01-01",
+        "toDate": "2023-07-31",
+        "companyName": "WebStart",
+        "role": "Nhân viên Phát Triển Frontend",
+        "workDescription": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web sử dụng React."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fullName": "Lê Hoàng Anh",
+    "phone": "0373777501",
+    "email": "hoang.anh.le@icloud.com",
+    "dob": "1988-12-05",
+    "address": {
+      "id": 203,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Phu",
+      "number": "789",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 6,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý dự án Agile.",
+        "skill_id": 15
+      },
+      {
+        "id": 7,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Lãnh đạo và quản lý đội nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "experiences": [
+      {
+        "id": 4,
+        "fromDate": "2010-03-01",
+        "toDate": "2015-05-31",
+        "companyName": "TechWave",
+        "role": "Quản lý Dự án CNTT",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin từ khâu khởi động đến hoàn thành."
+      },
+      {
+        "id": 5,
+        "fromDate": "2015-06-01",
+        "toDate": "2023-09-30",
+        "companyName": "Innovatech",
+        "role": "Trưởng phòng Phát triển",
+        "workDescription": "Quản lý nhóm phát triển phần mềm và đảm bảo tiến độ dự án."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "fullName": "Nguyễn Đức Anh",
+    "phone": "0794804459",
+    "email": "nguyenduc.anh@gmail.com",
+    "dob": "1990-07-10",
+    "address": {
+      "id": 204,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Pham Van Dong",
+      "number": "321",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 8,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích hệ thống.",
+        "skill_id": 22
+      },
+      {
+        "id": 9,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng sử dụng UML để thiết kế hệ thống.",
+        "skill_id": 22
+      },
+      {
+        "id": 10,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp tốt để làm việc với các bộ phận khác.",
+        "skill_id": 1
+      }
+    ],
+    "experiences": [
+      {
+        "id": 6,
+        "fromDate": "2012-09-01",
+        "toDate": "2016-12-31",
+        "companyName": "SystemTech",
+        "role": "Kỹ sư Phân Tích Hệ Thống",
+        "workDescription": "Phân tích và thiết kế các hệ thống công nghệ thông tin đáp ứng nhu cầu kinh doanh."
+      },
+      {
+        "id": 7,
+        "fromDate": "2017-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataSolutions",
+        "role": "Chuyên viên Phân Tích Kinh Doanh",
+        "workDescription": "Phân tích nhu cầu kinh doanh và đề xuất giải pháp công nghệ phù hợp."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "fullName": "Nguyễn Nhựt Anh",
+    "phone": "0983410360",
+    "email": "nhutat.an.nguyen@yahoo.com",
+    "dob": "1994-11-25",
+    "address": {
+      "id": 205,
+      "country": "Vietnam",
+      "city": "Hai Phong",
+      "street": "Le Lai",
+      "number": "654",
+      "zipcode": "310000"
+    },
+    "candidateSkills": [
+      {
+        "id": 11,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý dự án Agile.",
+        "skill_id": 15
+      },
+      {
+        "id": 12,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 13,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 8,
+        "fromDate": "2016-02-01",
+        "toDate": "2019-06-30",
+        "companyName": "ProjectPro",
+        "role": "Quản lý Dự án",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin từ khâu khởi động đến hoàn thành."
+      },
+      {
+        "id": 9,
+        "fromDate": "2019-07-01",
+        "toDate": "2023-11-30",
+        "companyName": "TechManage",
+        "role": "Trưởng phòng Quản lý Dự án",
+        "workDescription": "Dẫn dắt đội ngũ quản lý dự án và đảm bảo tiến độ, chất lượng của các dự án."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "fullName": "Võ Văn Bạch",
+    "phone": "0793809025",
+    "email": "vovanch Bach@outlook.com",
+    "dob": "1991-03-12",
+    "address": {
+      "id": 206,
+      "country": "Vietnam",
+      "city": "Can Tho",
+      "street": "Le Thanh Tong",
+      "number": "987",
+      "zipcode": "900000"
+    },
+    "candidateSkills": [
+      {
+        "id": 14,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 15,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tự động hóa với Jenkins.",
+        "skill_id": 36
+      }
+    ],
+    "experiences": [
+      {
+        "id": 10,
+        "fromDate": "2014-05-01",
+        "toDate": "2018-10-31",
+        "companyName": "DevOpsHub",
+        "role": "Chuyên viên DevOps",
+        "workDescription": "Đảm bảo quy trình phát triển và triển khai phần mềm hiệu quả thông qua DevOps."
+      },
+      {
+        "id": 11,
+        "fromDate": "2018-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "CloudMasters",
+        "role": "Kỹ sư DevOps",
+        "workDescription": "Quản lý và duy trì các môi trường đám mây sử dụng AWS và Azure."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "fullName": "Lê Minh Bảo",
+    "phone": "0327252264",
+    "email": "minhbao.le@company.com",
+    "dob": "1985-07-30",
+    "address": {
+      "id": 207,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Nguyen Hue",
+      "number": "159",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 16,
+        "skillLevel": "MASTER",
+        "moreInfo": "Chứng chỉ CISSP hoặc tương đương.",
+        "skill_id": 12
+      },
+      {
+        "id": 17,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các công cụ bảo mật như Wireshark, Metasploit.",
+        "skill_id": 10
+      },
+      {
+        "id": 18,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng bảo mật hệ thống mạng.",
+        "skill_id": 12
+      }
+    ],
+    "experiences": [
+      {
+        "id": 12,
+        "fromDate": "2010-01-01",
+        "toDate": "2015-12-31",
+        "companyName": "SecureNet",
+        "role": "Kỹ sư An Ninh Mạng",
+        "workDescription": "Thiết kế và triển khai các giải pháp bảo mật cho hệ thống mạng."
+      },
+      {
+        "id": 13,
+        "fromDate": "2016-01-01",
+        "toDate": "2023-11-30",
+        "companyName": "CyberGuard",
+        "role": "Chuyên viên Bảo mật",
+        "workDescription": "Bảo vệ hệ thống mạng khỏi các mối đe dọa và tấn công."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "fullName": "Nguyễn Văn Bảo",
+    "phone": "0961056669",
+    "email": "bao.nguyen@domain.org",
+    "dob": "1993-09-18",
+    "address": {
+      "id": 208,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Phu",
+      "number": "753",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 19,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về phần mềm của công ty.",
+        "skill_id": 7
+      },
+      {
+        "id": 20,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và lắng nghe.",
+        "skill_id": 1
+      },
+      {
+        "id": 21,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tổ chức sự kiện.",
+        "skill_id": 37
+      }
+    ],
+    "experiences": [
+      {
+        "id": 14,
+        "fromDate": "2017-03-01",
+        "toDate": "2020-08-31",
+        "companyName": "EventPro",
+        "role": "Nhân viên Tổ chức Sự kiện",
+        "workDescription": "Lên kế hoạch và tổ chức các sự kiện doanh nghiệp."
+      },
+      {
+        "id": 15,
+        "fromDate": "2020-09-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechEvents",
+        "role": "Trưởng phòng Tổ chức Sự kiện",
+        "workDescription": "Quản lý và điều hành các sự kiện công nghệ lớn."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "fullName": "Phan Gia Bảo",
+    "phone": "0373926563",
+    "email": "giabao.phan@gmail.com",
+    "dob": "1996-02-10",
+    "address": {
+      "id": 209,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Le Duan",
+      "number": "852",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 22,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết quản trị mạng Cisco.",
+        "skill_id": 10
+      },
+      {
+        "id": 23,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng giải quyết sự cố mạng.",
+        "skill_id": 7
+      }
+    ],
+    "experiences": [
+      {
+        "id": 16,
+        "fromDate": "2018-05-01",
+        "toDate": "2021-04-30",
+        "companyName": "NetCare",
+        "role": "Nhân viên Hỗ trợ Kỹ thuật Mạng",
+        "workDescription": "Cài đặt và bảo trì hệ thống mạng cho doanh nghiệp."
+      },
+      {
+        "id": 17,
+        "fromDate": "2021-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "SecureNet",
+        "role": "Kỹ sư Hỗ trợ Mạng",
+        "workDescription": "Giải quyết các vấn đề kỹ thuật liên quan đến mạng máy tính."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "fullName": "Trần Quốc Bảo",
+    "phone": "0981321591",
+    "email": "quocbao.tran@yahoo.com",
+    "dob": "1987-06-30",
+    "address": {
+      "id": 210,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Nguyen Chi Thanh",
+      "number": "147",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 24,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết viết các trường hợp kiểm thử hiệu quả.",
+        "skill_id": 26
+      },
+      {
+        "id": 25,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Có kinh nghiệm với Selenium.",
+        "skill_id": 26
+      }
+    ],
+    "experiences": [
+      {
+        "id": 18,
+        "fromDate": "2013-07-01",
+        "toDate": "2017-12-31",
+        "companyName": "QualitySoft",
+        "role": "Nhân viên Kiểm Thử Phần Mềm",
+        "workDescription": "Thực hiện kiểm thử phần mềm để đảm bảo chất lượng sản phẩm."
+      },
+      {
+        "id": 19,
+        "fromDate": "2018-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "TestPro",
+        "role": "Chuyên viên Kiểm Thử Tự Động",
+        "workDescription": "Phát triển và duy trì các kịch bản kiểm thử tự động sử dụng Selenium."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "fullName": "Trương Chi Bảo",
+    "phone": "0373936575",
+    "email": "chibaotr@outlook.com",
+    "dob": "1997-09-05",
+    "address": {
+      "id": 211,
+      "country": "Vietnam",
+      "city": "Hai Phong",
+      "street": "Ly Thuong Kiet",
+      "number": "369",
+      "zipcode": "310000"
+    },
+    "candidateSkills": [
+      {
+        "id": 26,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 27,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 20,
+        "fromDate": "2019-02-01",
+        "toDate": "2022-06-30",
+        "companyName": "BizAnalytics",
+        "role": "Nhân viên Phân Tích Kinh Doanh",
+        "workDescription": "Phân tích nhu cầu kinh doanh và đề xuất giải pháp công nghệ phù hợp."
+      },
+      {
+        "id": 21,
+        "fromDate": "2022-07-01",
+        "toDate": "2023-10-31",
+        "companyName": "BusinessPro",
+        "role": "Chuyên viên Phân Tích Kinh Doanh",
+        "workDescription": "Làm việc với các bộ phận khác để hiểu rõ yêu cầu và thiết kế giải pháp."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "fullName": "Trần Lê Quốc Bình",
+    "phone": "0374358270",
+    "email": "quocbinh.tran@domain.net",
+    "dob": "1998-01-20",
+    "address": {
+      "id": 212,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Hai Ba Trung",
+      "number": "258",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 28,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 29,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      }
+    ],
+    "experiences": [
+      {
+        "id": 22,
+        "fromDate": "2020-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebInnovate",
+        "role": "Nhân viên Phát Triển Frontend",
+        "workDescription": "Hỗ trợ phát triển giao diện người dùng cho các ứng dụng web sử dụng React."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "fullName": "Bùi Ngọc Bửu",
+    "phone": "0373877550",
+    "email": "buunoc.bui@gmail.com",
+    "dob": "1989-05-18",
+    "address": {
+      "id": 213,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Quang Khai",
+      "number": "741",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 30,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Node.js và Python.",
+        "skill_id": 20
+      },
+      {
+        "id": 31,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu.",
+        "skill_id": 18
+      },
+      {
+        "id": 32,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      }
+    ],
+    "experiences": [
+      {
+        "id": 23,
+        "fromDate": "2011-04-01",
+        "toDate": "2016-09-30",
+        "companyName": "BackendPro",
+        "role": "Nhân viên Phát Triển Backend",
+        "workDescription": "Phát triển và duy trì phần backend cho các ứng dụng web sử dụng Node.js."
+      },
+      {
+        "id": 24,
+        "fromDate": "2016-10-01",
+        "toDate": "2023-10-31",
+        "companyName": "API Masters",
+        "role": "Kỹ sư Phát Triển API",
+        "workDescription": "Thiết kế và phát triển các giao diện lập trình ứng dụng (API) cho các dịch vụ nội bộ."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "fullName": "Võ Văn Cảnh",
+    "phone": "0377344631",
+    "email": "cach.vo@techmail.com",
+    "dob": "1994-10-02",
+    "address": {
+      "id": 214,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Vo Thi Sau",
+      "number": "369",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 33,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 34,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 25,
+        "fromDate": "2016-07-01",
+        "toDate": "2020-12-31",
+        "companyName": "ChangeManage",
+        "role": "Nhân viên Quản Lý Thay Đổi",
+        "workDescription": "Điều hành và thích ứng với các thay đổi trong môi trường làm việc."
+      },
+      {
+        "id": 26,
+        "fromDate": "2021-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechChange",
+        "role": "Trưởng phòng Quản Lý Thay Đổi",
+        "workDescription": "Quản lý các dự án thay đổi kỹ thuật trong công ty để đảm bảo hiệu quả và chất lượng."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "fullName": "Đinh Trần Công Chiên",
+    "phone": "0374489592",
+    "email": "congchien.dinh@domain.com",
+    "dob": "1990-12-10",
+    "address": {
+      "id": 215,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 35,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ quản lý dự án như Jira.",
+        "skill_id": 15
+      },
+      {
+        "id": 36,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 37,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 27,
+        "fromDate": "2013-09-01",
+        "toDate": "2017-02-28",
+        "companyName": "ProjectManage",
+        "role": "Quản lý Dự án",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin sử dụng phương pháp Agile."
+      },
+      {
+        "id": 28,
+        "fromDate": "2017-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "AgilePro",
+        "role": "Trưởng phòng Quản lý Dự án Agile",
+        "workDescription": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile và Scrum."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "fullName": "Đinh Nguyên Chung",
+    "phone": "0375252264",
+    "email": "nguyen.chung@techmail.net",
+    "dob": "1993-11-05",
+    "address": {
+      "id": 216,
+      "country": "Vietnam",
+      "city": "Hai Phong",
+      "street": "Ly Thuong Kiet",
+      "number": "159",
+      "zipcode": "310000"
+    },
+    "candidateSkills": [
+      {
+        "id": 38,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      },
+      {
+        "id": 39,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết sử dụng các công cụ như Postman để kiểm thử API.",
+        "skill_id": 38
+      },
+      {
+        "id": 40,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng Node.js và Express.",
+        "skill_id": 20
+      }
+    ],
+    "experiences": [
+      {
+        "id": 29,
+        "fromDate": "2015-04-01",
+        "toDate": "2019-09-30",
+        "companyName": "APIMasters",
+        "role": "Kỹ sư Phát triển API",
+        "workDescription": "Thiết kế và phát triển các giao diện lập trình ứng dụng (API) cho các dịch vụ nội bộ."
+      },
+      {
+        "id": 30,
+        "fromDate": "2019-10-01",
+        "toDate": "2023-10-31",
+        "companyName": "BackendDevelopers",
+        "role": "Trưởng phòng Phát triển API",
+        "workDescription": "Quản lý nhóm phát triển API và đảm bảo chất lượng các dịch vụ API."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "fullName": "Nguyễn Thành Cương",
+    "phone": "0961722260",
+    "email": "thanhcuong.nguyen@business.com",
+    "dob": "1992-08-12",
+    "address": {
+      "id": 217,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Hoang Dieu",
+      "number": "456",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 41,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 42,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      }
+    ],
+    "experiences": [
+      {
+        "id": 31,
+        "fromDate": "2014-06-01",
+        "toDate": "2018-11-30",
+        "companyName": "BigDataSolutions",
+        "role": "Nhân viên Phân Tích Dữ liệu Lớn",
+        "workDescription": "Phân tích và xử lý dữ liệu lớn để hỗ trợ các chiến lược kinh doanh."
+      },
+      {
+        "id": 32,
+        "fromDate": "2019-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataVision",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "fullName": "Thái Bá Cường",
+    "phone": "0377344631",
+    "email": "bacuong.thai@domain.org",
+    "dob": "1991-03-25",
+    "address": {
+      "id": 218,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 43,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 44,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      }
+    ],
+    "experiences": [
+      {
+        "id": 33,
+        "fromDate": "2012-05-01",
+        "toDate": "2016-10-31",
+        "companyName": "SystemAnalyze",
+        "role": "Nhân viên Phân Tích Kỹ Thuật",
+        "workDescription": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp."
+      },
+      {
+        "id": 34,
+        "fromDate": "2017-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSolutions",
+        "role": "Trưởng phòng Phân Tích Kỹ Thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "fullName": "Võ Chí Cường",
+    "phone": "0388572260",
+    "email": "vuchi.cuong@techmail.com",
+    "dob": "1994-09-15",
+    "address": {
+      "id": 219,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Hue",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 45,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng Git và các công cụ quản lý mã nguồn.",
+        "skill_id": 2
+      },
+      {
+        "id": 46,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về Docker.",
+        "skill_id": 32
+      }
+    ],
+    "experiences": [
+      {
+        "id": 35,
+        "fromDate": "2019-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "SourceManage",
+        "role": "Nhân viên Quản lý Mã Nguồn",
+        "workDescription": "Quản lý và duy trì kho mã nguồn sử dụng Git."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "fullName": "Vũ Hải Đăng",
+    "phone": "0373948959",
+    "email": "haidang.vu@domain.net",
+    "dob": "1995-07-22",
+    "address": {
+      "id": 220,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Nguyen Thi Minh Khai",
+      "number": "147",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 47,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với phân tích yêu cầu và mô hình hóa kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 48,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 36,
+        "fromDate": "2017-06-01",
+        "toDate": "2021-12-31",
+        "companyName": "BizIntelligence",
+        "role": "Nhân viên Phân Tích Kỹ Thuật",
+        "workDescription": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp."
+      },
+      {
+        "id": 37,
+        "fromDate": "2022-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "BusinessTech",
+        "role": "Trưởng phòng Phân Tích Kỹ Thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "fullName": "Bùi Thanh Đạt",
+    "phone": "0378888010",
+    "email": "thanhdat.bui@gmail.com",
+    "dob": "1990-02-28",
+    "address": {
+      "id": 221,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Le Thanh Ton",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 49,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về phần mềm của công ty.",
+        "skill_id": 7
+      },
+      {
+        "id": 50,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và lắng nghe.",
+        "skill_id": 1
+      },
+      {
+        "id": 51,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tổ chức sự kiện.",
+        "skill_id": 37
+      },
+      {
+        "id": 52,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 38,
+        "fromDate": "2018-05-01",
+        "toDate": "2022-10-31",
+        "companyName": "EventMasters",
+        "role": "Nhân viên Hỗ trợ Phát Triển Sản phẩm",
+        "workDescription": "Hỗ trợ quản lý và phát triển các sản phẩm công nghệ của công ty."
+      },
+      {
+        "id": 39,
+        "fromDate": "2022-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProductTech",
+        "role": "Trưởng phòng Phát Triển Sản phẩm",
+        "workDescription": "Quản lý và điều hành các dự án phát triển sản phẩm công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "fullName": "Đỗ Tấn Đạt",
+    "phone": "0379292697",
+    "email": "tan.dat.do@business.org",
+    "dob": "1996-04-20",
+    "address": {
+      "id": 222,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Pham Van Dong",
+      "number": "753",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 53,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về hệ thống máy tính và mạng.",
+        "skill_id": 7
+      },
+      {
+        "id": 54,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt và kiên nhẫn.",
+        "skill_id": 1
+      }
+    ],
+    "experiences": [
+      {
+        "id": 40,
+        "fromDate": "2020-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSupport",
+        "role": "Nhân viên Hỗ trợ IT",
+        "workDescription": "Cung cấp hỗ trợ kỹ thuật cho nhân viên nội bộ về các vấn đề công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "fullName": "Lê Thành Đạt",
+    "phone": "0379684891",
+    "email": "thanhdat.le@domain.com",
+    "dob": "1993-09-25",
+    "address": {
+      "id": 223,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 55,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 56,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 57,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 58,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 59,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 60,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 41,
+        "fromDate": "2011-07-01",
+        "toDate": "2016-12-31",
+        "companyName": "SoftwareManage",
+        "role": "Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 42,
+        "fromDate": "2017-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "ManageSoft",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "fullName": "Lê Văn Đạt",
+    "phone": "0379138972",
+    "email": "van.dat.le@techmail.com",
+    "dob": "1992-12-18",
+    "address": {
+      "id": 224,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Le Loi",
+      "number": "369",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 61,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 62,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      }
+    ],
+    "experiences": [
+      {
+        "id": 43,
+        "fromDate": "2014-08-01",
+        "toDate": "2019-01-31",
+        "companyName": "FrontendDev",
+        "role": "Nhân viên Phát triển Frontend",
+        "workDescription": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web sử dụng React."
+      },
+      {
+        "id": 44,
+        "fromDate": "2019-02-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebDesignPro",
+        "role": "Trưởng phòng Phát triển Frontend",
+        "workDescription": "Quản lý nhóm phát triển frontend và đảm bảo chất lượng giao diện người dùng."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "fullName": "Nguyễn Trọng Đạt",
+    "phone": "0373793683",
+    "email": "trongdat.nguyen@business.com",
+    "dob": "1995-05-30",
+    "address": {
+      "id": 225,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Le Thanh Ton",
+      "number": "852",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 63,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 64,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 45,
+        "fromDate": "2016-09-01",
+        "toDate": "2021-02-28",
+        "companyName": "ProjectLeaders",
+        "role": "Quản lý Thời gian",
+        "workDescription": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án."
+      },
+      {
+        "id": 46,
+        "fromDate": "2021-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "TimeManagePro",
+        "role": "Trưởng phòng Quản lý Thời gian",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý thời gian cho các dự án công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "fullName": "Nguyễn Văn Đạt",
+    "phone": "0379370366",
+    "email": "vanda.nguyen@gmail.com",
+    "dob": "1991-07-22",
+    "address": {
+      "id": 226,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Pham Van Dong",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 65,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 66,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      }
+    ],
+    "experiences": [
+      {
+        "id": 47,
+        "fromDate": "2013-10-01",
+        "toDate": "2018-03-31",
+        "companyName": "BigDataTech",
+        "role": "Nhân viên Phân Tích Dữ liệu Lớn",
+        "workDescription": "Phân tích và xử lý dữ liệu lớn để hỗ trợ các chiến lược kinh doanh."
+      },
+      {
+        "id": 48,
+        "fromDate": "2018-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataSciencePro",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "fullName": "Lê Văn Đạt",
+    "phone": "0374967326",
+    "email": "vanda.le@techmail.org",
+    "dob": "1994-03-18",
+    "address": {
+      "id": 227,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 67,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 68,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 69,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 70,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 71,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 72,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 49,
+        "fromDate": "2012-08-01",
+        "toDate": "2017-01-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 50,
+        "fromDate": "2017-02-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "fullName": "Mai Quốc Đông",
+    "phone": "0373581505",
+    "email": "quocdong.mai@techmail.com",
+    "dob": "1992-11-30",
+    "address": {
+      "id": 228,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 73,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý và lãnh đạo.",
+        "skill_id": 11
+      },
+      {
+        "id": 74,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và đàm phán.",
+        "skill_id": 13
+      }
+    ],
+    "experiences": [
+      {
+        "id": 51,
+        "fromDate": "2014-10-01",
+        "toDate": "2019-03-31",
+        "companyName": "LeadershipPro",
+        "role": "Nhân viên Quản lý Nhân Sự IT",
+        "workDescription": "Quản lý các hoạt động nhân sự trong bộ phận công nghệ thông tin."
+      },
+      {
+        "id": 52,
+        "fromDate": "2019-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "HRTech",
+        "role": "Trưởng phòng Quản lý Nhân Sự IT",
+        "workDescription": "Quản lý và phát triển các chính sách nhân sự cho bộ phận công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "fullName": "Trần Lê Khoa",
+    "phone": "0373355261",
+    "email": "le.khoa.tran@domain.net",
+    "dob": "1990-06-10",
+    "address": {
+      "id": 229,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Nguyen Van Linh",
+      "number": "147",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 75,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 76,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      }
+    ],
+    "experiences": [
+      {
+        "id": 53,
+        "fromDate": "2015-09-01",
+        "toDate": "2020-02-28",
+        "companyName": "FullStackDev",
+        "role": "Nhân viên Phát triển Phần Mềm Fullstack",
+        "workDescription": "Phát triển các ứng dụng web toàn diện từ frontend đến backend sử dụng React và Node.js."
+      },
+      {
+        "id": 54,
+        "fromDate": "2020-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebFullPro",
+        "role": "Trưởng phòng Phát triển Phần Mềm Fullstack",
+        "workDescription": "Quản lý và điều hành nhóm phát triển phần mềm fullstack, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "fullName": "Võ Tiến Khoa",
+    "phone": "0373626123",
+    "email": "tienkhoa.vo@business.com",
+    "dob": "1988-10-05",
+    "address": {
+      "id": 230,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Le Thanh Ton",
+      "number": "369",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 77,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 78,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 79,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "experiences": [
+      {
+        "id": 55,
+        "fromDate": "2011-11-01",
+        "toDate": "2016-04-30",
+        "companyName": "TimeManagement",
+        "role": "Nhân viên Quản lý Thời gian",
+        "workDescription": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án."
+      },
+      {
+        "id": 56,
+        "fromDate": "2016-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProjectTime",
+        "role": "Trưởng phòng Quản lý Thời gian",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý thời gian cho các dự án công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "fullName": "Nguyễn Xuân Khôi",
+    "phone": "0373795065",
+    "email": "xuan.khoi.nguyen@gmail.com",
+    "dob": "1995-12-25",
+    "address": {
+      "id": 231,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "741",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 80,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 81,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 57,
+        "fromDate": "2016-12-01",
+        "toDate": "2021-05-31",
+        "companyName": "ProblemSolvers",
+        "role": "Nhân viên Hỗ trợ Phát triển Sản phẩm",
+        "workDescription": "Hỗ trợ quản lý và phát triển các sản phẩm công nghệ của công ty."
+      },
+      {
+        "id": 58,
+        "fromDate": "2021-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProductDevelopers",
+        "role": "Trưởng phòng Hỗ trợ Phát triển Sản phẩm",
+        "workDescription": "Quản lý và điều hành các dự án phát triển sản phẩm công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "fullName": "Hồ Minh Hậu",
+    "phone": "0379840989",
+    "email": "minhhau.ho@techmail.org",
+    "dob": "1992-05-10",
+    "address": {
+      "id": 232,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Le Loi",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 82,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 83,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 84,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 85,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 86,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 87,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 59,
+        "fromDate": "2013-07-01",
+        "toDate": "2018-12-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 60,
+        "fromDate": "2019-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "fullName": "Nguyễn Hoàng Khang",
+    "phone": "0379436783",
+    "email": "hoangkhang.nguyen@business.com",
+    "dob": "1993-11-20",
+    "address": {
+      "id": 233,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 88,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 89,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 90,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 91,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 92,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 93,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 61,
+        "fromDate": "2014-09-01",
+        "toDate": "2019-02-28",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 62,
+        "fromDate": "2019-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "fullName": "Nguyễn Huy Khang",
+    "phone": "0373897132",
+    "email": "huykhang.nguyen@techmail.org",
+    "dob": "1994-04-15",
+    "address": {
+      "id": 234,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 94,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 95,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 63,
+        "fromDate": "2015-10-01",
+        "toDate": "2020-03-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 64,
+        "fromDate": "2020-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "fullName": "Nguyễn Thị Mỹ Hoa",
+    "phone": "0378897816",
+    "email": "myhoa.nguyen@domain.com",
+    "dob": "1990-01-05",
+    "address": {
+      "id": 235,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Nguyen Trai",
+      "number": "852",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 96,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 97,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      },
+      {
+        "id": 98,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng quản lý dự án Agile.",
+        "skill_id": 15
+      },
+      {
+        "id": 99,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 100,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 65,
+        "fromDate": "2012-11-01",
+        "toDate": "2017-04-30",
+        "companyName": "FrontendDevelopers",
+        "role": "Nhân viên Phát triển Frontend",
+        "workDescription": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web sử dụng React."
+      },
+      {
+        "id": 66,
+        "fromDate": "2017-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebInnovate",
+        "role": "Trưởng phòng Phát triển Frontend",
+        "workDescription": "Quản lý nhóm phát triển frontend và đảm bảo chất lượng giao diện người dùng."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "fullName": "Huỳnh Lệ Hoan",
+    "phone": "0378458282",
+    "email": "lehoan.huynh@techmail.net",
+    "dob": "1991-08-18",
+    "address": {
+      "id": 236,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 101,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 102,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 103,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 67,
+        "fromDate": "2013-12-01",
+        "toDate": "2018-05-31",
+        "companyName": "SystemAnalyze",
+        "role": "Nhân viên Phân Tích Kỹ Thuật",
+        "workDescription": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp."
+      },
+      {
+        "id": 68,
+        "fromDate": "2018-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSolutions",
+        "role": "Trưởng phòng Phân Tích Kỹ Thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "fullName": "Nguyễn Việt Hoàng",
+    "phone": "0373756652",
+    "email": "viethoang.nguyen@techmail.com",
+    "dob": "1994-02-14",
+    "address": {
+      "id": 237,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Hung Dao",
+      "number": "753",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 104,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 105,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 106,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 107,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 108,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 109,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 69,
+        "fromDate": "2014-03-01",
+        "toDate": "2018-08-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 70,
+        "fromDate": "2018-09-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "fullName": "Phạm Văn Thành",
+    "phone": "0375653069",
+    "email": "thanh.van.pham@domain.net",
+    "dob": "1993-07-22",
+    "address": {
+      "id": 238,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Nguyen Van Linh",
+      "number": "369",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 110,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Git và các công cụ quản lý mã nguồn.",
+        "skill_id": 2
+      },
+      {
+        "id": 111,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về Docker.",
+        "skill_id": 32
+      }
+    ],
+    "experiences": [
+      {
+        "id": 71,
+        "fromDate": "2017-05-01",
+        "toDate": "2021-10-31",
+        "companyName": "SourceManage",
+        "role": "Nhân viên Quản lý Mã Nguồn",
+        "workDescription": "Quản lý và duy trì kho mã nguồn sử dụng Git."
+      },
+      {
+        "id": 72,
+        "fromDate": "2021-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "CodeMasters",
+        "role": "Trưởng phòng Quản lý Mã Nguồn",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý mã nguồn cho các dự án phát triển phần mềm."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "fullName": "Ngô Đăng Trường Sa",
+    "phone": "0377930175",
+    "email": "dangtrong.sa@business.com",
+    "dob": "1990-09-30",
+    "address": {
+      "id": 239,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 112,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 113,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 73,
+        "fromDate": "2015-11-01",
+        "toDate": "2020-04-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 74,
+        "fromDate": "2020-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "fullName": "Khưu Võ Thanh Sang",
+    "phone": "0373522235",
+    "email": "thanhsang.khuu@techmail.org",
+    "dob": "1992-06-18",
+    "address": {
+      "id": 240,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 114,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 115,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "experiences": [
+      {
+        "id": 75,
+        "fromDate": "2016-07-01",
+        "toDate": "2021-12-31",
+        "companyName": "BizAnalytics",
+        "role": "Nhân viên Phân Tích Kỹ thuật",
+        "workDescription": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định."
+      },
+      {
+        "id": 76,
+        "fromDate": "2022-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataVision",
+        "role": "Trưởng phòng Phân Tích Kỹ thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp phân tích dữ liệu."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "fullName": "Trần Minh Lân",
+    "phone": "0373370403",
+    "email": "minhlan.tran@techmail.com",
+    "dob": "1993-04-22",
+    "address": {
+      "id": 241,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "741",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 116,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 117,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 118,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 77,
+        "fromDate": "2014-12-01",
+        "toDate": "2019-05-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 78,
+        "fromDate": "2019-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "fullName": "Nguyễn Hữu Lộc",
+    "phone": "0373795065",
+    "email": "huyloc.nguyen@business.com",
+    "dob": "1994-05-10",
+    "address": {
+      "id": 242,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 119,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 120,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 79,
+        "fromDate": "2015-05-01",
+        "toDate": "2020-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 80,
+        "fromDate": "2020-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "fullName": "Nguyễn Tấn Lộc",
+    "phone": "0379199167",
+    "email": "tanloc.nguyen@techmail.com",
+    "dob": "1991-07-30",
+    "address": {
+      "id": 243,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 121,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ như Postman để kiểm thử API.",
+        "skill_id": 20
+      },
+      {
+        "id": 122,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      },
+      {
+        "id": 123,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      }
+    ],
+    "experiences": [
+      {
+        "id": 81,
+        "fromDate": "2016-01-01",
+        "toDate": "2020-06-30",
+        "companyName": "APIMasters",
+        "role": "Kỹ sư Phát triển API",
+        "workDescription": "Thiết kế và phát triển các giao diện lập trình ứng dụng (API) cho các dịch vụ nội bộ."
+      },
+      {
+        "id": 82,
+        "fromDate": "2020-07-01",
+        "toDate": "2023-10-31",
+        "companyName": "APIDevelopers",
+        "role": "Trưởng phòng Phát triển API",
+        "workDescription": "Quản lý nhóm phát triển API và đảm bảo chất lượng các dịch vụ API."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "fullName": "Trần Minh Quang",
+    "phone": "0373455827",
+    "email": "minhquang.tran@techmail.org",
+    "dob": "1992-09-12",
+    "address": {
+      "id": 244,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Hung Dao",
+      "number": "753",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 124,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 125,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 126,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 127,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 128,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 129,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 130,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 83,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 84,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "fullName": "Đào Tiến Dũng",
+    "phone": "0379684031",
+    "email": "tiendung.dao@business.com",
+    "dob": "1991-12-05",
+    "address": {
+      "id": 245,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 131,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 132,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 133,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "experiences": [
+      {
+        "id": 85,
+        "fromDate": "2014-04-01",
+        "toDate": "2018-09-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 86,
+        "fromDate": "2018-10-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "fullName": "Đồng Mạnh Dũng",
+    "phone": "0373793683",
+    "email": "muandung.dong@techmail.org",
+    "dob": "1993-07-10",
+    "address": {
+      "id": 246,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 134,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      },
+      {
+        "id": 135,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 136,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 137,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 87,
+        "fromDate": "2015-09-01",
+        "toDate": "2020-02-28",
+        "companyName": "ProjectManage",
+        "role": "Quản lý Dự án",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin sử dụng phương pháp Agile."
+      },
+      {
+        "id": 88,
+        "fromDate": "2020-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "AgilePro",
+        "role": "Trưởng phòng Quản lý Dự án Agile",
+        "workDescription": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile và Scrum."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "fullName": "Nguyễn Hữu Dũng",
+    "phone": "0373971572",
+    "email": "huydung.nguyen@techmail.com",
+    "dob": "1992-10-25",
+    "address": {
+      "id": 247,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Hung Dao",
+      "number": "753",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 138,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 139,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 140,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 89,
+        "fromDate": "2016-01-01",
+        "toDate": "2020-06-30",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 90,
+        "fromDate": "2020-07-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "fullName": "Đặng Trần Dương",
+    "phone": "0379488984",
+    "email": "tranduong.dang@business.com",
+    "dob": "1991-11-30",
+    "address": {
+      "id": 248,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 141,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      },
+      {
+        "id": 142,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 143,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 144,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 145,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 91,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 92,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "fullName": "Lê Văn Dương",
+    "phone": "0373793683",
+    "email": "vanduong.le@techmail.com",
+    "dob": "1994-08-18",
+    "address": {
+      "id": 249,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 146,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 147,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 148,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 149,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 150,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 93,
+        "fromDate": "2016-05-01",
+        "toDate": "2020-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 94,
+        "fromDate": "2020-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "fullName": "Trần Hiển Vinh",
+    "phone": "0373897132",
+    "email": "hienvinh.tran@techmail.com",
+    "dob": "1992-07-15",
+    "address": {
+      "id": 250,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 151,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 152,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 153,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 154,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 155,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 156,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 157,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 95,
+        "fromDate": "2014-06-01",
+        "toDate": "2018-11-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 96,
+        "fromDate": "2018-12-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "fullName": "Đỗ Thị Hằng Nga",
+    "phone": "0373948959",
+    "email": "hangnga.do@icloud.com",
+    "dob": "1993-04-20",
+    "address": {
+      "id": 251,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Le Loi",
+      "number": "321",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 154,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      },
+      {
+        "id": 155,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích dữ liệu.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 150,
+        "fromDate": "2015-05-01",
+        "toDate": "2019-10-31",
+        "companyName": "DataAnalyticsPro",
+        "role": "Nhân viên Phân Tích Dữ liệu",
+        "workDescription": "Phân tích dữ liệu kinh doanh để hỗ trợ quyết định chiến lược."
+      },
+      {
+        "id": 151,
+        "fromDate": "2019-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "fullName": "Phạm Minh Hiếu",
+    "phone": "0378651722",
+    "email": "minhhiếu.pham@yahoo.com",
+    "dob": "1989-05-20",
+    "address": {
+      "id": 252,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Quang Khai",
+      "number": "789",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 156,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 157,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "experiences": [
+      {
+        "id": 152,
+        "fromDate": "2014-03-01",
+        "toDate": "2018-08-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 153,
+        "fromDate": "2018-09-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "fullName": "Ông Nhựt Nam",
+    "phone": "0373272522",
+    "email": "nhutnam.ong@icloud.com",
+    "dob": "1988-11-15",
+    "address": {
+      "id": 253,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Nguyen Trai",
+      "number": "654",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 158,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý dự án Agile.",
+        "skill_id": 15
+      },
+      {
+        "id": 159,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 160,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 154,
+        "fromDate": "2013-04-01",
+        "toDate": "2017-09-30",
+        "companyName": "ProjectLeaders",
+        "role": "Quản lý Dự án",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin sử dụng phương pháp Agile."
+      },
+      {
+        "id": 155,
+        "fromDate": "2017-10-01",
+        "toDate": "2023-10-31",
+        "companyName": "AgilePro",
+        "role": "Trưởng phòng Quản lý Dự án Agile",
+        "workDescription": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile và Scrum."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "fullName": "Phan Thanh Nam",
+    "phone": "0373772416",
+    "email": "thanhnam.phan@outlook.com",
+    "dob": "1992-07-25",
+    "address": {
+      "id": 254,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 161,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về hệ thống máy tính và mạng.",
+        "skill_id": 7
+      },
+      {
+        "id": 162,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt và kiên nhẫn.",
+        "skill_id": 1
+      }
+    ],
+    "experiences": [
+      {
+        "id": 156,
+        "fromDate": "2020-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSupport",
+        "role": "Nhân viên Hỗ trợ IT",
+        "workDescription": "Cung cấp hỗ trợ kỹ thuật cho nhân viên nội bộ về các vấn đề công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "fullName": "Đỗ Thị Hằng Nga",
+    "phone": "0378888010",
+    "email": "hangnga.do@business.com",
+    "dob": "1990-02-28",
+    "address": {
+      "id": 255,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Le Thanh Ton",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 163,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về phần mềm của công ty.",
+        "skill_id": 7
+      },
+      {
+        "id": 164,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và lắng nghe.",
+        "skill_id": 1
+      },
+      {
+        "id": 165,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tổ chức sự kiện.",
+        "skill_id": 37
+      },
+      {
+        "id": 166,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 157,
+        "fromDate": "2018-05-01",
+        "toDate": "2022-10-31",
+        "companyName": "EventMasters",
+        "role": "Nhân viên Hỗ trợ Phát Triển Sản phẩm",
+        "workDescription": "Hỗ trợ quản lý và phát triển các sản phẩm công nghệ của công ty."
+      },
+      {
+        "id": 158,
+        "fromDate": "2022-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProductTech",
+        "role": "Trưởng phòng Phát Triển Sản phẩm",
+        "workDescription": "Quản lý và điều hành các dự án phát triển sản phẩm công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "fullName": "Đỗ Tấn Đạt",
+    "phone": "0379292697",
+    "email": "tan.dat.do@business.org",
+    "dob": "1996-04-20",
+    "address": {
+      "id": 256,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Pham Van Dong",
+      "number": "753",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 167,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về hệ thống máy tính và mạng.",
+        "skill_id": 7
+      },
+      {
+        "id": 168,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt và kiên nhẫn.",
+        "skill_id": 1
+      }
+    ],
+    "experiences": [
+      {
+        "id": 159,
+        "fromDate": "2020-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSupport",
+        "role": "Nhân viên Hỗ trợ IT",
+        "workDescription": "Cung cấp hỗ trợ kỹ thuật cho nhân viên nội bộ về các vấn đề công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "fullName": "Lê Thành Đạt",
+    "phone": "0379684891",
+    "email": "thanhdat.le@domain.com",
+    "dob": "1993-09-25",
+    "address": {
+      "id": 257,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 169,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 170,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 171,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 172,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 173,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 174,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 160,
+        "fromDate": "2011-07-01",
+        "toDate": "2016-12-31",
+        "companyName": "SoftwareManage",
+        "role": "Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 161,
+        "fromDate": "2017-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "ManageSoft",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "fullName": "Lê Văn Đạt",
+    "phone": "0379138972",
+    "email": "van.dat.le@techmail.com",
+    "dob": "1992-12-18",
+    "address": {
+      "id": 258,
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "street": "Le Loi",
+      "number": "369",
+      "zipcode": "100000"
+    },
+    "candidateSkills": [
+      {
+        "id": 175,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 176,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      }
+    ],
+    "experiences": [
+      {
+        "id": 162,
+        "fromDate": "2014-08-01",
+        "toDate": "2019-01-31",
+        "companyName": "FrontendDev",
+        "role": "Nhân viên Phát triển Frontend",
+        "workDescription": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web sử dụng React."
+      },
+      {
+        "id": 163,
+        "fromDate": "2019-02-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebDesignPro",
+        "role": "Trưởng phòng Phát triển Frontend",
+        "workDescription": "Quản lý nhóm phát triển frontend và đảm bảo chất lượng giao diện người dùng."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "fullName": "Nguyễn Trọng Đạt",
+    "phone": "0373793683",
+    "email": "trongdat.nguyen@business.com",
+    "dob": "1995-05-30",
+    "address": {
+      "id": 259,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Le Thanh Ton",
+      "number": "852",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 177,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 178,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 164,
+        "fromDate": "2016-09-01",
+        "toDate": "2021-02-28",
+        "companyName": "ProjectTime",
+        "role": "Quản lý Thời gian",
+        "workDescription": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án."
+      },
+      {
+        "id": 165,
+        "fromDate": "2021-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "TimeManagePro",
+        "role": "Trưởng phòng Quản lý Thời gian",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý thời gian cho các dự án công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "fullName": "Nguyễn Văn Đạt",
+    "phone": "0373793683",
+    "email": "vanda.nguyen@gmail.com",
+    "dob": "1991-07-22",
+    "address": {
+      "id": 260,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Pham Van Dong",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 179,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 180,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      }
+    ],
+    "experiences": [
+      {
+        "id": 166,
+        "fromDate": "2013-10-01",
+        "toDate": "2018-03-31",
+        "companyName": "BigDataTech",
+        "role": "Nhân viên Phân Tích Dữ liệu Lớn",
+        "workDescription": "Phân tích và xử lý dữ liệu lớn để hỗ trợ các chiến lược kinh doanh."
+      },
+      {
+        "id": 167,
+        "fromDate": "2018-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataSciencePro",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "fullName": "Lê Văn Đạt",
+    "phone": "0374967326",
+    "email": "vanda.le@techmail.org",
+    "dob": "1994-03-18",
+    "address": {
+      "id": 261,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 181,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 182,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 183,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 184,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 185,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 186,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 168,
+        "fromDate": "2011-07-01",
+        "toDate": "2016-12-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 169,
+        "fromDate": "2017-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "ManageSoft",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "fullName": "Mai Quốc Đông",
+    "phone": "0373581505",
+    "email": "quocdong.mai@techmail.com",
+    "dob": "1992-11-30",
+    "address": {
+      "id": 262,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "852",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 187,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý và lãnh đạo.",
+        "skill_id": 11
+      },
+      {
+        "id": 188,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và đàm phán.",
+        "skill_id": 13
+      }
+    ],
+    "experiences": [
+      {
+        "id": 170,
+        "fromDate": "2014-10-01",
+        "toDate": "2019-03-31",
+        "companyName": "LeadershipPro",
+        "role": "Nhân viên Quản lý Nhân Sự IT",
+        "workDescription": "Quản lý các hoạt động nhân sự trong bộ phận công nghệ thông tin."
+      },
+      {
+        "id": 171,
+        "fromDate": "2019-04-01",
+        "toDate": "2023-10-31",
+        "companyName": "HRTech",
+        "role": "Trưởng phòng Quản lý Nhân Sự IT",
+        "workDescription": "Quản lý và phát triển các chính sách nhân sự cho bộ phận công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "fullName": "Trần Lê Khoa",
+    "phone": "0373355261",
+    "email": "le.khoa.tran@domain.net",
+    "dob": "1990-06-10",
+    "address": {
+      "id": 263,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Nguyen Van Linh",
+      "number": "147",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 189,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 190,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      }
+    ],
+    "experiences": [
+      {
+        "id": 172,
+        "fromDate": "2015-09-01",
+        "toDate": "2020-02-28",
+        "companyName": "FullStackDev",
+        "role": "Nhân viên Phát triển Phần Mềm Fullstack",
+        "workDescription": "Phát triển các ứng dụng web toàn diện từ frontend đến backend sử dụng React và Node.js."
+      },
+      {
+        "id": 173,
+        "fromDate": "2020-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebFullPro",
+        "role": "Trưởng phòng Phát triển Phần Mềm Fullstack",
+        "workDescription": "Quản lý và điều hành nhóm phát triển phần mềm fullstack, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "fullName": "Võ Tiến Khoa",
+    "phone": "0373626123",
+    "email": "tienkhoa.vo@business.com",
+    "dob": "1988-10-05",
+    "address": {
+      "id": 264,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Le Thanh Ton",
+      "number": "369",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 191,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 192,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 193,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "experiences": [
+      {
+        "id": 174,
+        "fromDate": "2011-11-01",
+        "toDate": "2016-04-30",
+        "companyName": "TimeManagement",
+        "role": "Nhân viên Quản lý Thời gian",
+        "workDescription": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án."
+      },
+      {
+        "id": 175,
+        "fromDate": "2016-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProjectTime",
+        "role": "Trưởng phòng Quản lý Thời gian",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý thời gian cho các dự án công nghệ thông tin."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "fullName": "Nguyễn Xuân Khôi",
+    "phone": "0373795065",
+    "email": "xuan.khoi.nguyen@gmail.com",
+    "dob": "1995-12-25",
+    "address": {
+      "id": 265,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "741",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 194,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 195,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 176,
+        "fromDate": "2016-12-01",
+        "toDate": "2021-05-31",
+        "companyName": "ProblemSolvers",
+        "role": "Nhân viên Hỗ trợ Phát triển Sản phẩm",
+        "workDescription": "Hỗ trợ quản lý và phát triển các sản phẩm công nghệ của công ty."
+      },
+      {
+        "id": 177,
+        "fromDate": "2021-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "ProductDevelopers",
+        "role": "Trưởng phòng Hỗ trợ Phát triển Sản phẩm",
+        "workDescription": "Quản lý và điều hành các dự án phát triển sản phẩm công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "fullName": "Hồ Minh Hậu",
+    "phone": "0379840989",
+    "email": "minhhau.ho@techmail.net",
+    "dob": "1992-05-10",
+    "address": {
+      "id": 266,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 196,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 197,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 198,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 199,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 200,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 201,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 178,
+        "fromDate": "2013-07-01",
+        "toDate": "2018-12-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 179,
+        "fromDate": "2019-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "fullName": "Nguyễn Hoàng Khang",
+    "phone": "0379436783",
+    "email": "hoangkhang.nguyen@business.com",
+    "dob": "1993-11-20",
+    "address": {
+      "id": 267,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 202,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 203,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 204,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 205,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 206,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 207,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 180,
+        "fromDate": "2014-09-01",
+        "toDate": "2019-02-28",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 181,
+        "fromDate": "2019-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "fullName": "Nguyễn Huy Khang",
+    "phone": "0373897132",
+    "email": "huykhang.nguyen@techmail.org",
+    "dob": "1994-04-15",
+    "address": {
+      "id": 268,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Nguyen Trai",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 208,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 209,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 210,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 211,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 212,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 213,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 214,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 182,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 183,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "fullName": "Nguyễn Thị Mỹ Hoa",
+    "phone": "0378897816",
+    "email": "myhoa.nguyen@domain.com",
+    "dob": "1990-01-05",
+    "address": {
+      "id": 269,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Nguyen Trai",
+      "number": "852",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 215,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 216,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      },
+      {
+        "id": 217,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng quản lý dự án Agile.",
+        "skill_id": 15
+      },
+      {
+        "id": 218,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 219,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 184,
+        "fromDate": "2012-11-01",
+        "toDate": "2017-04-30",
+        "companyName": "FrontendDevelopers",
+        "role": "Nhân viên Phát triển Frontend",
+        "workDescription": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web sử dụng React."
+      },
+      {
+        "id": 185,
+        "fromDate": "2017-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "WebInnovate",
+        "role": "Trưởng phòng Phát triển Frontend",
+        "workDescription": "Quản lý nhóm phát triển frontend và đảm bảo chất lượng giao diện người dùng."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "fullName": "Huỳnh Lệ Hoan",
+    "phone": "0378458282",
+    "email": "lehoan.huynh@techmail.net",
+    "dob": "1991-08-18",
+    "address": {
+      "id": 270,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 220,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 221,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 222,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "experiences": [
+      {
+        "id": 186,
+        "fromDate": "2013-12-01",
+        "toDate": "2018-05-31",
+        "companyName": "SystemAnalyze",
+        "role": "Nhân viên Phân Tích Kỹ Thuật",
+        "workDescription": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp."
+      },
+      {
+        "id": 187,
+        "fromDate": "2018-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "TechSolutions",
+        "role": "Trưởng phòng Phân Tích Kỹ Thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp công nghệ."
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "fullName": "Nguyễn Việt Hoàng",
+    "phone": "0373756652",
+    "email": "viethoang.nguyen@techmail.com",
+    "dob": "1994-02-14",
+    "address": {
+      "id": 271,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Hung Dao",
+      "number": "753",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 223,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 224,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 225,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 226,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 227,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 228,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 188,
+        "fromDate": "2014-03-01",
+        "toDate": "2018-08-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 189,
+        "fromDate": "2018-09-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "fullName": "Phạm Văn Thành",
+    "phone": "0375653069",
+    "email": "thanh.van.pham@domain.net",
+    "dob": "1993-07-22",
+    "address": {
+      "id": 272,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Nguyen Van Linh",
+      "number": "369",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 229,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Git và các công cụ quản lý mã nguồn.",
+        "skill_id": 2
+      },
+      {
+        "id": 230,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về Docker.",
+        "skill_id": 32
+      }
+    ],
+    "experiences": [
+      {
+        "id": 190,
+        "fromDate": "2017-05-01",
+        "toDate": "2021-10-31",
+        "companyName": "SourceManage",
+        "role": "Nhân viên Quản lý Mã Nguồn",
+        "workDescription": "Quản lý và duy trì kho mã nguồn sử dụng Git."
+      },
+      {
+        "id": 191,
+        "fromDate": "2021-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "CodeMasters",
+        "role": "Trưởng phòng Quản lý Mã Nguồn",
+        "workDescription": "Điều hành và tối ưu hóa quy trình quản lý mã nguồn cho các dự án phát triển phần mềm."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "fullName": "Ngô Đăng Trường Sa",
+    "phone": "0377930175",
+    "email": "dangtrong.sa@business.com",
+    "dob": "1990-09-30",
+    "address": {
+      "id": 273,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 231,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 232,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 192,
+        "fromDate": "2015-11-01",
+        "toDate": "2020-04-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 193,
+        "fromDate": "2020-05-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "fullName": "Khưu Võ Thanh Sang",
+    "phone": "0373522235",
+    "email": "thanhsang.khuu@techmail.org",
+    "dob": "1992-06-18",
+    "address": {
+      "id": 274,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 233,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 234,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "experiences": [
+      {
+        "id": 194,
+        "fromDate": "2016-07-01",
+        "toDate": "2021-12-31",
+        "companyName": "BizAnalytics",
+        "role": "Nhân viên Phân Tích Kỹ thuật",
+        "workDescription": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định."
+      },
+      {
+        "id": 195,
+        "fromDate": "2022-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataVision",
+        "role": "Trưởng phòng Phân Tích Kỹ thuật",
+        "workDescription": "Quản lý nhóm phân tích kỹ thuật và đảm bảo chất lượng các giải pháp phân tích dữ liệu."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "fullName": "Trần Minh Lân",
+    "phone": "0373370403",
+    "email": "minhlan.tran@techmail.com",
+    "dob": "1993-04-22",
+    "address": {
+      "id": 275,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "741",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 235,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 236,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 237,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 196,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 197,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "fullName": "Nguyễn Hữu Lộc",
+    "phone": "0373795065",
+    "email": "huyloc.nguyen@business.com",
+    "dob": "1994-05-10",
+    "address": {
+      "id": 276,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 238,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 239,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "experiences": [
+      {
+        "id": 198,
+        "fromDate": "2015-05-01",
+        "toDate": "2020-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 199,
+        "fromDate": "2020-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "fullName": "Nguyễn Tấn Lộc",
+    "phone": "0379199167",
+    "email": "tanloc.nguyen@techmail.com",
+    "dob": "1991-07-30",
+    "address": {
+      "id": 277,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 240,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ như Postman để kiểm thử API.",
+        "skill_id": 20
+      },
+      {
+        "id": 241,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      },
+      {
+        "id": 242,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      }
+    ],
+    "experiences": [
+      {
+        "id": 200,
+        "fromDate": "2016-01-01",
+        "toDate": "2020-06-30",
+        "companyName": "APIMasters",
+        "role": "Kỹ sư Phát triển API",
+        "workDescription": "Thiết kế và phát triển các giao diện lập trình ứng dụng (API) cho các dịch vụ nội bộ."
+      },
+      {
+        "id": 201,
+        "fromDate": "2020-07-01",
+        "toDate": "2023-10-31",
+        "companyName": "APIDevelopers",
+        "role": "Trưởng phòng Phát triển API",
+        "workDescription": "Quản lý nhóm phát triển API và đảm bảo chất lượng các dịch vụ API."
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "fullName": "Trần Minh Quang",
+    "phone": "0373455827",
+    "email": "minhquang.tran@techmail.org",
+    "dob": "1992-09-12",
+    "address": {
+      "id": 278,
+      "country": "Vietnam",
+      "city": "Da Nang",
+      "street": "Tran Hung Dao",
+      "number": "753",
+      "zipcode": "550000"
+    },
+    "candidateSkills": [
+      {
+        "id": 243,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 244,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 245,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 246,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 247,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 248,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 249,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 202,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 203,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "fullName": "Đào Tiến Dũng",
+    "phone": "0379684031",
+    "email": "tiendung.dao@business.com",
+    "dob": "1991-12-05",
+    "address": {
+      "id": 279,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 250,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 251,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 252,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "experiences": [
+      {
+        "id": 204,
+        "fromDate": "2014-04-01",
+        "toDate": "2018-09-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 205,
+        "fromDate": "2018-10-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "fullName": "Đồng Mạnh Dũng",
+    "phone": "0373793683",
+    "email": "muandung.dong@techmail.org",
+    "dob": "1993-07-10",
+    "address": {
+      "id": 280,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 253,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      },
+      {
+        "id": 254,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 255,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 256,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 206,
+        "fromDate": "2015-09-01",
+        "toDate": "2020-02-28",
+        "companyName": "ProjectManage",
+        "role": "Quản lý Dự án",
+        "workDescription": "Lập kế hoạch và quản lý các dự án công nghệ thông tin sử dụng phương pháp Agile."
+      },
+      {
+        "id": 207,
+        "fromDate": "2020-03-01",
+        "toDate": "2023-10-31",
+        "companyName": "AgilePro",
+        "role": "Trưởng phòng Quản lý Dự án Agile",
+        "workDescription": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile và Scrum."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "fullName": "Nguyễn Hữu Dũng",
+    "phone": "0373793683",
+    "email": "huydung.nguyen@techmail.com",
+    "dob": "1992-10-25",
+    "address": {
+      "id": 281,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 257,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 258,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 259,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      }
+    ],
+    "experiences": [
+      {
+        "id": 208,
+        "fromDate": "2016-01-01",
+        "toDate": "2020-06-30",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 209,
+        "fromDate": "2020-07-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "fullName": "Đặng Trần Dương",
+    "phone": "0379488984",
+    "email": "tranduong.dang@business.com",
+    "dob": "1991-11-30",
+    "address": {
+      "id": 282,
+      "country": "Vietnam",
+      "city": "Hue",
+      "street": "Tran Hung Dao",
+      "number": "258",
+      "zipcode": "500000"
+    },
+    "candidateSkills": [
+      {
+        "id": 260,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Scrum Master.",
+        "skill_id": 15
+      },
+      {
+        "id": 261,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 262,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 263,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 264,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "experiences": [
+      {
+        "id": 210,
+        "fromDate": "2015-02-01",
+        "toDate": "2019-07-31",
+        "companyName": "SoftwareLifecycle",
+        "role": "Nhân viên Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ."
+      },
+      {
+        "id": 211,
+        "fromDate": "2019-08-01",
+        "toDate": "2023-10-31",
+        "companyName": "LifecycleManage",
+        "role": "Trưởng phòng Quản lý Sản Xuất Phần Mềm",
+        "workDescription": "Quản lý và điều hành quy trình sản xuất phần mềm, đảm bảo chất lượng và tiến độ."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "fullName": "Nguyễn Duy Thanh",
+    "phone": "0373793683",
+    "email": "duythanh.nguyen@techmail.com",
+    "dob": "1994-08-18",
+    "address": {
+      "id": 283,
+      "country": "Vietnam",
+      "city": "Nha Trang",
+      "street": "Tran Hung Dao",
+      "number": "147",
+      "zipcode": "650000"
+    },
+    "candidateSkills": [
+      {
+        "id": 265,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 266,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 267,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 268,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 269,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 270,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 271,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 212,
+        "fromDate": "2016-05-01",
+        "toDate": "2020-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 213,
+        "fromDate": "2020-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "fullName": "Trần Hiển Vinh",
+    "phone": "0373897132",
+    "email": "hienvinh.tran@techmail.com",
+    "dob": "1992-07-15",
+    "address": {
+      "id": 284,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 272,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 273,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 274,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 275,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 276,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 277,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 278,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 214,
+        "fromDate": "2014-06-01",
+        "toDate": "2018-11-30",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 215,
+        "fromDate": "2018-12-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "fullName": "Nguyễn Hữu Lộc",
+    "phone": "0373795065",
+    "email": "huyloc.nguyen@business.com",
+    "dob": "1994-05-10",
+    "address": {
+      "id": 285,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 279,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 280,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 281,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 282,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 283,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 284,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 285,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 216,
+        "fromDate": "2016-05-01",
+        "toDate": "2020-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 217,
+        "fromDate": "2020-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "fullName": "Nguyễn Tấn Thuận",
+    "phone": "0373793683",
+    "email": "tanhieun.nguyen@techmail.com",
+    "dob": "1991-07-18",
+    "address": {
+      "id": 286,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 286,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 287,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 288,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 289,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 290,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 291,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 292,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 218,
+        "fromDate": "2017-05-01",
+        "toDate": "2022-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 219,
+        "fromDate": "2022-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "fullName": "Trần Anh Tiến",
+    "phone": "0373793683",
+    "email": "antien.tran@techmail.com",
+    "dob": "1993-09-10",
+    "address": {
+      "id": 287,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 293,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 294,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 295,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 296,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 297,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 298,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 299,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 220,
+        "fromDate": "2017-07-01",
+        "toDate": "2022-12-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 221,
+        "fromDate": "2023-01-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "fullName": "Trần Minh Tú",
+    "phone": "0373793683",
+    "email": "mintu.tran@business.com",
+    "dob": "1993-07-10",
+    "address": {
+      "id": 288,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 300,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 301,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 302,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 303,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 304,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 305,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 222,
+        "fromDate": "2017-05-01",
+        "toDate": "2022-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 223,
+        "fromDate": "2022-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "fullName": "Nguyễn Minh Thuận",
+    "phone": "0373793683",
+    "email": "minhthuan.nguyen@techmail.com",
+    "dob": "1995-06-25",
+    "address": {
+      "id": 289,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 306,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 307,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 308,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 309,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 310,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 311,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 312,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 224,
+        "fromDate": "2018-06-01",
+        "toDate": "2023-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 225,
+        "fromDate": "2023-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "fullName": "Trần Hiển Vinh",
+    "phone": "0373897132",
+    "email": "hienvinh.tran@techmail.org",
+    "dob": "1992-07-15",
+    "address": {
+      "id": 290,
+      "country": "Vietnam",
+      "city": "Ho Chi Minh City",
+      "street": "Pham Ngu Lao",
+      "number": "369",
+      "zipcode": "700000"
+    },
+    "candidateSkills": [
+      {
+        "id": 313,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 314,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 315,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 316,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 317,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 318,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 9
+      },
+      {
+        "id": 319,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng phân tích dữ liệu kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "experiences": [
+      {
+        "id": 226,
+        "fromDate": "2016-05-01",
+        "toDate": "2021-10-31",
+        "companyName": "DataScienceHub",
+        "role": "Nhân viên Phân Tích Data Science",
+        "workDescription": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh."
+      },
+      {
+        "id": 227,
+        "fromDate": "2021-11-01",
+        "toDate": "2023-10-31",
+        "companyName": "AIInnovate",
+        "role": "Chuyên viên Phân Tích Data Science",
+        "workDescription": "Áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu kinh doanh."
+      }
+    ]
+  }
+]
+

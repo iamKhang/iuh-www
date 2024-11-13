@@ -24,7 +24,6 @@ public class Address {
     private String number;
     private String zipcode;
 
-    @OneToOne
-    @JoinColumn(name = "company_id")
+    @OneToOne(mappedBy = "address")
     private Company company;
 }

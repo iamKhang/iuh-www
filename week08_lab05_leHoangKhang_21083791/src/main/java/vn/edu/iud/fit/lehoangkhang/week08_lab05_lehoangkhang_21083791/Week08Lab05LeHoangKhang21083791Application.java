@@ -9,12 +9,16 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.io.ClassPathResource;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.dtos.*;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.AccountRole;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.SkillLevel;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.SkillType;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.*;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.*;
 
 import java.io.InputStream;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -32,148 +36,218 @@ public class Week08Lab05LeHoangKhang21083791Application {
     private CompanyRepository companyRepository;
     @Autowired
     private JobRepository jobRepository;
+    @Autowired
+    private JobSkillRepository jobSkillRepository;
+    @Autowired
+    private CandidateSkillRepository candidateSkillRepository;
+    @Autowired
+    private AccountRepository accountRepository;
+    @Autowired
+    private CandidateApplyJobRepository candidateApplyJobRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(Week08Lab05LeHoangKhang21083791Application.class, args);
 
     }
+
     @Bean
     CommandLineRunner initData() {
         return args -> {
-            // Kiểm tra và thêm dữ liệu cho Address nếu chưa tồn tại
-            if (candidateRepository.count()==0){
-                ObjectMapper mapper = new ObjectMapper();
-                mapper.registerModule(new com.fasterxml.jackson.datatype.jsr310.JavaTimeModule());
-                mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+            ObjectMapper mapper = new ObjectMapper();
 
-                // Đọc file JSON cho Candidate và Address
-                TypeReference<List<Candidate>> candidateTypeReference = new TypeReference<List<Candidate>>() {};
-                TypeReference<List<Address>> addressTypeReference = new TypeReference<List<Address>>() {};
-                InputStream candidateInputStream = getClass().getResourceAsStream("/scripts-data/candidate.json");
-                InputStream addressInputStream = getClass().getResourceAsStream("/scripts-data/address.json");
-
-                try {
-                    List<Candidate> candidates = mapper.readValue(candidateInputStream, candidateTypeReference);
-                    List<Address> addresses = mapper.readValue(addressInputStream, addressTypeReference);
-                    if (candidates.size() > addresses.size()) {
-                        System.out.println("Số lượng ứng viên và địa chỉ không khớp nhau!");
-                        return;
-                    }
-                    for (int i = 0; i < candidates.size(); i++) {
-                        Candidate candidate = candidates.get(i);
-                        Address address = addresses.get(i);
-                        candidate.setId(null);
-                        address.setId(null);
-
-                        candidate.setAddress(address);
-                        candidateRepository.save(candidate);
-                    }
-                    System.out.println("All candidates and addresses from JSON saved successfully!");
-
-                } catch (Exception e) {
-                    System.out.println("Failed to save candidates and addresses: " + e.getMessage());
-                    e.printStackTrace();
-                }
-            }
-
-            // Kiểm tra và thêm dữ liệu cho Skill nếu chưa tồn tại
+            // 1. Khởi tạo Skills
             if (skillRepository.count() == 0) {
-                List<Skill> skills = List.of(
-                        new Skill(null, "Communication", "Ability to communicate effectively", SkillType.SOFT_SKILL),
-                        new Skill(null, "Java Programming", "Expertise in Java programming", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Teamwork", "Ability to work effectively in a team", SkillType.SOFT_SKILL),
-                        new Skill(null, "Project Management", "Experience managing projects", SkillType.UNSPECIFIC),
-                        new Skill(null, "Problem Solving", "Ability to solve complex problems", SkillType.SOFT_SKILL),
-                        new Skill(null, "Python Programming", "Expertise in Python programming", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Critical Thinking", "Ability to think critically and analytically", SkillType.SOFT_SKILL),
-                        new Skill(null, "Data Analysis", "Experience in analyzing data", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Time Management", "Ability to manage time effectively", SkillType.SOFT_SKILL),
-                        new Skill(null, "Leadership", "Ability to lead teams and projects", SkillType.SOFT_SKILL),
-                        new Skill(null, "SQL", "Expertise in SQL and database management", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Creativity", "Ability to think creatively", SkillType.SOFT_SKILL),
-                        new Skill(null, "Machine Learning", "Experience with machine learning techniques", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Adaptability", "Ability to adapt to changing environments", SkillType.SOFT_SKILL),
-                        new Skill(null, "Cloud Computing", "Experience with cloud platforms such as AWS, Azure", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Negotiation", "Skill in negotiating and reaching agreements", SkillType.SOFT_SKILL),
-                        new Skill(null, "Networking", "Ability to build professional relationships", SkillType.UNSPECIFIC),
-                        new Skill(null, "JavaScript", "Expertise in JavaScript programming", SkillType.TECHNICAL_SKILL),
-                        new Skill(null, "Customer Service", "Experience in customer service", SkillType.SOFT_SKILL),
-                        new Skill(null, "Public Speaking", "Ability to speak in public confidently", SkillType.SOFT_SKILL)
-                );
-
                 try {
-                    for (Skill skill : skills) {
+                    InputStream skillsStream = new ClassPathResource("scripts-data/skills.json").getInputStream();
+                    List<SkillDTO> skillsDTO = mapper.readValue(skillsStream, new TypeReference<List<SkillDTO>>() {
+                    });
+                    for (SkillDTO skillDTO : skillsDTO) {
+                        Skill skill = new Skill();
+                        skill.setSkillName(skillDTO.getSkillName());
+                        skill.setSkillDescription(skillDTO.getSkillDescription());
+                        skill.setType(SkillType.valueOf(skillDTO.getType()));
                         skillRepository.save(skill);
-                        System.out.println("Saved skill: " + skill.getSkillName());
                     }
-                    System.out.println("All skills saved successfully!");
+                    System.out.println("Skills data initialized.");
                 } catch (Exception e) {
-                    System.out.println("Failed to save skills: " + e.getMessage());
                     e.printStackTrace();
                 }
-            } else {
-                System.out.println("Skills already exist in the database. Skipping skill initialization.");
             }
 
-            if (companyRepository.count() == 0){
-                System.out.println("No company data found. Initializing company data...");
-                companyRepository.saveAll(List.of(
-                        new Company("Apple Inc.", "Apple là một tập đoàn công nghệ hàng đầu, nổi tiếng với iPhone và các sản phẩm sáng tạo khác.", "contact@apple.com", "+1-800-692-7753", "https://www.apple.com"),
-                        new Company("Microsoft Corporation", "Microsoft cung cấp các phần mềm và dịch vụ đám mây hàng đầu thế giới.", "contact@microsoft.com", "+1-425-882-8080", "https://www.microsoft.com"),
-                        new Company("Google LLC", "Google là công ty con của Alphabet Inc., nổi tiếng với công cụ tìm kiếm và các sản phẩm phần mềm khác.", "contact@google.com", "+1-650-253-0000", "https://www.google.com"),
-                        new Company("Amazon.com, Inc.", "Amazon là công ty thương mại điện tử và điện toán đám mây hàng đầu.", "contact@amazon.com", "+1-888-280-4331", "https://www.amazon.com"),
-                        new Company("Facebook, Inc.", "Facebook, nay là Meta, là mạng xã hội lớn nhất thế giới với các dịch vụ đa dạng như Instagram và WhatsApp.", "contact@meta.com", "+1-650-543-4800", "https://www.meta.com"),
-                        new Company("Tesla, Inc.", "Tesla là công ty dẫn đầu về xe điện và các sản phẩm năng lượng sạch.", "contact@tesla.com", "+1-888-518-3752", "https://www.tesla.com"),
-                        new Company("IBM", "IBM là một công ty công nghệ lâu đời, nổi tiếng với các giải pháp phần mềm doanh nghiệp và AI.", "contact@ibm.com", "+1-800-426-4968", "https://www.ibm.com"),
-                        new Company("Intel Corporation", "Intel là một trong những nhà sản xuất chip bán dẫn lớn nhất thế giới.", "contact@intel.com", "+1-408-765-8080", "https://www.intel.com"),
-                        new Company("Oracle Corporation", "Oracle cung cấp các giải pháp phần mềm cơ sở dữ liệu và quản lý dữ liệu cho các doanh nghiệp.", "contact@oracle.com", "+1-650-506-7000", "https://www.oracle.com"),
-                        new Company("Samsung Electronics", "Samsung là tập đoàn công nghệ hàng đầu từ Hàn Quốc, nổi tiếng với các sản phẩm điện tử và bán dẫn.", "contact@samsung.com", "+82-2-2255-0114", "https://www.samsung.com")
-                ));
+            // 2. Khởi tạo Companies và Addresses
+            // 2. Khởi tạo Companies và Addresses
+            if (companyRepository.count() == 0) {
+                try {
+                    InputStream companiesStream = new ClassPathResource("scripts-data/companies.json").getInputStream();
+                    List<CompanyDTO> companiesDTO = mapper.readValue(companiesStream, new TypeReference<List<CompanyDTO>>() {
+                    });
+                    for (CompanyDTO companyDTO : companiesDTO) {
+                        // Tạo Address
+                        Address address = new Address();
+                        address.setCountry(companyDTO.getAddress().getCountry());
+                        address.setCity(companyDTO.getAddress().getCity());
+                        address.setStreet(companyDTO.getAddress().getStreet());
+                        address.setNumber(companyDTO.getAddress().getNumber());
+                        address.setZipcode(companyDTO.getAddress().getZipcode());
 
-                System.out.println("Company data initialized successfully!");
-            } else {
-                System.out.println("Company data already exists in the database. Skipping company data initialization.");
-            }
+                        // Tạo Company và thiết lập mối quan hệ
+                        Company company = new Company(companyDTO.getName(), companyDTO.getAbout(),
+                                companyDTO.getEmail(), companyDTO.getPhone(), companyDTO.getWebUrl());
+                        company.setAddress(address);
+                        address.setCompany(company); // Thiết lập mối quan hệ ngược lại nếu cần
 
-
-            List<Company> companies = companyRepository.findAll();
-            List<Skill> skills = skillRepository.findAll();
-            if (jobRepository.count() == 0) {
-                List<Job> jobs = new ArrayList<>();
-
-                for (int i = 0; i < 30; i++) {
-                    Job job = new Job();
-                    job.setName("Job " + (i + 1));
-                    job.setDescription("Description for Job " + (i + 1));
-
-                    // Assign a random company from the list of companies
-                    Company company = companies.get(new Random().nextInt(companies.size()));
-                    job.setCompany(company);
-
-                    // Assign random skills to the job
-                    List<JobSkill> jobSkills = new ArrayList<>();
-                    int numberOfSkills = new Random().nextInt(3) + 1; // Randomly choose 1 to 3 skills
-                    for (int j = 0; j < numberOfSkills; j++) {
-                        Skill skill = skills.get(new Random().nextInt(skills.size()));
-                        JobSkill jobSkill = new JobSkill();
-                        jobSkill.setSkill(skill);
-                        jobSkill.setJob(job);
-                        jobSkill.setSkillLevel(SkillLevel.values()[new Random().nextInt(SkillLevel.values().length)]);
-                        jobSkill.setMoreInfo("Additional info about skill " + skill.getSkillName());
-                        jobSkills.add(jobSkill);
+                        // Lưu Company (Address sẽ được lưu tự động)
+                        companyRepository.save(company);
                     }
-                    job.setJobSkills(jobSkills);
-
-                    jobs.add(job);
+                    System.out.println("Companies and Addresses data initialized.");
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-
-                jobRepository.saveAll(jobs);
             }
 
+
+            // 3. Khởi tạo Jobs và JobSkills
+            if (jobRepository.count() == 0) {
+                try {
+                    InputStream jobsStream = new ClassPathResource("scripts-data/jobs.json").getInputStream();
+                    List<JobDTO> jobsDTO = mapper.readValue(jobsStream, new TypeReference<List<JobDTO>>() {
+                    });
+                    for (JobDTO jobDTO : jobsDTO) {
+                        // Lấy Company
+                        Company company = companyRepository.findById(jobDTO.getCompany())
+                                .orElseThrow(() -> new RuntimeException("Company not found with ID: " + jobDTO.getCompany()));
+
+                        // Lưu Job
+                        Job job = new Job();
+                        job.setName(jobDTO.getName());
+                        job.setDescription(jobDTO.getDescription());
+                        job.setCompany(company);
+                        job.setDeadline(LocalDate.parse(jobDTO.getDeadline()));
+                        job.setActive(jobDTO.isActive());
+                        job.setNumberOfApplicants(jobDTO.getNumberOfApplicants());
+                        job.setNegotiable(jobDTO.isNegotiable());
+                        job.setSalaryFrom(jobDTO.getSalaryFrom());
+                        job.setSalaryTo(jobDTO.getSalaryTo());
+                        job.setRequiredExperienceYears(jobDTO.getRequiredExperienceYears());
+
+                        List<JobSkill> jobSkills = new ArrayList<>();
+                        // Lưu JobSkills
+                        for (JobSkillDTO jobSkillDTO : jobDTO.getJobSkills()) {
+                            Skill skill = skillRepository.findById(jobSkillDTO.getSkill_id())
+                                    .orElseThrow(() -> new RuntimeException("Skill not found with ID: " + jobSkillDTO.getSkill_id()));
+                            JobSkill jobSkill = new JobSkill();
+                            jobSkill.setSkillLevel(SkillLevel.valueOf(jobSkillDTO.getSkillLevel()));
+                            jobSkill.setMoreInfo(jobSkillDTO.getMoreInfo());
+                            jobSkill.setJob(job);
+                            jobSkill.setSkill(skill);
+                            jobSkills.add(jobSkill);
+                        }
+                        job.setJobSkills(jobSkills);
+
+                        // Lưu Job cùng với JobSkills
+                        jobRepository.save(job);
+                    }
+                    System.out.println("Jobs and JobSkills data initialized.");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            // 4. Khởi tạo Candidates, Addresses, CandidateSkills và Experiences
+            if (candidateRepository.count() == 0) {
+                try {
+                    InputStream candidatesStream = new ClassPathResource("scripts-data/candidates.json").getInputStream();
+                    List<CandidateDTO> candidatesDTO = mapper.readValue(candidatesStream, new TypeReference<List<CandidateDTO>>() {
+                    });
+                    for (CandidateDTO candidateDTO : candidatesDTO) {
+
+                        // Lưu Address
+                        Address address = new Address();
+                        address.setCountry(candidateDTO.getAddress().getCountry());
+                        address.setCity(candidateDTO.getAddress().getCity());
+                        address.setStreet(candidateDTO.getAddress().getStreet());
+                        address.setNumber(candidateDTO.getAddress().getNumber());
+                        address.setZipcode(candidateDTO.getAddress().getZipcode());
+
+                        // Lưu Candidate
+                        Candidate candidate = new Candidate();
+                        candidate.setFullName(candidateDTO.getFullName());
+                        candidate.setPhone(candidateDTO.getPhone());
+                        candidate.setEmail(candidateDTO.getEmail());
+                        candidate.setDob(LocalDate.parse(candidateDTO.getDob()));
+                        candidate.setAddress(address);
+
+                        // Lưu CandidateSkills
+                        List<CandidateSkill> candidateSkills = new ArrayList<>();
+                        if (candidateDTO.getCandidateSkills() != null) {
+                            for (CandidateSkillDTO candidateSkillDTO : candidateDTO.getCandidateSkills()) {
+                                Skill skill = skillRepository.findById(candidateSkillDTO.getSkill_id())
+                                        .orElseThrow(() -> new RuntimeException("Skill not found with ID: " + candidateSkillDTO.getSkill_id()));
+                                CandidateSkill candidateSkill = new CandidateSkill();
+                                candidateSkill.setSkillLevel(SkillLevel.valueOf(candidateSkillDTO.getSkillLevel()));
+                                candidateSkill.setMoreInfo(candidateSkillDTO.getMoreInfo());
+                                candidateSkill.setCandidate(candidate);
+                                candidateSkill.setSkill(skill);
+                                candidateSkills.add(candidateSkill);
+                            }
+                            candidate.setCandidateSkills(candidateSkills);
+                        }
+
+                        // Lưu Experiences
+                        if (candidateDTO.getExperiences() != null) {
+                            List<Experience> experiences = new ArrayList<>();
+                            for (ExperienceDTO experienceDTO : candidateDTO.getExperiences()) {
+                                Experience experience = new Experience();
+                                experience.setFromDate(LocalDate.parse(experienceDTO.getFromDate()));
+                                experience.setToDate(LocalDate.parse(experienceDTO.getToDate()));
+                                experience.setCompanyName(experienceDTO.getCompanyName());
+                                experience.setRole(experienceDTO.getRole());
+                                experience.setWorkDescription(experienceDTO.getWorkDescription());
+                                experience.setCandidate(candidate);
+                                experiences.add(experience);
+                            }
+                            candidate.setExperiences(experiences);
+                        }
+
+                        Account account = new Account();
+                        account.setCandidate(candidate);
+                        account.setPassword("$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa");
+                        account.setRole(AccountRole.CANDIDATE);
+
+                        accountRepository.save(account);
+                    }
+                    System.out.println("Candidates, Addresses, CandidateSkills và Experiences data initialized.");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+            // 6. Khởi tạo CandidateApplyJob
+            if (candidateApplyJobRepository.count() == 0) {
+                try {
+                    InputStream applyStream = new ClassPathResource("scripts-data/apply.json").getInputStream();
+                    List<ApplyDTO> applyDTOs = mapper.readValue(applyStream, new TypeReference<List<ApplyDTO>>() {
+                    });
+                    for (ApplyDTO applyDTO : applyDTOs) {
+                        Candidate candidate = candidateRepository.findById(applyDTO.getCandidate_id())
+                                .orElseThrow(() -> new RuntimeException("Candidate not found with ID: " + applyDTO.getCandidate_id()));
+                        Job job = jobRepository.findById(applyDTO.getJob_id())
+                                .orElseThrow(() -> new RuntimeException("Job not found with ID: " + applyDTO.getJob_id()));
+                        CandidateApplyJob applyJob = new CandidateApplyJob();
+                        applyJob.setCandidate(candidate);
+                        applyJob.setJob(job);
+                        applyJob.setApplyDate(LocalDate.parse(applyDTO.getApplyDate()));
+                        candidateApplyJobRepository.save(applyJob);
+                    }
+                    System.out.println("CandidateApplyJob data initialized.");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            System.out.println("Dữ liệu đã được khởi tạo thành công.");
         };
     }
-
-
-
 
 }

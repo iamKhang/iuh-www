@@ -1,0 +1,513 @@
+[
+  {
+    "id": 1,
+    "name": "TechNova Solutions",
+    "about": "Leading provider of innovative software solutions and IT consulting services.",
+    "email": "contact@technova.com",
+    "phone": "8005551234",
+    "webUrl": "https://www.technova.com",
+    "address": {
+      "id": 101,
+      "country": "United States",
+      "city": "San Francisco",
+      "street": "Market Street",
+      "number": "1355",
+      "zipcode": "94103"
+    },
+    "jobs": []
+  },
+  {
+    "id": 2,
+    "name": "InnovaTech",
+    "about": "Pioneering advancements in artificial intelligence and machine learning.",
+    "email": "info@innovatech.ai",
+    "phone": "2079460958",
+    "webUrl": "https://www.innovatech.ai",
+    "address": {
+      "id": 102,
+      "country": "United Kingdom",
+      "city": "London",
+      "street": "Baker Street",
+      "number": "221B",
+      "zipcode": "NW16XE"
+    },
+    "jobs": []
+  },
+  {
+    "id": 3,
+    "name": "GlobalSoft",
+    "about": "Providing scalable cloud computing and enterprise software solutions.",
+    "email": "support@globalsoft.com",
+    "phone": "2125557890",
+    "webUrl": "https://www.globalsoft.com",
+    "address": {
+      "id": 103,
+      "country": "Canada",
+      "city": "Toronto",
+      "street": "Queen Street",
+      "number": "500",
+      "zipcode": "M5V2B6"
+    },
+    "jobs": []
+  },
+  {
+    "id": 4,
+    "name": "CyberSecure",
+    "about": "Experts in cybersecurity solutions and data protection services.",
+    "email": "security@cybersecure.io",
+    "phone": "4930123456",
+    "webUrl": "https://www.cybersecure.io",
+    "address": {
+      "id": 104,
+      "country": "Germany",
+      "city": "Berlin",
+      "street": "Alexanderplatz",
+      "number": "101",
+      "zipcode": "10178"
+    },
+    "jobs": []
+  },
+  {
+    "id": 5,
+    "name": "NextGen Robotics",
+    "about": "Innovating the future with cutting-edge robotics and automation technologies.",
+    "email": "hello@nextgenrobotics.com",
+    "phone": "81312345678",
+    "webUrl": "https://www.nextgenrobotics.com",
+    "address": {
+      "id": 105,
+      "country": "Japan",
+      "city": "Tokyo",
+      "street": "Shibuya",
+      "number": "2-24-12",
+      "zipcode": "1500002"
+    },
+    "jobs": []
+  },
+  {
+    "id": 6,
+    "name": "Alpha Data Systems",
+    "about": "Specializing in big data analytics and business intelligence solutions.",
+    "email": "sales@alphadatasystems.com",
+    "phone": "61212345678",
+    "webUrl": "https://www.alphadatasystems.com",
+    "address": {
+      "id": 106,
+      "country": "Australia",
+      "city": "Sydney",
+      "street": "George Street",
+      "number": "88",
+      "zipcode": "2000"
+    },
+    "jobs": []
+  },
+  {
+    "id": 7,
+    "name": "EcoTech Innovations",
+    "about": "Developing sustainable technology solutions for a greener planet.",
+    "email": "contact@ecotechinnovations.org",
+    "phone": "33123456789",
+    "webUrl": "https://www.ecotechinnovations.org",
+    "address": {
+      "id": 107,
+      "country": "France",
+      "city": "Paris",
+      "street": "Rue de Rivoli",
+      "number": "99",
+      "zipcode": "75001"
+    },
+    "jobs": []
+  },
+  {
+    "id": 8,
+    "name": "QuantumLeap Computing",
+    "about": "Advancing quantum computing technologies for the next generation.",
+    "email": "info@quantumleap.com",
+    "phone": "16505552345",
+    "webUrl": "https://www.quantumleap.com",
+    "address": {
+      "id": 108,
+      "country": "United States",
+      "city": "Mountain View",
+      "street": "Amphitheatre Parkway",
+      "number": "1600",
+      "zipcode": "94043"
+    },
+    "jobs": []
+  },
+  {
+    "id": 9,
+    "name": "BioTech Solutions",
+    "about": "Integrating biotechnology with information technology for healthcare advancements.",
+    "email": "support@biotechsolutions.com",
+    "phone": "4989123456",
+    "webUrl": "https://www.biotechsolutions.com",
+    "address": {
+      "id": 109,
+      "country": "Germany",
+      "city": "Munich",
+      "street": "Theresienstraße",
+      "number": "3",
+      "zipcode": "80333"
+    },
+    "jobs": []
+  },
+  {
+    "id": 10,
+    "name": "SkyNet Systems",
+    "about": "Providing advanced networking solutions and cloud infrastructure services.",
+    "email": "info@skynetsystems.com",
+    "phone": "14155556789",
+    "webUrl": "https://www.skynetsystems.com",
+    "address": {
+      "id": 110,
+      "country": "United States",
+      "city": "New York",
+      "street": "5th Avenue",
+      "number": "711",
+      "zipcode": "10022"
+    },
+    "jobs": []
+  },
+  {
+    "id": 11,
+    "name": "AeroTech Dynamics",
+    "about": "Innovating aerospace technologies and advanced engineering solutions.",
+    "email": "contact@aerotechdynamics.com",
+    "phone": "34911234567",
+    "webUrl": "https://www.aerotechdynamics.com",
+    "address": {
+      "id": 111,
+      "country": "Spain",
+      "city": "Madrid",
+      "street": "Gran Vía",
+      "number": "28",
+      "zipcode": "28013"
+    },
+    "jobs": []
+  },
+  {
+    "id": 12,
+    "name": "DataWave Analytics",
+    "about": "Delivering comprehensive data analytics and visualization services.",
+    "email": "sales@datawaveanalytics.com",
+    "phone": "16175553456",
+    "webUrl": "https://www.datawaveanalytics.com",
+    "address": {
+      "id": 112,
+      "country": "United States",
+      "city": "Boston",
+      "street": "Cambridge Street",
+      "number": "50",
+      "zipcode": "02142"
+    },
+    "jobs": []
+  },
+  {
+    "id": 13,
+    "name": "NetFusion Technologies",
+    "about": "Specialists in network infrastructure and cybersecurity solutions.",
+    "email": "info@netfusiontech.com",
+    "phone": "13035554567",
+    "webUrl": "https://www.netfusiontech.com",
+    "address": {
+      "id": 113,
+      "country": "United States",
+      "city": "Denver",
+      "street": "Colfax Avenue",
+      "number": "1600",
+      "zipcode": "80202"
+    },
+    "jobs": []
+  },
+  {
+    "id": 14,
+    "name": "SmartHome Innovations",
+    "about": "Creating smart home devices and IoT solutions for modern living.",
+    "email": "support@smarthomeinnov.com",
+    "phone": "6398765432",
+    "webUrl": "https://www.smarthomeinnov.com",
+    "address": {
+      "id": 114,
+      "country": "Australia",
+      "city": "Melbourne",
+      "street": "Lygon Street",
+      "number": "400",
+      "zipcode": "3000"
+    },
+    "jobs": []
+  },
+  {
+    "id": 15,
+    "name": "VirtualReality Labs",
+    "about": "Developing immersive virtual reality experiences and applications.",
+    "email": "info@vrlabs.com",
+    "phone": "14085555678",
+    "webUrl": "https://www.vrlabs.com",
+    "address": {
+      "id": 115,
+      "country": "United States",
+      "city": "San Jose",
+      "street": "Santa Clara Street",
+      "number": "350",
+      "zipcode": "95113"
+    },
+    "jobs": []
+  },
+  {
+    "id": 16,
+    "name": "FinTech Innovators",
+    "about": "Providing cutting-edge financial technology solutions and services.",
+    "email": "contact@fintechinnovators.com",
+    "phone": "442076543210",
+    "webUrl": "https://www.fintechinnovators.com",
+    "address": {
+      "id": 116,
+      "country": "United Kingdom",
+      "city": "London",
+      "street": "Fleet Street",
+      "number": "200",
+      "zipcode": "EC4A1AB"
+    },
+    "jobs": []
+  },
+  {
+    "id": 17,
+    "name": "GreenTech Energy",
+    "about": "Advancing renewable energy technologies and sustainable solutions.",
+    "email": "info@greentechenergy.com",
+    "phone": "4989654321",
+    "webUrl": "https://www.greentechenergy.com",
+    "address": {
+      "id": 117,
+      "country": "Germany",
+      "city": "Frankfurt",
+      "street": "Main Tower",
+      "number": "30",
+      "zipcode": "60311"
+    },
+    "jobs": []
+  },
+  {
+    "id": 18,
+    "name": "HealthTech Systems",
+    "about": "Integrating technology with healthcare for improved patient outcomes.",
+    "email": "support@healthtechsystems.com",
+    "phone": "13125556789",
+    "webUrl": "https://www.healthtechsystems.com",
+    "address": {
+      "id": 118,
+      "country": "United States",
+      "city": "Chicago",
+      "street": "Michigan Avenue",
+      "number": "450",
+      "zipcode": "60611"
+    },
+    "jobs": []
+  },
+  {
+    "id": 19,
+    "name": "AutoDrive Technologies",
+    "about": "Pioneering autonomous driving technologies and smart vehicle solutions.",
+    "email": "info@autodrive.tech",
+    "phone": "497111123456",
+    "webUrl": "https://www.autodrive.tech",
+    "address": {
+      "id": 119,
+      "country": "Germany",
+      "city": "Stuttgart",
+      "street": "Königstraße",
+      "number": "50",
+      "zipcode": "70173"
+    },
+    "jobs": []
+  },
+  {
+    "id": 20,
+    "name": "EduTech Global",
+    "about": "Delivering innovative educational technologies and e-learning platforms.",
+    "email": "contact@edutechglobal.com",
+    "phone": "16175557890",
+    "webUrl": "https://www.edutechglobal.com",
+    "address": {
+      "id": 120,
+      "country": "United States",
+      "city": "Cambridge",
+      "street": "Massachusetts Avenue",
+      "number": "200",
+      "zipcode": "02139"
+    },
+    "jobs": []
+  },
+  {
+    "id": 21,
+    "name": "NanoTech Industries",
+    "about": "Leading the way in nanotechnology research and applications.",
+    "email": "info@nanotechindustries.com",
+    "phone": "16505558901",
+    "webUrl": "https://www.nanotechindustries.com",
+    "address": {
+      "id": 121,
+      "country": "United States",
+      "city": "Palo Alto",
+      "street": "University Avenue",
+      "number": "300",
+      "zipcode": "94301"
+    },
+    "jobs": []
+  },
+  {
+    "id": 22,
+    "name": "SpaceXplore",
+    "about": "Innovating space exploration technologies and satellite systems.",
+    "email": "contact@spacexplore.com",
+    "phone": "13105559012",
+    "webUrl": "https://www.spacexplore.com",
+    "address": {
+      "id": 122,
+      "country": "United States",
+      "city": "Los Angeles",
+      "street": "Sunset Boulevard",
+      "number": "500",
+      "zipcode": "90028"
+    },
+    "jobs": []
+  },
+  {
+    "id": 23,
+    "name": "MedTech Solutions",
+    "about": "Providing advanced medical technologies and health informatics solutions.",
+    "email": "support@medtechsolutions.com",
+    "phone": "12125550123",
+    "webUrl": "https://www.medtechsolutions.com",
+    "address": {
+      "id": 123,
+      "country": "United States",
+      "city": "New York",
+      "street": "Madison Avenue",
+      "number": "700",
+      "zipcode": "10065"
+    },
+    "jobs": []
+  },
+  {
+    "id": 24,
+    "name": "AgriTech Innovators",
+    "about": "Integrating technology with agriculture for sustainable farming solutions.",
+    "email": "info@agritechinnovators.com",
+    "phone": "441615553456",
+    "webUrl": "https://www.agritechinnovators.com",
+    "address": {
+      "id": 124,
+      "country": "United Kingdom",
+      "city": "Manchester",
+      "street": "Deansgate",
+      "number": "250",
+      "zipcode": "M32WB"
+    },
+    "jobs": []
+  },
+  {
+    "id": 25,
+    "name": "LogiTech Systems",
+    "about": "Specialists in logistics technology and supply chain management solutions.",
+    "email": "contact@logitechsystems.com",
+    "phone": "13035554567",
+    "webUrl": "https://www.logitechsystems.com",
+    "address": {
+      "id": 125,
+      "country": "United States",
+      "city": "Denver",
+      "street": "16th Street",
+      "number": "800",
+      "zipcode": "80202"
+    },
+    "jobs": []
+  },
+  {
+    "id": 26,
+    "name": "FinServe Technologies",
+    "about": "Delivering financial services technology and blockchain solutions.",
+    "email": "info@finservetech.com",
+    "phone": "12125555678",
+    "webUrl": "https://www.finservetech.com",
+    "address": {
+      "id": 126,
+      "country": "United States",
+      "city": "New York",
+      "street": "Wall Street",
+      "number": "100",
+      "zipcode": "10005"
+    },
+    "jobs": []
+  },
+  {
+    "id": 27,
+    "name": "SmartCity Solutions",
+    "about": "Developing smart city technologies for urban development and management.",
+    "email": "contact@smartcitysolutions.com",
+    "phone": "4930987654",
+    "webUrl": "https://www.smartcitysolutions.com",
+    "address": {
+      "id": 127,
+      "country": "Germany",
+      "city": "Hamburg",
+      "street": "Reeperbahn",
+      "number": "1",
+      "zipcode": "20359"
+    },
+    "jobs": []
+  },
+  {
+    "id": 28,
+    "name": "EcoWare Technologies",
+    "about": "Creating eco-friendly software and sustainable IT solutions.",
+    "email": "info@ecowaretech.com",
+    "phone": "61712345678",
+    "webUrl": "https://www.ecowaretech.com",
+    "address": {
+      "id": 128,
+      "country": "Australia",
+      "city": "Brisbane",
+      "street": "Queen Street",
+      "number": "150",
+      "zipcode": "4000"
+    },
+    "jobs": []
+  },
+  {
+    "id": 29,
+    "name": "AI Horizons",
+    "about": "Pushing the boundaries of artificial intelligence and cognitive computing.",
+    "email": "contact@aihorizons.com",
+    "phone": "16505556789",
+    "webUrl": "https://www.aihorizons.com",
+    "address": {
+      "id": 129,
+      "country": "United States",
+      "city": "Palo Alto",
+      "street": "University Avenue",
+      "number": "400",
+      "zipcode": "94301"
+    },
+    "jobs": []
+  },
+  {
+    "id": 30,
+    "name": "VirtualEdge Technologies",
+    "about": "Specializing in virtual infrastructure and edge computing solutions.",
+    "email": "support@virtualedge.com",
+    "phone": "14085557890",
+    "webUrl": "https://www.virtualedge.com",
+    "address": {
+      "id": 130,
+      "country": "United States",
+      "city": "San Jose",
+      "street": "Tech Boulevard",
+      "number": "600",
+      "zipcode": "95110"
+    },
+    "jobs": []
+  }
+]
+

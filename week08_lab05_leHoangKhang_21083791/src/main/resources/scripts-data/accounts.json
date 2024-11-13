@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "candidate": 1,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 2,
+    "candidate": 2,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 3,
+    "candidate": 3,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 4,
+    "candidate": 4,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 5,
+    "candidate": 5,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 6,
+    "candidate": 6,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 7,
+    "candidate": 7,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 8,
+    "candidate": 8,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 9,
+    "candidate": 9,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 10,
+    "candidate": 10,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 11,
+    "candidate": 11,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 12,
+    "candidate": 12,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 13,
+    "candidate": 13,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 14,
+    "candidate": 14,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 15,
+    "candidate": 15,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 16,
+    "candidate": 16,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 17,
+    "candidate": 17,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 18,
+    "candidate": 18,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 19,
+    "candidate": 19,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 20,
+    "candidate": 20,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 21,
+    "candidate": 21,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 22,
+    "candidate": 22,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 23,
+    "candidate": 23,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 24,
+    "candidate": 24,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 25,
+    "candidate": 25,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 26,
+    "candidate": 26,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 27,
+    "candidate": 27,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 28,
+    "candidate": 28,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 29,
+    "candidate": 29,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 30,
+    "candidate": 30,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 31,
+    "candidate": 31,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 32,
+    "candidate": 32,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 33,
+    "candidate": 33,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 34,
+    "candidate": 34,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 35,
+    "candidate": 35,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 36,
+    "candidate": 36,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 37,
+    "candidate": 37,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 38,
+    "candidate": 38,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 39,
+    "candidate": 39,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 40,
+    "candidate": 40,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 41,
+    "candidate": 41,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 42,
+    "candidate": 42,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 43,
+    "candidate": 43,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 44,
+    "candidate": 44,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 45,
+    "candidate": 45,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 46,
+    "candidate": 46,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 47,
+    "candidate": 47,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 48,
+    "candidate": 48,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 49,
+    "candidate": 49,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 50,
+    "candidate": 50,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 51,
+    "candidate": 51,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 52,
+    "candidate": 52,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 53,
+    "candidate": 53,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 54,
+    "candidate": 54,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 55,
+    "candidate": 55,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 56,
+    "candidate": 56,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 57,
+    "candidate": 57,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 58,
+    "candidate": 58,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 59,
+    "candidate": 59,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 60,
+    "candidate": 60,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 61,
+    "candidate": 61,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 62,
+    "candidate": 62,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 63,
+    "candidate": 63,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 64,
+    "candidate": 64,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 65,
+    "candidate": 65,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 66,
+    "candidate": 66,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 67,
+    "candidate": 67,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 68,
+    "candidate": 68,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 69,
+    "candidate": 69,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 70,
+    "candidate": 70,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 71,
+    "candidate": 71,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 72,
+    "candidate": 72,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 73,
+    "candidate": 73,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 74,
+    "candidate": 74,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 75,
+    "candidate": 75,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 76,
+    "candidate": 76,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 77,
+    "candidate": 77,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 78,
+    "candidate": 78,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 79,
+    "candidate": 79,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 80,
+    "candidate": 80,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 81,
+    "candidate": 81,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 82,
+    "candidate": 82,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 83,
+    "candidate": 83,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 84,
+    "candidate": 84,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 85,
+    "candidate": 85,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 86,
+    "candidate": 86,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 87,
+    "candidate": 87,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 88,
+    "candidate": 88,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 89,
+    "candidate": 89,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  },
+  {
+    "id": 90,
+    "candidate": 90,
+    "password": "$2a$10$ymdWR.EG0gCL9YtacQjmteGTCthfMdVAB8FZiha0s2N5bhxhx4wMa",
+    "role": "CANDIDATE"
+  }
+]

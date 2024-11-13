@@ -1,0 +1,2250 @@
+[
+  {
+    "id": 1,
+    "name": "Lập Trình Viên Java",
+    "description": "Phát triển và duy trì các ứng dụng sử dụng ngôn ngữ lập trình Java.",
+    "company": 1,
+    "jobSkills": [
+      {
+        "id": 1,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Có kinh nghiệm với Spring Framework.",
+        "skill_id": 2
+      },
+      {
+        "id": 2,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng hệ quản trị cơ sở dữ liệu MySQL.",
+        "skill_id": 18
+      }
+    ],
+    "deadline": "2024-12-31",
+    "active": true,
+    "numberOfApplicants": 15,
+    "negotiable": false,
+    "salaryFrom": 8000000,
+    "salaryTo": 15000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 2,
+    "name": "Chuyên Viên Phân Tích Dữ Liệu",
+    "description": "Phân tích và trực quan hóa dữ liệu để hỗ trợ quyết định kinh doanh.",
+    "company": 2,
+    "jobSkills": [
+      {
+        "id": 3,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Sử dụng thành thạo Python và các thư viện như Pandas, NumPy.",
+        "skill_id": 4
+      },
+      {
+        "id": 4,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ trực quan hóa như Tableau.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-11-30",
+    "active": true,
+    "numberOfApplicants": 20,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 3,
+    "name": "Kỹ Sư An Ninh Mạng",
+    "description": "Thiết kế và triển khai các giải pháp bảo mật cho hệ thống mạng.",
+    "company": 3,
+    "jobSkills": [
+      {
+        "id": 5,
+        "skillLevel": "MASTER",
+        "moreInfo": "Chứng chỉ CISSP hoặc tương đương.",
+        "skill_id": 12
+      },
+      {
+        "id": 6,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các công cụ bảo mật như Wireshark, Metasploit.",
+        "skill_id": 10
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 12000000,
+    "salaryTo": 20000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 4,
+    "name": "Nhân Viên Hỗ Trợ Kỹ Thuật",
+    "description": "Cung cấp hỗ trợ kỹ thuật cho khách hàng qua điện thoại và email.",
+    "company": 4,
+    "jobSkills": [
+      {
+        "id": 7,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về mạng máy tính.",
+        "skill_id": 9
+      },
+      {
+        "id": 8,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt.",
+        "skill_id": 1
+      }
+    ],
+    "deadline": "2024-11-25",
+    "active": true,
+    "numberOfApplicants": 25,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 5,
+    "name": "Quản Lý Dự Án CNTT",
+    "description": "Lập kế hoạch và quản lý các dự án công nghệ thông tin từ khâu khởi động đến hoàn thành.",
+    "company": 5,
+    "jobSkills": [
+      {
+        "id": 9,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phương pháp Agile và Scrum.",
+        "skill_id": 15
+      },
+      {
+        "id": 10,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "deadline": "2024-12-10",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 6,
+    "name": "Nhân Viên Phát Triển Frontend",
+    "description": "Xây dựng và tối ưu giao diện người dùng cho các ứng dụng web.",
+    "company": 6,
+    "jobSkills": [
+      {
+        "id": 11,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng React hoặc Angular.",
+        "skill_id": 28
+      },
+      {
+        "id": 12,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế UI/UX.",
+        "skill_id": 6
+      }
+    ],
+    "deadline": "2024-11-20",
+    "active": true,
+    "numberOfApplicants": 18,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 7,
+    "name": "Chuyên Viên DevOps",
+    "description": "Đảm bảo quy trình phát triển và triển khai phần mềm hiệu quả thông qua DevOps.",
+    "company": 7,
+    "jobSkills": [
+      {
+        "id": 13,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 14,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tự động hóa với Jenkins.",
+        "skill_id": 36
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 8,
+    "name": "Nhân Viên Hỗ Trợ Kỹ Thuật Mạng",
+    "description": "Cài đặt và bảo trì hệ thống mạng cho doanh nghiệp.",
+    "company": 8,
+    "jobSkills": [
+      {
+        "id": 15,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết quản trị mạng Cisco.",
+        "skill_id": 10
+      },
+      {
+        "id": 16,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng giải quyết sự cố mạng.",
+        "skill_id": 7
+      }
+    ],
+    "deadline": "2024-11-28",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 9,
+    "name": "Chuyên Viên Phân Tích Hệ Thống",
+    "description": "Phân tích và thiết kế các hệ thống công nghệ thông tin đáp ứng nhu cầu kinh doanh.",
+    "company": 9,
+    "jobSkills": [
+      {
+        "id": 17,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với UML và phân tích yêu cầu.",
+        "skill_id": 22
+      },
+      {
+        "id": 18,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp tốt để làm việc với các bộ phận khác.",
+        "skill_id": 1
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 10,
+    "name": "Nhân Viên Kiểm Thử Phần Mềm",
+    "description": "Thực hiện kiểm thử phần mềm để đảm bảo chất lượng sản phẩm.",
+    "company": 10,
+    "jobSkills": [
+      {
+        "id": 19,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với các công cụ kiểm thử như Selenium.",
+        "skill_id": 26
+      },
+      {
+        "id": 20,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết viết các trường hợp kiểm thử hiệu quả.",
+        "skill_id": 20
+      }
+    ],
+    "deadline": "2024-12-01",
+    "active": true,
+    "numberOfApplicants": 22,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 11,
+    "name": "Nhân Viên Marketing Kỹ Thuật Số",
+    "description": "Phát triển và triển khai các chiến dịch marketing kỹ thuật số.",
+    "company": 11,
+    "jobSkills": [
+      {
+        "id": 21,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với SEO và SEM.",
+        "skill_id": 33
+      },
+      {
+        "id": 22,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích dữ liệu marketing.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 17,
+    "negotiable": false,
+    "salaryFrom": 9000000,
+    "salaryTo": 18000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 12,
+    "name": "Nhân Viên Phát Triển Ứng Dụng Di Động",
+    "description": "Thiết kế và phát triển các ứng dụng di động cho Android và iOS.",
+    "company": 12,
+    "jobSkills": [
+      {
+        "id": 23,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Kotlin và Swift.",
+        "skill_id": 14
+      },
+      {
+        "id": 24,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ phát triển như Android Studio, Xcode.",
+        "skill_id": 20
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 19,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 13,
+    "name": "Nhân Viên Quản Lý Sản Phẩm",
+    "description": "Lập kế hoạch và quản lý vòng đời sản phẩm từ ý tưởng đến thị trường.",
+    "company": 13,
+    "jobSkills": [
+      {
+        "id": 25,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý sản phẩm công nghệ.",
+        "skill_id": 30
+      },
+      {
+        "id": 26,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích kinh doanh.",
+        "skill_id": 40
+      }
+    ],
+    "deadline": "2024-12-08",
+    "active": true,
+    "numberOfApplicants": 13,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 14,
+    "name": "Nhân Viên Hỗ Trợ Khách Hàng",
+    "description": "Cung cấp hỗ trợ và giải đáp thắc mắc cho khách hàng qua nhiều kênh.",
+    "company": 14,
+    "jobSkills": [
+      {
+        "id": 27,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về sản phẩm công ty.",
+        "skill_id": 7
+      },
+      {
+        "id": 28,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và lắng nghe.",
+        "skill_id": 1
+      }
+    ],
+    "deadline": "2024-11-27",
+    "active": true,
+    "numberOfApplicants": 30,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 15,
+    "name": "Chuyên Viên Phát Triển Backend",
+    "description": "Phát triển và duy trì phần backend cho các ứng dụng web.",
+    "company": 15,
+    "jobSkills": [
+      {
+        "id": 29,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Node.js hoặc Python.",
+        "skill_id": 20
+      },
+      {
+        "id": 30,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu.",
+        "skill_id": 18
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 11,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 16,
+    "name": "Nhân Viên Thiết Kế UI/UX",
+    "description": "Thiết kế giao diện người dùng và trải nghiệm người dùng cho các sản phẩm số.",
+    "company": 16,
+    "jobSkills": [
+      {
+        "id": 31,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Adobe XD hoặc Figma.",
+        "skill_id": 6
+      },
+      {
+        "id": 32,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng thiết kế responsive.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 16,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 17,
+    "name": "Nhân Viên Quản Lý Cơ Sở Dữ Liệu",
+    "description": "Quản lý và bảo trì cơ sở dữ liệu của công ty để đảm bảo hiệu suất và bảo mật.",
+    "company": 17,
+    "jobSkills": [
+      {
+        "id": 33,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với SQL Server hoặc Oracle.",
+        "skill_id": 18
+      },
+      {
+        "id": 34,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết tối ưu hóa truy vấn và quản lý dữ liệu lớn.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-30",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 18,
+    "name": "Nhân Viên Phân Tích Kinh Doanh",
+    "description": "Phân tích nhu cầu kinh doanh và đề xuất giải pháp công nghệ phù hợp.",
+    "company": 18,
+    "jobSkills": [
+      {
+        "id": 35,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với phân tích yêu cầu và mô hình hóa kinh doanh.",
+        "skill_id": 40
+      },
+      {
+        "id": 36,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 19,
+    "name": "Nhân Viên Hỗ Trợ Phát Triển Sản Phẩm",
+    "description": "Hỗ trợ quản lý và phát triển các sản phẩm công nghệ của công ty.",
+    "company": 19,
+    "jobSkills": [
+      {
+        "id": 37,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ quản lý dự án như Jira.",
+        "skill_id": 15
+      },
+      {
+        "id": 38,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 20,
+    "name": "Nhân Viên Thiết Kế Đồ Họa",
+    "description": "Thiết kế đồ họa cho các chiến dịch marketing và sản phẩm số.",
+    "company": 20,
+    "jobSkills": [
+      {
+        "id": 39,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Adobe Photoshop và Illustrator.",
+        "skill_id": 6
+      },
+      {
+        "id": 40,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng sáng tạo và thẩm mỹ cao.",
+        "skill_id": 17
+      }
+    ],
+    "deadline": "2024-12-28",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 10000000,
+    "salaryTo": 18000000,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 21,
+    "name": "Nhân Viên Phát Triển API",
+    "description": "Thiết kế và phát triển các giao diện lập trình ứng dụng (API) cho các dịch vụ nội bộ.",
+    "company": 21,
+    "jobSkills": [
+      {
+        "id": 41,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với RESTful API và JSON.",
+        "skill_id": 38
+      },
+      {
+        "id": 42,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết sử dụng các công cụ như Postman để kiểm thử API.",
+        "skill_id": 20
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 22,
+    "name": "Nhân Viên Phân Tích Dữ Liệu Lớn",
+    "description": "Phân tích và xử lý dữ liệu lớn để hỗ trợ các chiến lược kinh doanh.",
+    "company": 22,
+    "jobSkills": [
+      {
+        "id": 43,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 44,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 7,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 23,
+    "name": "Nhân Viên Quản Lý Mạng",
+    "description": "Quản lý và bảo trì hạ tầng mạng của công ty để đảm bảo hoạt động liên tục.",
+    "company": 23,
+    "jobSkills": [
+      {
+        "id": 45,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các thiết bị mạng Cisco.",
+        "skill_id": 10
+      },
+      {
+        "id": 46,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết thiết lập và quản lý VPN.",
+        "skill_id": 10
+      }
+    ],
+    "deadline": "2024-12-10",
+    "active": true,
+    "numberOfApplicants": 11,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 24,
+    "name": "Nhân Viên Hỗ Trợ Kỹ Thuật Phần Mềm",
+    "description": "Giải quyết các vấn đề kỹ thuật liên quan đến phần mềm cho khách hàng.",
+    "company": 24,
+    "jobSkills": [
+      {
+        "id": 47,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về phần mềm của công ty.",
+        "skill_id": 7
+      },
+      {
+        "id": 48,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt và kiên nhẫn.",
+        "skill_id": 1
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 28,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 25,
+    "name": "Nhân Viên DevOps Junior",
+    "description": "Hỗ trợ các hoạt động DevOps để nâng cao hiệu suất phát triển và vận hành hệ thống.",
+    "company": 25,
+    "jobSkills": [
+      {
+        "id": 49,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về Docker và CI/CD.",
+        "skill_id": 32
+      },
+      {
+        "id": 50,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng Git và các công cụ quản lý mã nguồn.",
+        "skill_id": 2
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 16,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 26,
+    "name": "Nhân Viên Phân Tích Business Intelligence",
+    "description": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định.",
+    "company": 26,
+    "jobSkills": [
+      {
+        "id": 51,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ BI như Power BI hoặc Tableau.",
+        "skill_id": 4
+      },
+      {
+        "id": 52,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 13,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 27,
+    "name": "Nhân Viên Kiểm Thử Tự Động",
+    "description": "Phát triển và duy trì các kịch bản kiểm thử tự động để đảm bảo chất lượng phần mềm.",
+    "company": 27,
+    "jobSkills": [
+      {
+        "id": 53,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Selenium hoặc các công cụ kiểm thử tự động khác.",
+        "skill_id": 26
+      },
+      {
+        "id": 54,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết mã kiểm thử tự động.",
+        "skill_id": 2
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 28,
+    "name": "Nhân Viên Hỗ Trợ IT",
+    "description": "Cung cấp hỗ trợ kỹ thuật cho nhân viên nội bộ về các vấn đề công nghệ thông tin.",
+    "company": 28,
+    "jobSkills": [
+      {
+        "id": 55,
+        "skillLevel": "BEGINNER",
+        "moreInfo": "Hiểu biết cơ bản về hệ thống máy tính và mạng.",
+        "skill_id": 7
+      },
+      {
+        "id": 56,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp tốt và kiên nhẫn.",
+        "skill_id": 1
+      }
+    ],
+    "deadline": "2024-12-10",
+    "active": true,
+    "numberOfApplicants": 20,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 29,
+    "name": "Nhân Viên Quản Lý Thay Đổi",
+    "description": "Điều hành và thích ứng với các thay đổi trong môi trường làm việc.",
+    "company": 29,
+    "jobSkills": [
+      {
+        "id": 57,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý dự án và thay đổi.",
+        "skill_id": 35
+      },
+      {
+        "id": 58,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 30,
+    "name": "Nhân Viên Quản Lý Sản Xuất Phần Mềm",
+    "description": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ.",
+    "company": 30,
+    "jobSkills": [
+      {
+        "id": 59,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 60,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 31,
+    "name": "Nhân Viên Hỗ Trợ Phát Triển Frontend",
+    "description": "Hỗ trợ phát triển giao diện người dùng cho các ứng dụng web.",
+    "company": 1,
+    "jobSkills": [
+      {
+        "id": 61,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 62,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 32,
+    "name": "Nhân Viên Quản Lý Thời Gian",
+    "description": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án.",
+    "company": 2,
+    "jobSkills": [
+      {
+        "id": 63,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 64,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 13000000,
+    "salaryTo": 21000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 33,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 3,
+    "jobSkills": [
+      {
+        "id": 65,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 66,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 34,
+    "name": "Nhân Viên Quản Lý Dự Án Agile",
+    "description": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile.",
+    "company": 4,
+    "jobSkills": [
+      {
+        "id": 67,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Chứng chỉ Scrum Master hoặc tương đương.",
+        "skill_id": 15
+      },
+      {
+        "id": 68,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      }
+    ],
+    "deadline": "2024-12-08",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 35,
+    "name": "Nhân Viên Hỗ Trợ DevOps",
+    "description": "Hỗ trợ các hoạt động DevOps để nâng cao hiệu suất phát triển và vận hành hệ thống.",
+    "company": 5,
+    "jobSkills": [
+      {
+        "id": 69,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ CI/CD như Jenkins.",
+        "skill_id": 32
+      },
+      {
+        "id": 70,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 36,
+    "name": "Nhân Viên Phân Tích Data Science",
+    "description": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh.",
+    "company": 6,
+    "jobSkills": [
+      {
+        "id": 71,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 72,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 7,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 37,
+    "name": "Nhân Viên Quản Lý Nhân Sự IT",
+    "description": "Quản lý các hoạt động nhân sự trong bộ phận công nghệ thông tin.",
+    "company": 7,
+    "jobSkills": [
+      {
+        "id": 73,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý và lãnh đạo.",
+        "skill_id": 11
+      },
+      {
+        "id": 74,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và đàm phán.",
+        "skill_id": 13
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 38,
+    "name": "Nhân Viên Phát Triển Phần Mềm Fullstack",
+    "description": "Phát triển các ứng dụng web toàn diện từ frontend đến backend.",
+    "company": 8,
+    "jobSkills": [
+      {
+        "id": 75,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 76,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 39,
+    "name": "Nhân Viên Phân Tích Dữ Liệu Marketing",
+    "description": "Phân tích dữ liệu marketing để tối ưu hóa chiến dịch và tăng doanh số.",
+    "company": 9,
+    "jobSkills": [
+      {
+        "id": 77,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Google Analytics và SEO.",
+        "skill_id": 33
+      },
+      {
+        "id": 78,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu.",
+        "skill_id": 9
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 40,
+    "name": "Nhân Viên Quản Lý Thay Đổi Kỹ Thuật",
+    "description": "Điều hành các thay đổi kỹ thuật trong dự án để đảm bảo hiệu quả và chất lượng.",
+    "company": 10,
+    "jobSkills": [
+      {
+        "id": 79,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 80,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      }
+    ],
+    "deadline": "2024-12-30",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 41,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 21,
+    "jobSkills": [
+      {
+        "id": 81,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 82,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 83,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng UML và các công cụ phân tích.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 42,
+    "name": "Nhân Viên Thiết Kế Đồ Họa",
+    "description": "Thiết kế đồ họa cho các chiến dịch marketing và sản phẩm số.",
+    "company": 22,
+    "jobSkills": [
+      {
+        "id": 84,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Adobe Photoshop và Illustrator.",
+        "skill_id": 6
+      },
+      {
+        "id": 85,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng sáng tạo và thẩm mỹ cao.",
+        "skill_id": 17
+      },
+      {
+        "id": 86,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết thiết kế responsive và sử dụng các công cụ thiết kế hiện đại.",
+        "skill_id": 6
+      }
+    ],
+    "deadline": "2024-12-28",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 10000000,
+    "salaryTo": 18000000,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 43,
+    "name": "Nhân Viên Phân Tích Data Science",
+    "description": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh.",
+    "company": 23,
+    "jobSkills": [
+      {
+        "id": 87,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 88,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 89,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      },
+      {
+        "id": 90,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Hiểu biết về các thuật toán thống kê và phân tích dữ liệu.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 7,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 44,
+    "name": "Nhân Viên Quản Lý Nhân Sự IT",
+    "description": "Quản lý các hoạt động nhân sự trong bộ phận công nghệ thông tin.",
+    "company": 24,
+    "jobSkills": [
+      {
+        "id": 91,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý và lãnh đạo.",
+        "skill_id": 11
+      },
+      {
+        "id": 92,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và đàm phán.",
+        "skill_id": 13
+      },
+      {
+        "id": 93,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý nhân sự và sử dụng các phần mềm quản lý nhân sự.",
+        "skill_id": 21
+      },
+      {
+        "id": 94,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng xây dựng chính sách và quy trình nhân sự hiệu quả.",
+        "skill_id": 3
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 45,
+    "name": "Nhân Viên Phát Triển Phần Mềm Fullstack",
+    "description": "Phát triển các ứng dụng web toàn diện từ frontend đến backend.",
+    "company": 25,
+    "jobSkills": [
+      {
+        "id": 95,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 96,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      },
+      {
+        "id": 97,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng viết mã sạch và hiệu quả.",
+        "skill_id": 2
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 46,
+    "name": "Nhân Viên Phân Tích Dữ Liệu Marketing",
+    "description": "Phân tích dữ liệu marketing để tối ưu hóa chiến dịch và tăng doanh số.",
+    "company": 26,
+    "jobSkills": [
+      {
+        "id": 98,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Google Analytics và SEO.",
+        "skill_id": 33
+      },
+      {
+        "id": 99,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 100,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các chiến dịch PPC và quản lý ngân sách marketing.",
+        "skill_id": 8
+      },
+      {
+        "id": 101,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng phân tích thị trường và xu hướng người tiêu dùng.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 47,
+    "name": "Nhân Viên Quản Lý Thay Đổi Kỹ Thuật",
+    "description": "Điều hành các thay đổi kỹ thuật trong dự án để đảm bảo hiệu quả và chất lượng.",
+    "company": 27,
+    "jobSkills": [
+      {
+        "id": 102,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý thay đổi và lãnh đạo.",
+        "skill_id": 35
+      },
+      {
+        "id": 103,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 104,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      }
+    ],
+    "deadline": "2024-12-30",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 48,
+    "name": "Nhân Viên Quản Lý Sản Xuất Phần Mềm",
+    "description": "Giám sát quy trình sản xuất phần mềm để đảm bảo chất lượng và tiến độ.",
+    "company": 28,
+    "jobSkills": [
+      {
+        "id": 105,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với quản lý vòng đời phần mềm.",
+        "skill_id": 30
+      },
+      {
+        "id": 106,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 7
+      },
+      {
+        "id": 107,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ quản lý dự án như Jira hoặc Trello.",
+        "skill_id": 15
+      },
+      {
+        "id": 108,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 109,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Hiểu biết về các phương pháp phát triển phần mềm Agile.",
+        "skill_id": 24
+      },
+      {
+        "id": 110,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và quản lý thời gian hiệu quả.",
+        "skill_id": 3
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 49,
+    "name": "Nhân Viên Quản Lý Thời Gian",
+    "description": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án.",
+    "company": 29,
+    "jobSkills": [
+      {
+        "id": 111,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 112,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 113,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc dưới áp lực và đạt được mục tiêu.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 13000000,
+    "salaryTo": 21000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 50,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 30,
+    "jobSkills": [
+      {
+        "id": 114,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 115,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 116,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng UML và các công cụ phân tích.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 51,
+    "name": "Nhân Viên Quản Lý Thời Gian",
+    "description": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án.",
+    "company": 1,
+    "jobSkills": [
+      {
+        "id": 117,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 118,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 119,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc dưới áp lực và đạt được mục tiêu.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 13000000,
+    "salaryTo": 21000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 52,
+    "name": "Nhân Viên Quản Lý Dự Án Agile",
+    "description": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile.",
+    "company": 2,
+    "jobSkills": [
+      {
+        "id": 120,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Chứng chỉ Scrum Master hoặc tương đương.",
+        "skill_id": 15
+      },
+      {
+        "id": 121,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 122,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 123,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các công cụ quản lý dự án Agile như Jira.",
+        "skill_id": 15
+      }
+    ],
+    "deadline": "2024-12-08",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 53,
+    "name": "Nhân Viên Hỗ Trợ DevOps",
+    "description": "Hỗ trợ các hoạt động DevOps để nâng cao hiệu suất phát triển và vận hành hệ thống.",
+    "company": 3,
+    "jobSkills": [
+      {
+        "id": 124,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ CI/CD như Jenkins.",
+        "skill_id": 32
+      },
+      {
+        "id": 125,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 126,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý hệ thống và tối ưu hóa quy trình phát triển.",
+        "skill_id": 10
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 54,
+    "name": "Nhân Viên Phân Tích Business Intelligence",
+    "description": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định.",
+    "company": 4,
+    "jobSkills": [
+      {
+        "id": 127,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ BI như Power BI hoặc Tableau.",
+        "skill_id": 4
+      },
+      {
+        "id": 128,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 129,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Hiểu biết về các mô hình dữ liệu và cơ sở dữ liệu.",
+        "skill_id": 18
+      },
+      {
+        "id": 130,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 13,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 55,
+    "name": "Nhân Viên Kiểm Thử Tự Động",
+    "description": "Phát triển và duy trì các kịch bản kiểm thử tự động để đảm bảo chất lượng phần mềm.",
+    "company": 5,
+    "jobSkills": [
+      {
+        "id": 131,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Selenium hoặc các công cụ kiểm thử tự động khác.",
+        "skill_id": 26
+      },
+      {
+        "id": 132,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết mã kiểm thử tự động.",
+        "skill_id": 2
+      },
+      {
+        "id": 133,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các framework kiểm thử như TestNG hoặc JUnit.",
+        "skill_id": 2
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 56,
+    "name": "Nhân Viên Hỗ Trợ Phát Triển Frontend",
+    "description": "Hỗ trợ phát triển giao diện người dùng cho các ứng dụng web.",
+    "company": 6,
+    "jobSkills": [
+      {
+        "id": 134,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 135,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      },
+      {
+        "id": 136,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ thiết kế như Figma hoặc Adobe XD.",
+        "skill_id": 6
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 57,
+    "name": "Nhân Viên Quản Lý Thời Gian",
+    "description": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án.",
+    "company": 7,
+    "jobSkills": [
+      {
+        "id": 137,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 138,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 139,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc dưới áp lực và đạt được mục tiêu.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 13000000,
+    "salaryTo": 21000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 58,
+    "name": "Nhân Viên Quản Lý Dự Án Agile",
+    "description": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile.",
+    "company": 8,
+    "jobSkills": [
+      {
+        "id": 140,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Chứng chỉ Scrum Master hoặc tương đương.",
+        "skill_id": 15
+      },
+      {
+        "id": 141,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 142,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 143,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các công cụ quản lý dự án Agile như Jira.",
+        "skill_id": 15
+      }
+    ],
+    "deadline": "2024-12-08",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 59,
+    "name": "Nhân Viên Hỗ Trợ DevOps",
+    "description": "Hỗ trợ các hoạt động DevOps để nâng cao hiệu suất phát triển và vận hành hệ thống.",
+    "company": 9,
+    "jobSkills": [
+      {
+        "id": 144,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ CI/CD như Jenkins.",
+        "skill_id": 32
+      },
+      {
+        "id": 145,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 146,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý hệ thống và tối ưu hóa quy trình phát triển.",
+        "skill_id": 10
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 60,
+    "name": "Nhân Viên Phân Tích Business Intelligence",
+    "description": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định.",
+    "company": 10,
+    "jobSkills": [
+      {
+        "id": 147,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ BI như Power BI hoặc Tableau.",
+        "skill_id": 4
+      },
+      {
+        "id": 148,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 9
+      },
+      {
+        "id": 149,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Hiểu biết về các mô hình dữ liệu và cơ sở dữ liệu.",
+        "skill_id": 18
+      },
+      {
+        "id": 150,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 151,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng SQL và các ngôn ngữ truy vấn dữ liệu.",
+        "skill_id": 18
+      },
+      {
+        "id": 152,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng phát triển báo cáo tự động và dashboard.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 61,
+    "name": "Nhân Viên Kiểm Thử Tự Động",
+    "description": "Phát triển và duy trì các kịch bản kiểm thử tự động để đảm bảo chất lượng phần mềm.",
+    "company": 11,
+    "jobSkills": [
+      {
+        "id": 153,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với Selenium hoặc các công cụ kiểm thử tự động khác.",
+        "skill_id": 26
+      },
+      {
+        "id": 154,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết mã kiểm thử tự động.",
+        "skill_id": 2
+      },
+      {
+        "id": 155,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các framework kiểm thử như TestNG hoặc JUnit.",
+        "skill_id": 2
+      },
+      {
+        "id": 156,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với Continuous Testing và DevOps.",
+        "skill_id": 32
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 62,
+    "name": "Nhân Viên Hỗ Trợ Phát Triển Frontend",
+    "description": "Hỗ trợ phát triển giao diện người dùng cho các ứng dụng web.",
+    "company": 12,
+    "jobSkills": [
+      {
+        "id": 157,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kinh nghiệm với React hoặc Vue.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 158,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết thiết kế responsive và mobile-first.",
+        "skill_id": 6
+      },
+      {
+        "id": 159,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ thiết kế như Figma hoặc Adobe XD.",
+        "skill_id": 6
+      },
+      {
+        "id": 160,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với CSS preprocessors như SASS hoặc LESS.",
+        "skill_id": 28
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 2
+  },
+  {
+    "id": 63,
+    "name": "Nhân Viên Quản Lý Thời Gian",
+    "description": "Quản lý thời gian và tổ chức công việc hiệu quả cho nhóm dự án.",
+    "company": 13,
+    "jobSkills": [
+      {
+        "id": 161,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lập kế hoạch và ưu tiên công việc.",
+        "skill_id": 3
+      },
+      {
+        "id": 162,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kỹ năng sử dụng các công cụ quản lý thời gian như Trello, Asana.",
+        "skill_id": 21
+      },
+      {
+        "id": 163,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc dưới áp lực và đạt được mục tiêu.",
+        "skill_id": 5
+      }
+    ],
+    "deadline": "2024-12-12",
+    "active": true,
+    "numberOfApplicants": 14,
+    "negotiable": false,
+    "salaryFrom": 13000000,
+    "salaryTo": 21000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 64,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 14,
+    "jobSkills": [
+      {
+        "id": 164,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 165,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 166,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng UML và các công cụ phân tích.",
+        "skill_id": 4
+      },
+      {
+        "id": 167,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với thiết kế hệ thống và giải pháp phần mềm.",
+        "skill_id": 22
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 65,
+    "name": "Nhân Viên Quản Lý Dự Án Agile",
+    "description": "Quản lý các dự án phát triển phần mềm theo phương pháp Agile.",
+    "company": 15,
+    "jobSkills": [
+      {
+        "id": 168,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Chứng chỉ Scrum Master hoặc tương đương.",
+        "skill_id": 15
+      },
+      {
+        "id": 169,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 170,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và thuyết trình.",
+        "skill_id": 23
+      },
+      {
+        "id": 171,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các công cụ quản lý dự án Agile như Jira.",
+        "skill_id": 15
+      }
+    ],
+    "deadline": "2024-12-08",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 66,
+    "name": "Nhân Viên Hỗ Trợ DevOps",
+    "description": "Hỗ trợ các hoạt động DevOps để nâng cao hiệu suất phát triển và vận hành hệ thống.",
+    "company": 16,
+    "jobSkills": [
+      {
+        "id": 172,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Biết sử dụng các công cụ CI/CD như Jenkins.",
+        "skill_id": 32
+      },
+      {
+        "id": 173,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 174,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý hệ thống và tối ưu hóa quy trình phát triển.",
+        "skill_id": 10
+      },
+      {
+        "id": 175,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tự động hóa và scripting với Bash hoặc Python.",
+        "skill_id": 2
+      },
+      {
+        "id": 176,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Hiểu biết về các hệ thống quản lý cấu hình như Ansible hoặc Puppet.",
+        "skill_id": 32
+      },
+      {
+        "id": 177,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các dịch vụ đám mây như AWS, Azure, hoặc Google Cloud.",
+        "skill_id": 36
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": true,
+    "salaryFrom": 0,
+    "salaryTo": 0,
+    "requiredExperienceYears": 0
+  },
+  {
+    "id": 67,
+    "name": "Nhân Viên Phân Tích Data Science",
+    "description": "Ứng dụng các kỹ thuật khoa học dữ liệu để phân tích và dự đoán xu hướng kinh doanh.",
+    "company": 17,
+    "jobSkills": [
+      {
+        "id": 178,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 179,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 180,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau hoặc Power BI.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 7,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5
+  },
+  {
+    "id": 68,
+    "name": "Nhân Viên Quản Lý Nhân Sự IT",
+    "description": "Quản lý các hoạt động nhân sự trong bộ phận công nghệ thông tin.",
+    "company": 18,
+    "jobSkills": [
+      {
+        "id": 181,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý và lãnh đạo.",
+        "skill_id": 11
+      },
+      {
+        "id": 182,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng giao tiếp và đàm phán.",
+        "skill_id": 13
+      },
+      {
+        "id": 183,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý nhân sự và sử dụng các phần mềm quản lý nhân sự.",
+        "skill_id": 21
+      },
+      {
+        "id": 184,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng xây dựng chính sách và quy trình nhân sự hiệu quả.",
+        "skill_id": 3
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 3
+  },
+  {
+    "id": 69,
+    "name": "Nhân Viên Phát Triển Phần Mềm Fullstack",
+    "description": "Phát triển các ứng dụng web toàn diện từ frontend đến backend.",
+    "company": 19,
+    "jobSkills": [
+      {
+        "id": 185,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 186,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Biết quản lý cơ sở dữ liệu và API.",
+        "skill_id": 20
+      },
+      {
+        "id": 187,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng viết mã sạch và hiệu quả.",
+        "skill_id": 2
+      },
+      {
+        "id": 188,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kinh nghiệm với các framework phát triển web hiện đại.",
+        "skill_id": 8
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 70,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 20,
+    "jobSkills": [
+      {
+        "id": 189,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 190,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 191,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng UML và các công cụ phân tích.",
+        "skill_id": 4
+      },
+      {
+        "id": 192,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với thiết kế hệ thống và giải pháp phần mềm.",
+        "skill_id": 22
+      },
+      {
+        "id": 193,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng phân tích yêu cầu và xây dựng tài liệu kỹ thuật.",
+        "skill_id": 4
+      },
+      {
+        "id": 194,
+        "skillLevel": "MASTER",
+        "moreInfo": "Chứng chỉ trong lĩnh vực phân tích kỹ thuật.",
+        "skill_id": 22
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  },
+  {
+    "id": 71,
+    "name": "Nhân Viên Phân Tích Kỹ Thuật",
+    "description": "Phân tích yêu cầu kỹ thuật và thiết kế giải pháp phù hợp.",
+    "company": 21,
+    "jobSkills": [
+      {
+        "id": 195,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phân tích hệ thống và thiết kế kiến trúc.",
+        "skill_id": 22
+      },
+      {
+        "id": 196,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 5
+      },
+      {
+        "id": 197,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng UML và các công cụ phân tích.",
+        "skill_id": 4
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4
+  }
+]
+

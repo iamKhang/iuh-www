@@ -37,6 +37,10 @@ public class JobController {
             Model model) {
         Page<Job> jobPage = jobService.getJobs(page - 1, size);
 
+        List<Job> jobs = jobPage.getContent();
+        jobs.forEach(job -> {
+            System.out.println(job.getSalaryFrom() + " - " + job.getSalaryTo());
+        });
         model.addAttribute("jobPage", jobPage);
         int totalPages = jobPage.getTotalPages();
         if (totalPages > 0) {

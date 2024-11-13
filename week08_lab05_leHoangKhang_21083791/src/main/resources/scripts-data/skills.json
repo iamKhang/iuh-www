@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "skillName": "Giao Tiếp",
+    "skillDescription": "Khả năng truyền đạt thông tin một cách rõ ràng và hiệu quả.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 2,
+    "skillName": "Lập Trình Java",
+    "skillDescription": "Kỹ năng viết mã và phát triển ứng dụng bằng ngôn ngữ Java.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 3,
+    "skillName": "Quản Lý Thời Gian",
+    "skillDescription": "Khả năng tổ chức và quản lý thời gian hiệu quả để hoàn thành công việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 4,
+    "skillName": "Phân Tích Dữ Liệu",
+    "skillDescription": "Khả năng thu thập, xử lý và phân tích dữ liệu để đưa ra quyết định.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 5,
+    "skillName": "Làm Việc Nhóm",
+    "skillDescription": "Khả năng hợp tác và làm việc hiệu quả trong nhóm.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 6,
+    "skillName": "Thiết Kế UI/UX",
+    "skillDescription": "Kỹ năng thiết kế giao diện người dùng và trải nghiệm người dùng.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 7,
+    "skillName": "Giải Quyết Vấn Đề",
+    "skillDescription": "Khả năng tìm ra giải pháp cho các vấn đề phát sinh trong công việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 8,
+    "skillName": "Phát Triển Web",
+    "skillDescription": "Kỹ năng xây dựng và duy trì các trang web và ứng dụng web.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 9,
+    "skillName": "Tư Duy Phản Biện",
+    "skillDescription": "Khả năng đánh giá và phân tích thông tin một cách logic và có hệ thống.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 10,
+    "skillName": "Quản Trị Mạng",
+    "skillDescription": "Kỹ năng thiết lập, quản lý và bảo trì các hệ thống mạng máy tính.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 11,
+    "skillName": "Lãnh Đạo",
+    "skillDescription": "Khả năng dẫn dắt và quản lý đội nhóm đạt được mục tiêu chung.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 12,
+    "skillName": "An Ninh Mạng",
+    "skillDescription": "Kỹ năng bảo vệ hệ thống mạng khỏi các mối đe dọa và tấn công.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 13,
+    "skillName": "Thương Lượng",
+    "skillDescription": "Khả năng đạt được thỏa thuận có lợi trong các tình huống thương lượng.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 14,
+    "skillName": "Phát Triển Ứng Dụng Di Động",
+    "skillDescription": "Kỹ năng xây dựng và phát triển các ứng dụng cho điện thoại di động.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 15,
+    "skillName": "Quản Lý Dự Án",
+    "skillDescription": "Khả năng lập kế hoạch, tổ chức và quản lý các dự án từ đầu đến cuối.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 16,
+    "skillName": "Học Máy (Machine Learning)",
+    "skillDescription": "Kỹ năng áp dụng các thuật toán học máy để phân tích và dự đoán dữ liệu.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 17,
+    "skillName": "Sáng Tạo",
+    "skillDescription": "Khả năng phát triển các ý tưởng mới và đổi mới trong công việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 18,
+    "skillName": "Quản Lý Cơ Sở Dữ Liệu",
+    "skillDescription": "Kỹ năng thiết kế, quản lý và bảo trì cơ sở dữ liệu.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 19,
+    "skillName": "Đàm Phán",
+    "skillDescription": "Khả năng thương lượng để đạt được các thỏa thuận tốt nhất.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 20,
+    "skillName": "Phát Triển Phần Mềm",
+    "skillDescription": "Kỹ năng thiết kế, phát triển và kiểm thử phần mềm.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 21,
+    "skillName": "Tổ Chức",
+    "skillDescription": "Khả năng sắp xếp và quản lý công việc một cách hiệu quả.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 22,
+    "skillName": "Phân Tích Hệ Thống",
+    "skillDescription": "Kỹ năng đánh giá và thiết kế các hệ thống công nghệ thông tin.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 23,
+    "skillName": "Thuyết Trình",
+    "skillDescription": "Khả năng trình bày thông tin một cách rõ ràng và thuyết phục trước đám đông.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 24,
+    "skillName": "Phát Triển Phần Mềm Agile",
+    "skillDescription": "Kỹ năng áp dụng phương pháp Agile trong phát triển phần mềm.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 25,
+    "skillName": "Quản Lý Căng Thẳng",
+    "skillDescription": "Khả năng duy trì hiệu suất làm việc tốt dưới áp lực cao.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 26,
+    "skillName": "Kiểm Thử Phần Mềm",
+    "skillDescription": "Kỹ năng kiểm tra và đảm bảo chất lượng phần mềm.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 27,
+    "skillName": "Định Hướng Kết Quả",
+    "skillDescription": "Khả năng tập trung vào việc đạt được mục tiêu và kết quả.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 28,
+    "skillName": "Phát Triển Frontend",
+    "skillDescription": "Kỹ năng xây dựng giao diện người dùng cho các ứng dụng web.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 29,
+    "skillName": "Kỹ Năng Thuyết Phục",
+    "skillDescription": "Khả năng ảnh hưởng và thuyết phục người khác để đạt được mục tiêu.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 30,
+    "skillName": "Quản Lý Sản Phẩm",
+    "skillDescription": "Kỹ năng lập kế hoạch và quản lý vòng đời sản phẩm từ ý tưởng đến thị trường.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 31,
+    "skillName": "Tư Duy Sáng Tạo",
+    "skillDescription": "Khả năng nghĩ ra các ý tưởng mới và đột phá trong công việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 32,
+    "skillName": "DevOps",
+    "skillDescription": "Kỹ năng kết hợp phát triển phần mềm và vận hành hệ thống để nâng cao hiệu quả.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 33,
+    "skillName": "Kỹ Năng Lắng Nghe",
+    "skillDescription": "Khả năng nghe hiểu và phản hồi một cách hiệu quả trong giao tiếp.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 34,
+    "skillName": "Phát Triển Backend",
+    "skillDescription": "Kỹ năng xây dựng và quản lý phần backend của các ứng dụng web.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 35,
+    "skillName": "Quản Lý Thay Đổi",
+    "skillDescription": "Khả năng điều hành và thích ứng với các thay đổi trong môi trường làm việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 36,
+    "skillName": "Cloud Computing",
+    "skillDescription": "Kỹ năng sử dụng và quản lý các dịch vụ đám mây như AWS, Azure, hoặc Google Cloud.",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 37,
+    "skillName": "Kỹ Năng Tổ Chức Sự Kiện",
+    "skillDescription": "Khả năng lên kế hoạch và tổ chức các sự kiện một cách hiệu quả.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 38,
+    "skillName": "Phát Triển API",
+    "skillDescription": "Kỹ năng thiết kế và phát triển các giao diện lập trình ứng dụng (API).",
+    "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 39,
+    "skillName": "Quản Lý Xung Đột",
+    "skillDescription": "Khả năng xử lý và giải quyết các xung đột trong nhóm làm việc.",
+    "type": "SOFT_SKILL"
+  },
+  {
+    "id": 40,
+    "skillName": "Phân Tích Kinh Doanh",
+    "skillDescription": "Kỹ năng phân tích nhu cầu kinh doanh và đề xuất giải pháp công nghệ phù hợp.",
+    "type": "TECHNICAL_SKILL"
+  }
+]
+

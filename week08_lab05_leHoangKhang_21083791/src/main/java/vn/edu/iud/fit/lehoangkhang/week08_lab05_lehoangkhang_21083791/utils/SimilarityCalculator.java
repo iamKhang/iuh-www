@@ -23,13 +23,9 @@ public class SimilarityCalculator {
     public static double[] createSkillVector(List<Skill> allSkills, List<? extends Object> skills) {
         double[] vector = new double[allSkills.size()];
         Map<String, Integer> skillIndexMap = new HashMap<>();
-
-        // Tạo bản đồ từ tên kỹ năng đến chỉ số
         for (int i = 0; i < allSkills.size(); i++) {
             skillIndexMap.put(allSkills.get(i).getSkillName(), i);
         }
-
-        // Đánh dấu kỹ năng trong vector
         for (Object obj : skills) {
             String skillName = "";
             if (obj instanceof CandidateSkill) {
@@ -39,7 +35,7 @@ public class SimilarityCalculator {
             }
             if (skillIndexMap.containsKey(skillName)) {
                 int index = skillIndexMap.get(skillName);
-                vector[index] = 1.0; // Bạn có thể điều chỉnh giá trị này dựa trên mức độ kỹ năng
+                vector[index] = 1.0;
             }
         }
 
