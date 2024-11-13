@@ -17,6 +17,8 @@ public class CandidateDTO {
     private Long id;
     private String fullName;
     private String phone;
+    private boolean gender;
+
     private String email;
     private String dob;
     private AddressDTO address;

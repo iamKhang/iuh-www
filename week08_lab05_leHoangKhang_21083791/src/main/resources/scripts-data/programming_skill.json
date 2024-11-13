@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Java",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 2,
+    "name": "Python",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 3,
+    "name": "C++",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 4,
+    "name": "JavaScript",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 5,
+    "name": "Ruby",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 6,
+    "name": "Go",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 7,
+    "name": "Swift",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 8,
+    "name": "Kotlin",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 9,
+    "name": "PHP",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 10,
+    "name": "TypeScript",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 11,
+    "name": "C#",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 12,
+    "name": "R",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 13,
+    "name": "Scala",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 14,
+    "name": "Perl",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 15,
+    "name": "Rust",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 16,
+    "name": "Lua",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 17,
+    "name": "Dart",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 18,
+    "name": "Elixir",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 19,
+    "name": "Clojure",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 20,
+    "name": "Haskell",
+    "programSkill": "LANGUAGE"
+  },
+  {
+    "id": 21,
+    "name": "Android Development",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 22,
+    "name": "iOS Development",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 23,
+    "name": "React Native",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 24,
+    "name": "Flutter",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 25,
+    "name": "Xamarin",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 26,
+    "name": "Ionic",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 27,
+    "name": "Kotlin Multiplatform",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 28,
+    "name": "SwiftUI",
+    "programSkill": "MOBILE"
+  },
+  {
+    "id": 29,
+    "name": "React.js",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 30,
+    "name": "Angular",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 31,
+    "name": "Vue.js",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 32,
+    "name": "Django",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 33,
+    "name": "Spring Boot",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 34,
+    "name": "Ruby on Rails",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 35,
+    "name": "Laravel",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 36,
+    "name": "Flask",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 37,
+    "name": "Express.js",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 38,
+    "name": "Node.js",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 39,
+    "name": "ASP.NET",
+    "programSkill": "FRAMEWORK"
+  },
+  {
+    "id": 40,
+    "name": "TensorFlow",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 41,
+    "name": "Kubernetes",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 42,
+    "name": "Docker",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 43,
+    "name": "Jenkins",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 44,
+    "name": "Ansible",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 45,
+    "name": "Terraform",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 46,
+    "name": "GitLab CI/CD",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 47,
+    "name": "Puppet",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 48,
+    "name": "Chef",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 49,
+    "name": "Prometheus",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 50,
+    "name": "Grafana",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 51,
+    "name": "Selenium",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 52,
+    "name": "JUnit",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 53,
+    "name": "TestNG",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 54,
+    "name": "Cucumber",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 55,
+    "name": "Mockito",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 56,
+    "name": "Postman",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 57,
+    "name": "Appium",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 58,
+    "name": "JMeter",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 59,
+    "name": "Cypress",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 60,
+    "name": "Robot Framework",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 61,
+    "name": "MySQL",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 62,
+    "name": "PostgreSQL",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 63,
+    "name": "MongoDB",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 64,
+    "name": "Oracle",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 65,
+    "name": "SQL Server",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 66,
+    "name": "Redis",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 67,
+    "name": "Cassandra",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 68,
+    "name": "Elasticsearch",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 69,
+    "name": "Firebase",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 70,
+    "name": "MariaDB",
+    "programSkill": "DATABASE"
+  },
+  {
+    "id": 71,
+    "name": "AWS",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 72,
+    "name": "Azure",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 73,
+    "name": "Google Cloud Platform",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 74,
+    "name": "Nginx",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 75,
+    "name": "Apache",
+    "programSkill": "DEVOPS"
+  },
+  {
+    "id": 76,
+    "name": "Git",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 77,
+    "name": "SVN",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 78,
+    "name": "Maven",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 79,
+    "name": "Gradle",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 80,
+    "name": "JIRA",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 81,
+    "name": "Trello",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 82,
+    "name": "Slack",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 83,
+    "name": "Confluence",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 84,
+    "name": "Bitbucket",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 85,
+    "name": "GitHub",
+    "programSkill": "TOOL"
+  },
+  {
+    "id": 86,
+    "name": "IntelliJ IDEA",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 87,
+    "name": "Eclipse",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 88,
+    "name": "Visual Studio Code",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 89,
+    "name": "PyCharm",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 90,
+    "name": "NetBeans",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 91,
+    "name": "Atom",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 92,
+    "name": "Sublime Text",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 93,
+    "name": "Xcode",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 94,
+    "name": "Vim",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 95,
+    "name": "Emacs",
+    "programSkill": "IDE"
+  },
+  {
+    "id": 96,
+    "name": "JUnit",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 97,
+    "name": "Mockito",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 98,
+    "name": "Cucumber",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 99,
+    "name": "TestNG",
+    "programSkill": "TESTING"
+  },
+  {
+    "id": 100,
+    "name": "Selenium",
+    "programSkill": "TESTING"
+  }
+]

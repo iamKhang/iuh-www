@@ -26,6 +26,7 @@ public class Candidate {
     private String phone;
     @Column(columnDefinition = "VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
     private String email;
+    private boolean gender;
     private LocalDate dob;
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "address_id")

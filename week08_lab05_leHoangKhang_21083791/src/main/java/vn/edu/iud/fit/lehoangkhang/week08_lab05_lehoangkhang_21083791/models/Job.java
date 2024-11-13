@@ -5,9 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.JobType;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.ProgramSkillType;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -28,6 +31,7 @@ public class Job {
     @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
     private List<JobSkill> jobSkills;
     private LocalDate deadline;
+
     private boolean active;
     @Column(name = "number_of_applicants")
     private int numberOfApplicants;
@@ -38,4 +42,10 @@ public class Job {
     private double salaryTo;
     @Column(name = "required_experience_years")
     private int requiredExperienceYears;
+    @ElementCollection
+    @CollectionTable(name = "required_skills", joinColumns = @JoinColumn(name = "job_id"))
+    private Set<ProgramSkillType> requiredSkills;
+    @Enumerated(EnumType.STRING)
+    private JobType type;
+
 }

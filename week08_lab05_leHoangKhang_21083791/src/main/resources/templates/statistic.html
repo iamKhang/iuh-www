@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Statistics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Thống Kê Tuyển Dụng</h1>
+
+<!-- Check if topSkills has data -->
+<div th:if="${topSkills != null && !topSkills.isEmpty()}" class="flex">
+    <div th:each="entry : ${topSkills}">
+        <h2 th:text="${entry.key}">Skill Type</h2>
+<!--        <ul>-->
+<!--            <li th:each="skill : ${entry.value}">-->
+<!--                <span th:text="${skill['skillName']}">Skill Name</span> - -->
+<!--                <span th:text="${skill['count']}">Count</span>-->
+<!--            </li>-->
+<!--        </ul>-->
+        <!-- Add a canvas for each skill type chart -->
+        <canvas th:attr="id=${entry.key + 'Chart'}" width="400" height="200"></canvas>
+    </div>
+</div>
+
+<!-- Message if no data is available -->
+<div th:if="${topSkills == null || topSkills.isEmpty()}">
+    <p>No data available for statistics.</p>
+</div>
+
+<h1>Thống Kê Ứng Viên Theo Độ Tuổi</h1>
+
+<div>
+    <canvas id="agePieChart"></canvas>
+</div>
+
+<h1>Thống Kê Ứng Viên Theo Giới Tính</h1>
+
+<canvas id="genderChart" width="400" height="400"></canvas>
+
+<!-- JavaScript to render charts -->
+<script th:inline="javascript">
+    // Dữ liệu cho biểu đồ kỹ năng (topSkillsData)
+    const topSkillsData = /*[[${topSkills}]]*/ {};
+
+    // Loop qua từng loại kỹ năng để tạo biểu đồ cho từng loại kỹ năng
+    Object.keys(topSkillsData).forEach(skillType => {
+        const skills = topSkillsData[skillType];
+        if (!skills || skills.length === 0) return;
+
+        const labels = skills.map(skill => skill.skillName);
+        const data = skills.map(skill => skill.count);
+
+        const skillCtx = document.getElementById(skillType + 'Chart').getContext('2d');
+        new Chart(skillCtx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: skillType + ' Skills',
+                    data: data,
+                    borderWidth: 1,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+
+    // Dữ liệu cho biểu đồ tròn về độ tuổi
+    const ageData = /*[[${ageData}]]*/ {};
+    const ageLabels = Object.keys(ageData);
+    const ageCounts = Object.values(ageData);
+
+    const ageCtx = document.getElementById('agePieChart').getContext('2d');
+    new Chart(ageCtx, {
+        type: 'pie',
+        data: {
+            labels: ageLabels,
+            datasets: [{
+                label: 'Ứng viên theo độ tuổi',
+                data: ageCounts,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.label + ': ' + context.raw;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Dữ liệu cho biểu đồ tròn về giới tính
+    const genderData = /*[[${genderCounts}]]*/ {};
+    if (Object.keys(genderData).length > 0) {
+        const genderLabels = Object.keys(genderData);
+        const genderCounts = Object.values(genderData);
+
+        const genderCtx = document.getElementById('genderChart').getContext('2d');
+        new Chart(genderCtx, {
+            type: 'pie',
+            data: {
+                labels: genderLabels,
+                datasets: [{
+                    label: 'Số lượng ứng viên theo giới tính',
+                    data: genderCounts,
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    } else {
+        console.error("No gender data available for the gender chart.");
+    }
+</script>
+
+
+</body>
+</html>

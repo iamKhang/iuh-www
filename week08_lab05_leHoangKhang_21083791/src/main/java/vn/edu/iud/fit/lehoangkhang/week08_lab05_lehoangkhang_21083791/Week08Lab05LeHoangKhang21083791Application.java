@@ -176,6 +176,7 @@ public class Week08Lab05LeHoangKhang21083791Application {
                         candidate.setEmail(candidateDTO.getEmail());
                         candidate.setDob(LocalDate.parse(candidateDTO.getDob()));
                         candidate.setAddress(address);
+                        candidate.setGender(candidateDTO.isGender());
 
                         // Lưu CandidateSkills
                         List<CandidateSkill> candidateSkills = new ArrayList<>();

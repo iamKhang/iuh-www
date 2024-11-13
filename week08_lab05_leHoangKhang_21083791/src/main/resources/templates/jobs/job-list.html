@@ -74,7 +74,7 @@
                     <p th:text="${#temporals.format(job.deadline, 'dd/MM/yyyy')}">20/12/2024</p>
                 </td>
                 <td th:text="${job.active} ? 'Đang tuyển dụng' : 'Hết hạn'">Đang tuyển dụng</td>
-                <td th:text="${job.requiredExperienceYears}">3</td>
+                <td th:text="${job.requiredExperienceYears == 0 ? 'Không yêu cầu kinh nghiệm' : job.requiredExperienceYears}">3</td>
                 <td class="text-center">
                     <a th:href="@{/jobs/{id}(id=${job.id})}" class="btn btn-primary btn-sm ">
                         <i class="bi bi-eye me"></i>
@@ -88,7 +88,6 @@
         </table>
     </div>
 
-    <!-- Phân trang -->
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             <!-- Nút Previous -->

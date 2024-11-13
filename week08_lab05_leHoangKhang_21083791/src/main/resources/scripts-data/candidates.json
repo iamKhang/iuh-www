@@ -4,6 +4,7 @@
     "fullName": "Đàm Thái An",
     "phone": "0378207498",
     "email": "damthai.an@gmail.com",
+    "gender": 0,
     "dob": "1992-04-15",
     "address": {
       "id": 201,
@@ -58,6 +59,7 @@
     "phone": "0375229687",
     "email": "lananh.duong@yahoo.com",
     "dob": "1995-08-22",
+    "gender": 0,
     "address": {
       "id": 202,
       "country": "Vietnam",
@@ -95,6 +97,7 @@
     "id": 3,
     "fullName": "Lê Hoàng Anh",
     "phone": "0373777501",
+    "gender": 0,
     "email": "hoang.anh.le@icloud.com",
     "dob": "1988-12-05",
     "address": {
@@ -141,6 +144,7 @@
   {
     "id": 4,
     "fullName": "Nguyễn Đức Anh",
+    "gender": 1,
     "phone": "0794804459",
     "email": "nguyenduc.anh@gmail.com",
     "dob": "1990-07-10",
@@ -195,6 +199,7 @@
     "id": 5,
     "fullName": "Nguyễn Nhựt Anh",
     "phone": "0983410360",
+    "gender": 1,
     "email": "nhutat.an.nguyen@yahoo.com",
     "dob": "1994-11-25",
     "address": {
@@ -247,6 +252,7 @@
   {
     "id": 6,
     "fullName": "Võ Văn Bạch",
+    "gender": 1,
     "phone": "0793809025",
     "email": "vovanch Bach@outlook.com",
     "dob": "1991-03-12",
@@ -295,6 +301,7 @@
     "id": 7,
     "fullName": "Lê Minh Bảo",
     "phone": "0327252264",
+    "gender": 1,
     "email": "minhbao.le@company.com",
     "dob": "1985-07-30",
     "address": {
@@ -347,6 +354,7 @@
   {
     "id": 8,
     "fullName": "Nguyễn Văn Bảo",
+    "gender": 1,
     "phone": "0961056669",
     "email": "bao.nguyen@domain.org",
     "dob": "1993-09-18",
@@ -400,6 +408,7 @@
   {
     "id": 9,
     "fullName": "Phan Gia Bảo",
+    "gender": 1,
     "phone": "0373926563",
     "email": "giabao.phan@gmail.com",
     "dob": "1996-02-10",
@@ -447,6 +456,7 @@
   {
     "id": 10,
     "fullName": "Trần Quốc Bảo",
+    "gender": 1,
     "phone": "0981321591",
     "email": "quocbao.tran@yahoo.com",
     "dob": "1987-06-30",
@@ -494,6 +504,7 @@
   {
     "id": 11,
     "fullName": "Trương Chi Bảo",
+    "gender": 1,
     "phone": "0373936575",
     "email": "chibaotr@outlook.com",
     "dob": "1997-09-05",
@@ -541,6 +552,7 @@
   {
     "id": 12,
     "fullName": "Trần Lê Quốc Bình",
+    "gender": 1,
     "phone": "0374358270",
     "email": "quocbinh.tran@domain.net",
     "dob": "1998-01-20",
@@ -580,6 +592,7 @@
   {
     "id": 13,
     "fullName": "Bùi Ngọc Bửu",
+    "gender": 1,
     "phone": "0373877550",
     "email": "buunoc.bui@gmail.com",
     "dob": "1989-05-18",
@@ -633,6 +646,7 @@
   {
     "id": 14,
     "fullName": "Võ Văn Cảnh",
+    "gender": 1,
     "phone": "0377344631",
     "email": "cach.vo@techmail.com",
     "dob": "1994-10-02",
@@ -680,6 +694,7 @@
   {
     "id": 15,
     "fullName": "Đinh Trần Công Chiên",
+    "gender": 1,
     "phone": "0374489592",
     "email": "congchien.dinh@domain.com",
     "dob": "1990-12-10",
@@ -733,6 +748,7 @@
   {
     "id": 16,
     "fullName": "Đinh Nguyên Chung",
+    "gender": 1,
     "phone": "0375252264",
     "email": "nguyen.chung@techmail.net",
     "dob": "1993-11-05",
@@ -786,6 +802,7 @@
   {
     "id": 17,
     "fullName": "Nguyễn Thành Cương",
+    "gender": 1,
     "phone": "0961722260",
     "email": "thanhcuong.nguyen@business.com",
     "dob": "1992-08-12",
@@ -833,6 +850,7 @@
   {
     "id": 18,
     "fullName": "Thái Bá Cường",
+    "gender": 1,
     "phone": "0377344631",
     "email": "bacuong.thai@domain.org",
     "dob": "1991-03-25",
@@ -880,6 +898,7 @@
   {
     "id": 19,
     "fullName": "Võ Chí Cường",
+    "gender": 1,
     "phone": "0388572260",
     "email": "vuchi.cuong@techmail.com",
     "dob": "1994-09-15",
@@ -919,6 +938,7 @@
   {
     "id": 20,
     "fullName": "Vũ Hải Đăng",
+    "gender": 1,
     "phone": "0373948959",
     "email": "haidang.vu@domain.net",
     "dob": "1995-07-22",
@@ -966,6 +986,7 @@
   {
     "id": 21,
     "fullName": "Bùi Thanh Đạt",
+    "gender": 1,
     "phone": "0378888010",
     "email": "thanhdat.bui@gmail.com",
     "dob": "1990-02-28",
@@ -1025,6 +1046,7 @@
   {
     "id": 22,
     "fullName": "Đỗ Tấn Đạt",
+    "gender": 1,
     "phone": "0379292697",
     "email": "tan.dat.do@business.org",
     "dob": "1996-04-20",
@@ -1064,6 +1086,7 @@
   {
     "id": 23,
     "fullName": "Lê Thành Đạt",
+    "gender": 1,
     "phone": "0379684891",
     "email": "thanhdat.le@domain.com",
     "dob": "1993-09-25",
@@ -1135,6 +1158,7 @@
   {
     "id": 24,
     "fullName": "Lê Văn Đạt",
+    "gender": 1,
     "phone": "0379138972",
     "email": "van.dat.le@techmail.com",
     "dob": "1992-12-18",
@@ -1182,6 +1206,7 @@
   {
     "id": 25,
     "fullName": "Nguyễn Trọng Đạt",
+    "gender": 1,
     "phone": "0373793683",
     "email": "trongdat.nguyen@business.com",
     "dob": "1995-05-30",
@@ -1229,6 +1254,7 @@
   {
     "id": 26,
     "fullName": "Nguyễn Văn Đạt",
+    "gender": 1,
     "phone": "0379370366",
     "email": "vanda.nguyen@gmail.com",
     "dob": "1991-07-22",
@@ -1276,6 +1302,7 @@
   {
     "id": 27,
     "fullName": "Lê Văn Đạt",
+    "gender": 1,
     "phone": "0374967326",
     "email": "vanda.le@techmail.org",
     "dob": "1994-03-18",
@@ -1347,6 +1374,7 @@
   {
     "id": 28,
     "fullName": "Mai Quốc Đông",
+    "gender": 1,
     "phone": "0373581505",
     "email": "quocdong.mai@techmail.com",
     "dob": "1992-11-30",
@@ -1394,6 +1422,7 @@
   {
     "id": 29,
     "fullName": "Trần Lê Khoa",
+    "gender": 1,
     "phone": "0373355261",
     "email": "le.khoa.tran@domain.net",
     "dob": "1990-06-10",
@@ -1441,6 +1470,7 @@
   {
     "id": 30,
     "fullName": "Võ Tiến Khoa",
+    "gender": 1,
     "phone": "0373626123",
     "email": "tienkhoa.vo@business.com",
     "dob": "1988-10-05",
@@ -1494,6 +1524,7 @@
   {
     "id": 31,
     "fullName": "Nguyễn Xuân Khôi",
+    "gender": 1,
     "phone": "0373795065",
     "email": "xuan.khoi.nguyen@gmail.com",
     "dob": "1995-12-25",
@@ -1541,6 +1572,7 @@
   {
     "id": 32,
     "fullName": "Hồ Minh Hậu",
+    "gender": 1,
     "phone": "0379840989",
     "email": "minhhau.ho@techmail.org",
     "dob": "1992-05-10",
@@ -1612,6 +1644,7 @@
   {
     "id": 33,
     "fullName": "Nguyễn Hoàng Khang",
+    "gender": 1,
     "phone": "0379436783",
     "email": "hoangkhang.nguyen@business.com",
     "dob": "1993-11-20",
@@ -1683,6 +1716,7 @@
   {
     "id": 34,
     "fullName": "Nguyễn Huy Khang",
+    "gender": 1,
     "phone": "0373897132",
     "email": "huykhang.nguyen@techmail.org",
     "dob": "1994-04-15",
@@ -1730,6 +1764,7 @@
   {
     "id": 35,
     "fullName": "Nguyễn Thị Mỹ Hoa",
+    "gender": 1,
     "phone": "0378897816",
     "email": "myhoa.nguyen@domain.com",
     "dob": "1990-01-05",
@@ -1795,6 +1830,7 @@
   {
     "id": 36,
     "fullName": "Huỳnh Lệ Hoan",
+    "gender": 0,
     "phone": "0378458282",
     "email": "lehoan.huynh@techmail.net",
     "dob": "1991-08-18",
@@ -1848,6 +1884,7 @@
   {
     "id": 37,
     "fullName": "Nguyễn Việt Hoàng",
+    "gender": 1,
     "phone": "0373756652",
     "email": "viethoang.nguyen@techmail.com",
     "dob": "1994-02-14",
@@ -1919,6 +1956,7 @@
   {
     "id": 38,
     "fullName": "Phạm Văn Thành",
+    "gender": 1,
     "phone": "0375653069",
     "email": "thanh.van.pham@domain.net",
     "dob": "1993-07-22",
@@ -1966,6 +2004,7 @@
   {
     "id": 39,
     "fullName": "Ngô Đăng Trường Sa",
+    "gender": 1,
     "phone": "0377930175",
     "email": "dangtrong.sa@business.com",
     "dob": "1990-09-30",
@@ -2013,6 +2052,7 @@
   {
     "id": 40,
     "fullName": "Khưu Võ Thanh Sang",
+    "gender": 1,
     "phone": "0373522235",
     "email": "thanhsang.khuu@techmail.org",
     "dob": "1992-06-18",
@@ -2060,6 +2100,7 @@
   {
     "id": 41,
     "fullName": "Trần Minh Lân",
+    "gender": 1,
     "phone": "0373370403",
     "email": "minhlan.tran@techmail.com",
     "dob": "1993-04-22",
@@ -2113,6 +2154,7 @@
   {
     "id": 42,
     "fullName": "Nguyễn Hữu Lộc",
+    "gender": 1,
     "phone": "0373795065",
     "email": "huyloc.nguyen@business.com",
     "dob": "1994-05-10",
@@ -2160,6 +2202,7 @@
   {
     "id": 43,
     "fullName": "Nguyễn Tấn Lộc",
+    "gender": 1,
     "phone": "0379199167",
     "email": "tanloc.nguyen@techmail.com",
     "dob": "1991-07-30",
@@ -2213,6 +2256,7 @@
   {
     "id": 44,
     "fullName": "Trần Minh Quang",
+    "gender": 1,
     "phone": "0373455827",
     "email": "minhquang.tran@techmail.org",
     "dob": "1992-09-12",
@@ -2290,6 +2334,7 @@
   {
     "id": 45,
     "fullName": "Đào Tiến Dũng",
+    "gender": 1,
     "phone": "0379684031",
     "email": "tiendung.dao@business.com",
     "dob": "1991-12-05",
@@ -2343,6 +2388,7 @@
   {
     "id": 46,
     "fullName": "Đồng Mạnh Dũng",
+    "gender": 1,
     "phone": "0373793683",
     "email": "muandung.dong@techmail.org",
     "dob": "1993-07-10",
@@ -2402,6 +2448,7 @@
   {
     "id": 47,
     "fullName": "Nguyễn Hữu Dũng",
+    "gender": 1,
     "phone": "0373971572",
     "email": "huydung.nguyen@techmail.com",
     "dob": "1992-10-25",
@@ -2455,6 +2502,7 @@
   {
     "id": 48,
     "fullName": "Đặng Trần Dương",
+    "gender": 1,
     "phone": "0379488984",
     "email": "tranduong.dang@business.com",
     "dob": "1991-11-30",
@@ -2520,6 +2568,7 @@
   {
     "id": 49,
     "fullName": "Lê Văn Dương",
+    "gender": 1,
     "phone": "0373793683",
     "email": "vanduong.le@techmail.com",
     "dob": "1994-08-18",
@@ -2585,6 +2634,7 @@
   {
     "id": 50,
     "fullName": "Trần Hiển Vinh",
+    "gender": 1,
     "phone": "0373897132",
     "email": "hienvinh.tran@techmail.com",
     "dob": "1992-07-15",
@@ -2662,6 +2712,7 @@
   {
     "id": 51,
     "fullName": "Đỗ Thị Hằng Nga",
+    "gender": 1,
     "phone": "0373948959",
     "email": "hangnga.do@icloud.com",
     "dob": "1993-04-20",
@@ -2709,6 +2760,7 @@
   {
     "id": 52,
     "fullName": "Phạm Minh Hiếu",
+    "gender": 1,
     "phone": "0378651722",
     "email": "minhhiếu.pham@yahoo.com",
     "dob": "1989-05-20",
@@ -2756,6 +2808,7 @@
   {
     "id": 53,
     "fullName": "Ông Nhựt Nam",
+    "gender": 1,
     "phone": "0373272522",
     "email": "nhutnam.ong@icloud.com",
     "dob": "1988-11-15",
@@ -2809,6 +2862,7 @@
   {
     "id": 54,
     "fullName": "Phan Thanh Nam",
+    "gender": 1,
     "phone": "0373772416",
     "email": "thanhnam.phan@outlook.com",
     "dob": "1992-07-25",
@@ -2848,6 +2902,7 @@
   {
     "id": 55,
     "fullName": "Đỗ Thị Hằng Nga",
+    "gender": 0,
     "phone": "0378888010",
     "email": "hangnga.do@business.com",
     "dob": "1990-02-28",
@@ -2907,6 +2962,7 @@
   {
     "id": 56,
     "fullName": "Đỗ Tấn Đạt",
+    "gender": 1,
     "phone": "0379292697",
     "email": "tan.dat.do@business.org",
     "dob": "1996-04-20",
@@ -2946,6 +3002,7 @@
   {
     "id": 57,
     "fullName": "Lê Thành Đạt",
+    "gender": 1,
     "phone": "0379684891",
     "email": "thanhdat.le@domain.com",
     "dob": "1993-09-25",
@@ -3017,6 +3074,7 @@
   {
     "id": 58,
     "fullName": "Lê Văn Đạt",
+    "gender": 1,
     "phone": "0379138972",
     "email": "van.dat.le@techmail.com",
     "dob": "1992-12-18",
@@ -3064,6 +3122,7 @@
   {
     "id": 59,
     "fullName": "Nguyễn Trọng Đạt",
+    "gender": 1,
     "phone": "0373793683",
     "email": "trongdat.nguyen@business.com",
     "dob": "1995-05-30",
@@ -3111,6 +3170,7 @@
   {
     "id": 60,
     "fullName": "Nguyễn Văn Đạt",
+    "gender": 1,
     "phone": "0373793683",
     "email": "vanda.nguyen@gmail.com",
     "dob": "1991-07-22",
@@ -3158,6 +3218,7 @@
   {
     "id": 61,
     "fullName": "Lê Văn Đạt",
+    "gender": 1,
     "phone": "0374967326",
     "email": "vanda.le@techmail.org",
     "dob": "1994-03-18",
@@ -3229,6 +3290,7 @@
   {
     "id": 62,
     "fullName": "Mai Quốc Đông",
+    "gender": 1,
     "phone": "0373581505",
     "email": "quocdong.mai@techmail.com",
     "dob": "1992-11-30",
@@ -3276,6 +3338,7 @@
   {
     "id": 63,
     "fullName": "Trần Lê Khoa",
+    "gender": 1,
     "phone": "0373355261",
     "email": "le.khoa.tran@domain.net",
     "dob": "1990-06-10",
@@ -3323,6 +3386,7 @@
   {
     "id": 64,
     "fullName": "Võ Tiến Khoa",
+    "gender": 1,
     "phone": "0373626123",
     "email": "tienkhoa.vo@business.com",
     "dob": "1988-10-05",
@@ -3376,6 +3440,7 @@
   {
     "id": 65,
     "fullName": "Nguyễn Xuân Khôi",
+    "gender": 1,
     "phone": "0373795065",
     "email": "xuan.khoi.nguyen@gmail.com",
     "dob": "1995-12-25",
@@ -3423,6 +3488,7 @@
   {
     "id": 66,
     "fullName": "Hồ Minh Hậu",
+    "gender": 1,
     "phone": "0379840989",
     "email": "minhhau.ho@techmail.net",
     "dob": "1992-05-10",
@@ -3494,6 +3560,7 @@
   {
     "id": 67,
     "fullName": "Nguyễn Hoàng Khang",
+    "gender": 1,
     "phone": "0379436783",
     "email": "hoangkhang.nguyen@business.com",
     "dob": "1993-11-20",
@@ -3565,6 +3632,7 @@
   {
     "id": 68,
     "fullName": "Nguyễn Huy Khang",
+    "gender": 1,
     "phone": "0373897132",
     "email": "huykhang.nguyen@techmail.org",
     "dob": "1994-04-15",
@@ -3642,6 +3710,7 @@
   {
     "id": 69,
     "fullName": "Nguyễn Thị Mỹ Hoa",
+    "gender": 0,
     "phone": "0378897816",
     "email": "myhoa.nguyen@domain.com",
     "dob": "1990-01-05",
@@ -3707,6 +3776,7 @@
   {
     "id": 70,
     "fullName": "Huỳnh Lệ Hoan",
+    "gender": 1,
     "phone": "0378458282",
     "email": "lehoan.huynh@techmail.net",
     "dob": "1991-08-18",
@@ -3760,6 +3830,7 @@
   {
     "id": 71,
     "fullName": "Nguyễn Việt Hoàng",
+    "gender": 1,
     "phone": "0373756652",
     "email": "viethoang.nguyen@techmail.com",
     "dob": "1994-02-14",
@@ -3831,6 +3902,7 @@
   {
     "id": 72,
     "fullName": "Phạm Văn Thành",
+    "gender": 1,
     "phone": "0375653069",
     "email": "thanh.van.pham@domain.net",
     "dob": "1993-07-22",
@@ -3878,6 +3950,7 @@
   {
     "id": 73,
     "fullName": "Ngô Đăng Trường Sa",
+    "gender": 1,
     "phone": "0377930175",
     "email": "dangtrong.sa@business.com",
     "dob": "1990-09-30",
@@ -3925,6 +3998,7 @@
   {
     "id": 74,
     "fullName": "Khưu Võ Thanh Sang",
+    "gender": 1,
     "phone": "0373522235",
     "email": "thanhsang.khuu@techmail.org",
     "dob": "1992-06-18",
@@ -3972,6 +4046,7 @@
   {
     "id": 75,
     "fullName": "Trần Minh Lân",
+    "gender": 1,
     "phone": "0373370403",
     "email": "minhlan.tran@techmail.com",
     "dob": "1993-04-22",
@@ -4025,6 +4100,7 @@
   {
     "id": 76,
     "fullName": "Nguyễn Hữu Lộc",
+    "gender": 1,
     "phone": "0373795065",
     "email": "huyloc.nguyen@business.com",
     "dob": "1994-05-10",
@@ -4072,6 +4148,7 @@
   {
     "id": 77,
     "fullName": "Nguyễn Tấn Lộc",
+    "gender": 1,
     "phone": "0379199167",
     "email": "tanloc.nguyen@techmail.com",
     "dob": "1991-07-30",
@@ -4125,6 +4202,7 @@
   {
     "id": 78,
     "fullName": "Trần Minh Quang",
+    "gender": 1,
     "phone": "0373455827",
     "email": "minhquang.tran@techmail.org",
     "dob": "1992-09-12",
@@ -4202,6 +4280,7 @@
   {
     "id": 79,
     "fullName": "Đào Tiến Dũng",
+    "gender": 1,
     "phone": "0379684031",
     "email": "tiendung.dao@business.com",
     "dob": "1991-12-05",
@@ -4255,6 +4334,7 @@
   {
     "id": 80,
     "fullName": "Đồng Mạnh Dũng",
+    "gender": 1,
     "phone": "0373793683",
     "email": "muandung.dong@techmail.org",
     "dob": "1993-07-10",
@@ -4314,6 +4394,7 @@
   {
     "id": 81,
     "fullName": "Nguyễn Hữu Dũng",
+    "gender": 1,
     "phone": "0373793683",
     "email": "huydung.nguyen@techmail.com",
     "dob": "1992-10-25",
@@ -4367,6 +4448,7 @@
   {
     "id": 82,
     "fullName": "Đặng Trần Dương",
+    "gender": 1,
     "phone": "0379488984",
     "email": "tranduong.dang@business.com",
     "dob": "1991-11-30",
@@ -4432,6 +4514,7 @@
   {
     "id": 83,
     "fullName": "Nguyễn Duy Thanh",
+    "gender": 1,
     "phone": "0373793683",
     "email": "duythanh.nguyen@techmail.com",
     "dob": "1994-08-18",
@@ -4509,6 +4592,7 @@
   {
     "id": 84,
     "fullName": "Trần Hiển Vinh",
+    "gender": 1,
     "phone": "0373897132",
     "email": "hienvinh.tran@techmail.com",
     "dob": "1992-07-15",
@@ -4586,6 +4670,7 @@
   {
     "id": 85,
     "fullName": "Nguyễn Hữu Lộc",
+    "gender": 1,
     "phone": "0373795065",
     "email": "huyloc.nguyen@business.com",
     "dob": "1994-05-10",
@@ -4663,6 +4748,7 @@
   {
     "id": 86,
     "fullName": "Nguyễn Tấn Thuận",
+    "gender": 1,
     "phone": "0373793683",
     "email": "tanhieun.nguyen@techmail.com",
     "dob": "1991-07-18",
@@ -4740,6 +4826,7 @@
   {
     "id": 87,
     "fullName": "Trần Anh Tiến",
+    "gender": 1,
     "phone": "0373793683",
     "email": "antien.tran@techmail.com",
     "dob": "1993-09-10",
@@ -4817,6 +4904,7 @@
   {
     "id": 88,
     "fullName": "Trần Minh Tú",
+    "gender": 1,
     "phone": "0373793683",
     "email": "mintu.tran@business.com",
     "dob": "1993-07-10",
@@ -4888,6 +4976,7 @@
   {
     "id": 89,
     "fullName": "Nguyễn Minh Thuận",
+    "gender": 1,
     "phone": "0373793683",
     "email": "minhthuan.nguyen@techmail.com",
     "dob": "1995-06-25",
@@ -4965,6 +5054,7 @@
   {
     "id": 90,
     "fullName": "Trần Hiển Vinh",
+    "gender": 1,
     "phone": "0373897132",
     "email": "hienvinh.tran@techmail.org",
     "dob": "1992-07-15",
