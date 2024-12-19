@@ -3,157 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Đăng ký ứng viên</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .error {
-            color: red;
-            font-size: 0.9em;
+        .form-section {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
         }
-        .hidden {
+
+        .section-title {
+            color: #1a237e;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #64b5f6;
+        }
+
+        .error {
+            color: #e57373;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .form-control:focus {
+            border-color: #64b5f6;
+            box-shadow: 0 0 0 0.2rem rgba(100,181,246,0.25);
+        }
+
+        .btn-register {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: white !important;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-register:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 4px;
+        }
+
+        .avatar-upload {
+            position: relative;
+            max-width: 180px;
+            margin: 0 auto;
+        }
+
+        .avatar-preview {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            background: #F8F8F8;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .avatar-preview #default-avatar {
+            font-size: 80px;
+            color: #d1d1d1;
+            z-index: 1;
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-preview:hover #default-avatar {
+            color: #bdbdbd;
+            background: linear-gradient(135deg, #e0e0e0, #d5d5d5);
+        }
+
+        .avatar-preview img:not(.d-none) {
+            z-index: 2;
+        }
+
+        .avatar-edit {
+            position: absolute;
+            right: 5px;
+            bottom: 20px;
+            z-index: 10;
+        }
+
+        .avatar-edit input {
             display: none;
+        }
+
+        .avatar-edit label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 100%;
+            background: #FFFFFF;
+            border: 1px solid #d2d6de;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            position: relative;
+            z-index: 11;
+        }
+
+        .avatar-edit label:hover {
+            background: #f1f1f1;
+            border-color: #d6d6d6;
+            transform: scale(1.1);
+        }
+
+        .avatar-edit label i {
+            color: #757575;
+        }
+
+        .avatar-edit label:hover i {
+            color: #424242;
         }
     </style>
 </head>
-<body>
-<div th:replace="fragments/header :: header"></div>
-<div class="container mt-5">
-    <h2 class="text-center">Đăng ký tài khoản</h2>
-    <form th:action="@{/register}" th:object="${account}" method="post" class="col-md-8 offset-md-2" onsubmit="return validateForm()">
-        <!-- Thông tin cá nhân -->
-        <h4>Thông tin cá nhân</h4>
-        <div class="form-group mb-3">
-            <label for="candidate.fullName">Tên đầy đủ</label>
-            <input type="text" th:field="*{candidate.fullName}" class="form-control" placeholder="Nhập tên đầy đủ" required>
-            <div th:if="${#fields.hasErrors('candidate.fullName')}" class="error" th:errors="*{candidate.fullName}">Tên đầy đủ không hợp lệ</div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.phone">Số điện thoại</label>
-            <input type="text" th:field="*{candidate.phone}" class="form-control" placeholder="Nhập số điện thoại" pattern="^(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})$" required oninput="validatePhone(this)">
-            <small class="error hidden" id="phoneError" th:if="${phoneError != null}" th:text="${phoneError}">Số điện thoại đã được sử dụng.</small>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.email">Email</label>
-            <input type="email" th:field="*{candidate.email}" class="form-control" placeholder="Nhập email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required oninput="validateEmail(this)">
-            <small class="error hidden" id="emailError" th:if="${emailError != null}" th:text="${emailError}">Email đã được sử dụng.</small>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.dob">Ngày sinh</label>
-            <input type="date" th:field="*{candidate.dob}" class="form-control" required>
-            <div th:if="${#fields.hasErrors('candidate.dob')}" class="error" th:errors="*{candidate.dob}">Ngày sinh không hợp lệ</div>
-        </div>
-        <!-- Địa chỉ -->
-        <h4>Địa chỉ</h4>
-        <div class="form-group mb-3">
-            <label for="candidate.address.country">Quốc gia</label>
-            <input type="text" th:field="*{candidate.address.country}" class="form-control" placeholder="Nhập quốc gia" required>
-            <div th:if="${#fields.hasErrors('candidate.address.country')}" class="error" th:errors="*{candidate.address.country}">Quốc gia không hợp lệ</div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.address.city">Thành phố</label>
-            <input type="text" th:field="*{candidate.address.city}" class="form-control" placeholder="Nhập thành phố" required>
-            <div th:if="${#fields.hasErrors('candidate.address.city')}" class="error" th:errors="*{candidate.address.city}">Thành phố không hợp lệ</div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.address.street">Đường</label>
-            <input type="text" th:field="*{candidate.address.street}" class="form-control" placeholder="Nhập tên đường" required>
-            <div th:if="${#fields.hasErrors('candidate.address.street')}" class="error" th:errors="*{candidate.address.street}">Đường không hợp lệ</div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.address.number">Số nhà</label>
-            <input type="text" th:field="*{candidate.address.number}" class="form-control" placeholder="Nhập số nhà" required>
-            <div th:if="${#fields.hasErrors('candidate.address.number')}" class="error" th:errors="*{candidate.address.number}">Số nhà không hợp lệ</div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="candidate.address.zipcode">Mã bưu điện</label>
-            <input type="text" th:field="*{candidate.address.zipcode}" class="form-control" placeholder="Nhập mã bưu điện" required>
-            <div th:if="${#fields.hasErrors('candidate.address.zipcode')}" class="error" th:errors="*{candidate.address.zipcode}">Mã bưu điện không hợp lệ</div>
-        </div>
+<body class="bg-light">
+    <div th:replace="fragments/header :: header"></div>
+    
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Đăng ký tài khoản ứng viên</h2>
+        <form th:action="@{/register}" th:object="${account}" method="post" 
+              class="col-md-8 offset-md-2" enctype="multipart/form-data">
+            
+            <!-- Thông tin cá nhân -->
+            <div class="form-section">
+                <h3 class="section-title">Thông tin cá nhân</h3>
+                <div class="row g-3">
+                    <div class="col-md-12 text-center mb-4">
+                        <label class="form-label d-block">Ảnh đại diện</label>
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="avatarUpload" name="avatarFile" 
+                                       accept="image/png, image/jpeg, image/jpg"
+                                       onchange="previewImage(this);" />
+                                <label for="avatarUpload">
+                                    <i class="fas fa-camera"></i>
+                                </label>
+                            </div>
+                            <div class="avatar-preview" id="avatar-preview-container">
+                                <img id="avatar-preview" class="d-none">
+                                <div id="default-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Không bắt buộc - Nếu không chọn ảnh, hệ thống sẽ sử dụng ảnh mặc định</small>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Họ và tên</label>
+                        <input type="text" th:field="*{candidate.fullName}" class="form-control" required>
+                        <div th:if="${#fields.hasErrors('candidate.fullName')}" class="error" th:errors="*{candidate.fullName}"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Email</label>
+                        <input type="email" th:field="*{candidate.email}" class="form-control" required>
+                        <div th:if="${#fields.hasErrors('candidate.email')}" class="error" th:errors="*{candidate.email}"></div>
+                        <div th:if="${emailError}" class="error" th:text="${emailError}"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Số điện thoại</label>
+                        <input type="tel" th:field="*{candidate.phone}" class="form-control" 
+                               pattern="^(03|05|07|08|09)\d{8}$" required
+                               title="Số điện thoại phải bắt đầu bằng 03, 05, 07, 08, hoặc 09 và có 10 chữ số">
+                        <div th:if="${#fields.hasErrors('candidate.phone')}" class="error" th:errors="*{candidate.phone}"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Ngày sinh</label>
+                        <input type="date" th:field="*{candidate.dob}" class="form-control" required
+                               th:max="${#temporals.format(#temporals.createNow().minusYears(18), 'yyyy-MM-dd')}">
+                        <div th:if="${#fields.hasErrors('candidate.dob')}" class="error" th:errors="*{candidate.dob}"></div>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label required">Giới tính</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" th:field="*{candidate.gender}" value="true" id="genderMale">
+                            <label class="form-check-label" for="genderMale">Nam</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" th:field="*{candidate.gender}" value="false" id="genderFemale">
+                            <label class="form-check-label" for="genderFemale">Nữ</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Thông tin tài khoản -->
-        <h4>Thông tin tài khoản</h4>
-        <div class="form-group mb-3">
-            <label for="password">Mật khẩu</label>
-            <input type="password" th:field="*{password}" class="form-control" placeholder="Nhập mật khẩu" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required oninput="validatePassword(this)">
-            <small class="error hidden" id="passwordError">Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ cái và số.</small>
-        </div>
-        <div class="form-group mb-3">
-            <label for="confirmPassword">Xác nhận mật khẩu</label>
-            <input type="password"  class="form-control" placeholder="Nhập lại mật khẩu" required oninput="validateConfirmPassword()">
-            <small class="error hidden" id="confirmPasswordError">Mật khẩu không khớp!</small>
-        </div>
-        <div class="form-group mb-3">
-            <label for="role">Vai trò</label>
-            <select th:field="*{role}" class="form-control" required>
-                <option value="">-- Chọn vai trò --</option>
-                <option value="CANDIDATE">Ứng viên</option>
-                <option value="EMPLOYER">Nhà tuyển dụng</option>
-            </select>
-            <div th:if="${#fields.hasErrors('role')}" class="error" th:errors="*{role}">Vai trò không hợp lệ</div>
-        </div>
+            <!-- Địa chỉ -->
+            <div class="form-section">
+                <h3 class="section-title">Địa chỉ</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label required">Quốc gia</label>
+                        <input type="text" th:field="*{candidate.address.country}" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Thành phố</label>
+                        <input type="text" th:field="*{candidate.address.city}" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Đường</label>
+                        <input type="text" th:field="*{candidate.address.street}" class="form-control" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label required">Số nhà</label>
+                        <input type="text" th:field="*{candidate.address.number}" class="form-control" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Mã bưu điện</label>
+                        <input type="text" th:field="*{candidate.address.zipcode}" class="form-control">
+                    </div>
+                </div>
+            </div>
 
-        <!-- Nút đăng ký -->
-        <div class="form-group text-center">
-            <button type="submit" class="btn btn-primary w-50">Đăng ký</button>
-        </div>
-    </form>
-</div>
+            <!-- Thông tin đăng nhập -->
+            <div class="form-section">
+                <h3 class="section-title">Thông tin đăng nhập</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label required">Mật khẩu</label>
+                        <input type="password" th:field="*{password}" class="form-control" 
+                               required minlength="6" 
+                               oninput="validatePassword()">
+                        <div class="error" id="passwordError"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Xác nhận mật khẩu</label>
+                        <input type="password" id="confirmPassword" class="form-control" 
+                               required minlength="6"
+                               oninput="validatePassword()">
+                        <div class="error" id="confirmPasswordError"></div>
+                    </div>
+                </div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Function to validate phone number input
-    function validatePhone(input) {
-        const phonePattern = /^(03|05|07|08|09|01[2|6|8|9])[0-9]{8}$/;
-        const phoneError = document.getElementById("phoneError");
-        if (phonePattern.test(input.value)) {
-            phoneError.classList.add("hidden"); // Hide error message if phone number is valid
-        } else {
-            phoneError.classList.remove("hidden"); // Show error message if phone number is invalid
+            <!-- Nút đăng ký -->
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-register">
+                    <i class="fas fa-user-plus me-2"></i>Đăng ký
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function validatePassword() {
+            const password = document.querySelector('[name="password"]');
+            const confirm = document.getElementById('confirmPassword');
+            const passwordError = document.getElementById('passwordError');
+            const confirmError = document.getElementById('confirmPasswordError');
+            const submitBtn = document.querySelector('button[type="submit"]');
+
+            if (password.value.length < 6) {
+                passwordError.textContent = 'Mật khẩu phải có ít nhất 6 ký tự';
+                submitBtn.disabled = true;
+                return;
+            } else {
+                passwordError.textContent = '';
+            }
+
+            if (password.value !== confirm.value) {
+                confirmError.textContent = 'Mật khẩu không khớp';
+                submitBtn.disabled = true;
+            } else {
+                confirmError.textContent = '';
+                submitBtn.disabled = false;
+            }
         }
-    }
 
-    // Function to validate email input
-    function validateEmail(input) {
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        const emailError = document.getElementById("emailError");
-        if (emailPattern.test(input.value)) {
-            emailError.classList.add("hidden"); // Hide error message if email is valid
-        } else {
-            emailError.classList.remove("hidden"); // Show error message if email is invalid
+        function previewImage(input) {
+            const preview = document.getElementById('avatar-preview');
+            const container = document.getElementById('avatar-preview-container');
+            const defaultAvatar = document.getElementById('default-avatar');
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.classList.remove('d-none');
+                    defaultAvatar.style.display = 'none';
+                    container.classList.remove('empty');
+                }
+                
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.classList.add('d-none');
+                defaultAvatar.style.display = 'block';
+                container.classList.add('empty');
+            }
         }
-    }
-
-    // Function to validate password input
-    function validatePassword(input) {
-        const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-        const passwordError = document.getElementById("passwordError");
-        if (passwordPattern.test(input.value)) {
-            passwordError.classList.add("hidden"); // Hide error message if password is valid
-        } else {
-            passwordError.classList.remove("hidden"); // Show error message if password is invalid
-        }
-    }
-
-    // Function to validate confirm password input
-    function validateConfirmPassword() {
-        const password = document.querySelector('input[th\\:field="*{password}"]').value;
-        const confirmPassword = document.querySelector('input[th\\:field="*{confirmPassword}"]').value;
-        const confirmPasswordError = document.getElementById("confirmPasswordError");
-
-        if (password === confirmPassword) {
-            confirmPasswordError.classList.add("hidden"); // Hide error message if passwords match
-        } else {
-            confirmPasswordError.classList.remove("hidden"); // Show error message if passwords do not match
-        }
-    }
-
-    function validateForm() {
-        const phoneErrorHidden = document.getElementById("phoneError").classList.contains("hidden");
-        const emailErrorHidden = document.getElementById("emailError").classList.contains("hidden");
-        const passwordErrorHidden = document.getElementById("passwordError").classList.contains("hidden");
-        const confirmPasswordErrorHidden = document.getElementById("confirmPasswordError").classList.contains("hidden");
-        return phoneErrorHidden && emailErrorHidden && passwordErrorHidden && confirmPasswordErrorHidden;
-    }
-</script>
+    </script>
 </body>
 </html>

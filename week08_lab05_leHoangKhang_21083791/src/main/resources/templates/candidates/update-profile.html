@@ -15,13 +15,79 @@
             color: red;
             margin-left: 2px;
         }
+        .avatar-upload {
+            position: relative;
+            max-width: 180px;
+            margin: 0 auto;
+        }
+
+        .avatar-preview {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            background: #F8F8F8;
+            margin-bottom: 15px;
+        }
+
+        .avatar-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .avatar-preview.empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #cccccc;
+        }
+
+        .avatar-edit {
+            position: absolute;
+            right: 5px;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .avatar-edit input {
+            display: none;
+        }
+
+        .avatar-edit label {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border-radius: 100%;
+            background: #FFFFFF;
+            border: 1px solid #d2d6de;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            font-weight: normal;
+            transition: all .2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-edit label:hover {
+            background: #f1f1f1;
+            border-color: #d6d6d6;
+        }
     </style>
 </head>
 <body>
 <div th:replace="fragments/header :: header"></div>
 <div class="container mt-5">
     <h2 class="mb-4 text-center">Cập nhật Profile</h2>
-    <form th:action="@{/candidates/updateprofile}" th:object="${candidate}" method="post" id="updateProfileForm" novalidate>
+    <form th:action="@{/candidates/updateprofile}" th:object="${candidate}" method="post" id="updateProfileForm" enctype="multipart/form-data" novalidate>
+        <!-- Thêm input hidden để giữ avatarUrl -->
+        <input type="hidden" th:field="*{avatarUrl}" />
+
         <!-- Thông Tin Cá Nhân -->
         <div class="card mb-4">
             <div class="card-header">
@@ -29,6 +95,27 @@
             </div>
             <div class="card-body">
                 <div class="row mb-3">
+                    <div class="col-md-12 text-center mb-4">
+                        <label class="form-label d-block">Ảnh đại diện</label>
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="avatarUpload" name="avatarFile" 
+                                       accept="image/png, image/jpeg, image/jpg"
+                                       onchange="previewImage(this);" />
+                                <label for="avatarUpload">
+                                    <i class="fas fa-camera"></i>
+                                </label>
+                            </div>
+                            <div class="avatar-preview" id="avatar-preview-container">
+                                <img th:if="${candidate.avatarUrl}" 
+                                     th:src="${candidate.avatarUrl}"
+                                     id="avatar-preview">
+                                <div th:if="${candidate.avatarUrl == null}" class="empty">
+                                    <i class="fas fa-user" id="default-avatar"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <label for="fullName" class="form-label required">Họ và Tên</label>
                         <input type="text" class="form-control" id="fullName" th:field="*{fullName}" required>
@@ -280,7 +367,9 @@
             </div>
         </div>
     </div>
+
 </div>
+<div th:replace="fragments/footer :: footer"></div>
 
 <script>
     $(document).ready(function () {
@@ -449,6 +538,33 @@
         // Khởi tạo ban đầu
         validateForm();
     });
+
+    function previewImage(input) {
+        const preview = document.getElementById('avatar-preview');
+        const container = document.getElementById('avatar-preview-container');
+        const defaultAvatar = document.getElementById('default-avatar');
+        
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                if (!preview) {
+                    // Nếu chưa có img element, tạo mới
+                    const img = document.createElement('img');
+                    img.id = 'avatar-preview';
+                    container.innerHTML = '';
+                    container.appendChild(img);
+                    img.src = e.target.result;
+                } else {
+                    preview.src = e.target.result;
+                }
+                container.classList.remove('empty');
+                if (defaultAvatar) {
+                    defaultAvatar.classList.add('d-none');
+                }
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>
 </body>
 </html>

@@ -1,12 +1,20 @@
 package vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models;
 
-import jakarta.persistence.*;
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Entity
 @Getter
@@ -27,17 +35,20 @@ public class Company {
     private String phone;
     @Column(columnDefinition = "VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
     private String webUrl;
+    @Column(name = "logo_url")
+    private String logoUrl;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;
     @OneToMany(mappedBy = "company")
     private List<Job> jobs;
 
-    public Company(String name, String about, String email, String phone, String webUrl) {
+    public Company(String name, String about, String email, String phone, String webUrl, String logoUrl) {
         this.name = name;
         this.about = about;
         this.email = email;
         this.phone = phone;
         this.webUrl = webUrl;
+        this.logoUrl = logoUrl;
     }
 }

@@ -1,0 +1,72 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chu</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div style="text-align: center; background-color: coral; padding:  10px 0">
+    <p style="text-align: center; font-weight: bold; font-size: 30px">
+        21083791 - LE HOANG KHANG
+    </p>
+
+
+</div>
+
+<div style="text-align: center; background-color: aqua; padding:  10px 0; width: 10%; margin: 10px 10px; border-radius: 10px">
+    <a style="color: blue" th:href="@{/books/add}">Them sach</a>
+</div>
+
+<table style="width: 100%">
+    <thead>
+    <tr>
+        <th>
+            ISBN
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Publisher
+        </th>
+        <th>
+            Page Number
+        </th>
+        <th>
+            Title
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${not #lists.isEmpty(books)}" th:each="book : ${books}">
+        <td th:text="${book.getIsbn()}"/>
+        <td th:text="${book.getAuthor()}"/>
+        <td th:text="${book.published}"/>
+        <td th:text="${book.pages}"/>
+        <td th:text="${book.title}"/>
+    </tr>
+    <tr th:if="${#lists.isEmpty(books)}">
+        <td colspan="5">
+            No books found
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

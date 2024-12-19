@@ -20,6 +20,7 @@ public class CompanyDTO {
     private String email;
     private String phone;
     private String webUrl;
+    private String logoUrl;
     private AddressDTO address;
     private List<JobDTO> jobs;
 }

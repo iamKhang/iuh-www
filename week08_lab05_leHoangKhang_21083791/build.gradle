@@ -42,7 +42,7 @@ dependencies {
     implementation 'org.apache.mahout:mahout-math:0.13.0'
     // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
     implementation 'org.apache.commons:commons-math3:3.6.1'
-
+implementation 'nz.ac.waikato.cms.weka:weka-stable:3.8.6'
 
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
     annotationProcessor 'org.projectlombok:lombok'

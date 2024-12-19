@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Nhà tuyển dụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .dashboard-header {
+            background: linear-gradient(135deg, #0061f2 0%, #6900f2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .welcome-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+            transition: transform 0.2s;
+            margin-top: -3rem;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-card-inner {
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .stats-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        .bg-primary-soft { background: rgba(0, 97, 242, 0.1); color: #0061f2; }
+        .bg-success-soft { background: rgba(10, 187, 135, 0.1); color: #00ac69; }
+        .bg-warning-soft { background: rgba(244, 161, 0, 0.1); color: #f4a100; }
+
+        .stats-info h3 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #363d47;
+        }
+
+        .stats-info p {
+            margin: 0;
+            color: #69707a;
+            font-size: 0.9rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        .card-header {
+            background: transparent;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e3e6ec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #363d47;
+            margin: 0;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .application-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1.25rem;
+            border-bottom: 1px solid #e3e6ec;
+            transition: background-color 0.2s;
+        }
+
+        .application-item:last-child {
+            border-bottom: none;
+        }
+
+        .application-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .candidate-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .candidate-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .candidate-avatar span {
+            font-weight: 600;
+            color: #495057;
+            font-size: 1.1rem;
+        }
+
+        .job-status {
+            padding: 0.4rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            display: inline-block;
+        }
+
+        .status-active {
+            background: rgba(10, 187, 135, 0.1);
+            color: #00ac69;
+        }
+
+        .status-expiring {
+            background: rgba(244, 161, 0, 0.1);
+            color: #f4a100;
+        }
+
+        .action-button {
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary-soft {
+            background: rgba(0, 97, 242, 0.1);
+            color: #0061f2;
+        }
+
+        .btn-primary-soft:hover {
+            background: #0061f2;
+            color: white;
+        }
+
+        .application-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .application-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .application-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .application-actions {
+            flex-shrink: 0;
+            text-align: right;
+            min-width: 120px;
+        }
+
+        .btn-outline-primary {
+            white-space: nowrap;
+        }
+
+        .card-header h5 i {
+            margin-right: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .text-muted i {
+            margin-right: 0.5rem;
+        }
+
+        .btn i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div th:replace="fragments/header :: header"></div>
+
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+        <div class="container">
+            <div class="welcome-text" th:text="'Xin chào, ' + ${company.name}">Xin chào, Company Name</div>
+            <div class="company-info">Dashboard Quản lý Tuyển dụng</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Stats Cards -->
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="stats-card">
+                    <div class="stats-card-inner">
+                        <div class="stats-icon bg-primary-soft">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="stats-info">
+                            <h3 th:text="${activeJobs}">0</h3>
+                            <p>Việc làm đang tuyển</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="stats-card">
+                    <div class="stats-card-inner">
+                        <div class="stats-icon bg-success-soft">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stats-info">
+                            <h3 th:text="${totalApplications}">0</h3>
+                            <p>Tổng số ứng viên</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="stats-card">
+                    <div class="stats-card-inner">
+                        <div class="stats-icon bg-warning-soft">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stats-info">
+                            <h3 th:text="${expiringJobs}">0</h3>
+                            <p>Tin tuyển dụng sắp hết hạn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Recent Applications -->
+            <div class="col-xl-8 mb-4">
+                <div class="content-card">
+                    <div class="card-header mx-3 my-2">
+                        <h5><i class="fas fa-user-clock me-2"></i>Ứng viên mới nhất</h5>
+                        <a href="/employer/candidates" class="action-button btn-primary-soft">
+                            Xem tất cả
+                        </a>
+                    </div>
+                    <div class="card-body p-0">
+                        <div th:if="${#lists.isEmpty(recentApplications)}" class="p-4 text-center text-muted">
+                            <i class="fas fa-inbox fa-2x mb-3"></i>
+                            <p>Chưa có ứng viên nào ứng tuyển</p>
+                        </div>
+                        <div th:each="appItem : ${recentApplications}" class="application-item">
+                            <div class="candidate-avatar">
+                                <img th:if="${appItem.candidate.avatarUrl != null}" 
+                                     th:src="@{${appItem.candidate.avatarUrl}}"
+                                     class="img-fluid rounded-circle"
+                                     alt="Avatar">
+                                <span th:unless="${appItem.candidate.avatarUrl != null}" 
+                                      th:text="${#strings.substring(appItem.candidate.fullName,0,1)}">A</span>
+                            </div>
+                            <div class="application-content">
+                                <div class="application-info">
+                                    <div class="application-details">
+                                        <h6 class="mb-1" th:text="${appItem.candidate.fullName}">
+                                            Tên ứng viên
+                                        </h6>
+                                        <div class="text-muted small">
+                                            <span th:text="${appItem.job.name}">Tên công việc</span>
+                                            <span class="mx-2">•</span>
+                                            <span th:text="${appItem.candidate.email}">Email</span>
+                                        </div>
+                                    </div>
+                                    <div class="application-actions">
+                                        <div class="text-muted small mb-2" 
+                                             th:text="${#temporals.format(appItem.applyDate, 'dd/MM/yyyy')}">
+                                            01/01/2024
+                                        </div>
+                                        <a th:href="@{'/employer/candidates/' + ${appItem.id}}" 
+                                           class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye me-1"></i>Xem hồ sơ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Jobs -->
+            <div class="col-xl-4 mb-4">
+                <div class="content-card">
+                    <div class="card-header mx-3 my-2">
+                        <h5><i class="fas fa-briefcase me-2"></i>Việc làm đang tuyển</h5>
+                        <a href="/employer/jobs" class="action-button btn-primary-soft">
+                            Xem tất cả
+                        </a>
+                    </div>
+                    <div class="card-body p-0">
+                        <div th:each="job : ${activeJobsList}" class="application-item">
+                            <div class="application-content">
+                                <div class="application-info">
+                                    <div class="application-details">
+                                        <h6 class="mb-1" th:text="${job.name}">Tên công việc</h6>
+                                        <div class="text-muted small">
+                                            <i class="fas fa-users me-1"></i>
+                                            <span th:text="${job.numberOfApplicants + ' ứng viên'}">0 ứng viên</span>
+                                        </div>
+                                    </div>
+                                    <div class="application-actions">
+                                        <span th:if="${job.deadline.isAfter(T(java.time.LocalDate).now().plusDays(7))}" 
+                                              class="job-status status-active">Đang tuyển</span>
+                                        <span th:unless="${job.deadline.isAfter(T(java.time.LocalDate).now().plusDays(7))}" 
+                                              class="job-status status-expiring">Sắp hết hạn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

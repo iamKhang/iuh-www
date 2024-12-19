@@ -6,13 +6,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.JobType;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.SkillType;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.CandidateRepository;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.CandidateSkillRepository;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.JobRepository;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.JobSkillRepository;
 
 import java.math.BigInteger;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -29,6 +33,9 @@ public class StatisticsController {
 
     @Autowired
     private CandidateRepository candidateRepository;
+
+    @Autowired
+    private JobRepository jobRepository; // Thêm dòng này
 
     @GetMapping
     public String showStatistics(Model model) {
@@ -49,6 +56,7 @@ public class StatisticsController {
         System.out.println(topSkills);
         model.addAttribute("topSkills", topSkills);
 
+        // 2. Thống Kê Theo Độ Tuổi Ứng Viên
         List<Object[]> results = candidateRepository.countCandidatesByAgeGroup();
 
         // Xử lý kết quả trả về thành một Map với các nhóm tuổi và số lượng ứng viên
@@ -61,7 +69,7 @@ public class StatisticsController {
 
         model.addAttribute("ageData", ageData);
 
-         // Lấy thống kê giới tính
+        // 3. Thống Kê Giới Tính Ứng Viên
         List<Object[]> genderStatistics = candidateRepository.countCandidatesByGender();
 
         // Chuyển đổi dữ liệu để hiển thị
@@ -76,7 +84,36 @@ public class StatisticsController {
 
         model.addAttribute("genderCounts", genderCounts);
 
+        // 4. Thống Kê Dựa Trên JobType - Top 14
+        List<Object[]> jobTypeResults = jobRepository.countTopJobTypes();
 
+        // Giới hạn top 14
+        List<Object[]> topJobTypeResults = jobTypeResults.stream().limit(14).collect(Collectors.toList());
+
+        // Xử lý kết quả trả về thành một Map với JobType và số lượng công việc
+        Map<String, Long> jobTypeData = new HashMap<>();
+        for (Object[] result : topJobTypeResults) {
+            JobType jobType = (JobType) result[0];
+            Long count = ((Number) result[1]).longValue();
+            jobTypeData.put(jobType.name(), count);
+        }
+
+        model.addAttribute("jobTypeData", jobTypeData);
+
+        // Thêm thống kê xu hướng tuyển dụng theo thời gian
+        List<Object[]> jobPostings = jobRepository.findAll().stream()
+            .sorted((j1, j2) -> j1.getStartDate().compareTo(j2.getStartDate()))
+            .collect(Collectors.groupingBy(
+                job -> job.getStartDate().format(DateTimeFormatter.ofPattern("MM/yyyy")),
+                LinkedHashMap::new,
+                Collectors.counting()
+            ))
+            .entrySet().stream()
+            .map(entry -> new Object[]{entry.getKey(), entry.getValue()})
+            .collect(Collectors.toList());
+
+        model.addAttribute("jobPostingTrends", jobPostings);
+        
         return "statistic";
     }
 }

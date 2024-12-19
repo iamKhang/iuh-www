@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm đơn hàng</title>
+</head>
+<body>
+    <h1>SoMay-HotenSV-MSSV</h1>
+    
+    <form th:action="@{/don-hang/save}" th:object="${donHang}" method="post">
+        <div>
+            <label>Tên khách hàng:</label>
+            <input type="text" th:field="*{tenKhachHang}"/>
+            <span th:if="${#fields.hasErrors('tenKhachHang')}" 
+                  th:errors="*{tenKhachHang}" class="error">
+            </span>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" th:field="*{email}"/>
+            <span th:if="${#fields.hasErrors('email')}" 
+                  th:errors="*{email}" class="error">
+            </span>
+        </div>
+        <div>
+            <label>Ngày đặt hàng:</label>
+            <input type="datetime-local" th:field="*{ngayDatHang}"/>
+            <span th:if="${#fields.hasErrors('ngayDatHang')}" 
+                  th:errors="*{ngayDatHang}" class="error">
+            </span>
+        </div>
+        <div>
+            <label>Tên SP:</label>
+            <input type="text" th:field="*{tenSp}"/>
+            <span th:if="${#fields.hasErrors('tenSp')}" 
+                  th:errors="*{tenSp}" class="error">
+            </span>
+        </div>
+        <div>
+            <label>Cửa hàng:</label>
+            <select th:field="*{cuaHang}">
+                <option value="">-- Chọn cửa hàng --</option>
+                <option th:each="ch : ${dsCuaHang}"
+                        th:value="${ch.maCuaHang}"
+                        th:text="${ch.ten}">
+                </option>
+            </select>
+        </div>
+        <button type="submit">Lưu</button>
+    </form>
+</body>
+</html> 

@@ -32,6 +32,8 @@ public interface CandidateRepository extends JpaRepository<Candidate, Long> {
     @Query("SELECT c.gender, COUNT(c) FROM Candidate c GROUP BY c.gender")
     List<Object[]> countCandidatesByGender();
 
+    Candidate findByEmail(String email);
+
 
 
 

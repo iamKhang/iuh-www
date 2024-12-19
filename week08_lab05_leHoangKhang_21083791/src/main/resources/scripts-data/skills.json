@@ -238,6 +238,186 @@
     "skillName": "Phân Tích Kinh Doanh",
     "skillDescription": "Kỹ năng phân tích nhu cầu kinh doanh và đề xuất giải pháp công nghệ phù hợp.",
     "type": "TECHNICAL_SKILL"
+  },
+  {
+    "id": 41,
+    "skillName": "Giao Tiếp Hiệu Quả",
+    "skillDescription": "Kỹ năng giao tiếp trong môi trường làm việc nhóm và với khách hàng.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 42,
+    "skillName": "Lập Kế Hoạch",
+    "skillDescription": "Khả năng lập kế hoạch và quản lý công việc hiệu quả.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 43,
+    "skillName": "Tư Duy Logic",
+    "skillDescription": "Kỹ năng tư duy logic để giải quyết vấn đề.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 44,
+    "skillName": "Thuyết Trình",
+    "skillDescription": "Kỹ năng trình bày ý tưởng và nội dung một cách rõ ràng, thuyết phục.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 45,
+    "skillName": "Quản Lý Thời Gian",
+    "skillDescription": "Khả năng phân bổ thời gian hợp lý để đạt được mục tiêu.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 46,
+    "skillName": "Làm Việc Nhóm",
+    "skillDescription": "Kỹ năng phối hợp và làm việc hiệu quả với đội nhóm.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 47,
+    "skillName": "Giải Quyết Xung Đột",
+    "skillDescription": "Khả năng xử lý các tình huống mâu thuẫn và bất đồng ý kiến.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 48,
+    "skillName": "Phân Tích Vấn Đề",
+    "skillDescription": "Kỹ năng xác định nguyên nhân và đưa ra giải pháp phù hợp.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 49,
+    "skillName": "Tổ Chức Công Việc",
+    "skillDescription": "Khả năng tổ chức và sắp xếp công việc một cách khoa học.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 50,
+    "skillName": "Ra Quyết Định",
+    "skillDescription": "Kỹ năng đưa ra các quyết định chính xác và kịp thời.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 51,
+    "skillName": "Kỹ Năng Lãnh Đạo",
+    "skillDescription": "Khả năng dẫn dắt và tạo động lực cho đội nhóm.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 52,
+    "skillName": "Kỹ Năng Thích Ứng",
+    "skillDescription": "Khả năng thích nghi với các thay đổi trong môi trường làm việc.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 53,
+    "skillName": "Tư Duy Sáng Tạo",
+    "skillDescription": "Khả năng đưa ra các ý tưởng mới và giải pháp sáng tạo.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 54,
+    "skillName": "Quản Lý Áp Lực",
+    "skillDescription": "Kỹ năng làm việc hiệu quả dưới áp lực cao.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 55,
+    "skillName": "Kỹ Năng Đàm Phán",
+    "skillDescription": "Khả năng thương lượng và đạt được thỏa thuận có lợi.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 56,
+    "skillName": "Đọc Hiểu Dữ Liệu",
+    "skillDescription": "Khả năng phân tích và hiểu các dữ liệu phức tạp.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 57,
+    "skillName": "Viết Báo Cáo",
+    "skillDescription": "Kỹ năng viết và trình bày báo cáo một cách chuyên nghiệp.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 58,
+    "skillName": "Kỹ Năng Học Tập",
+    "skillDescription": "Khả năng học hỏi và cải thiện kỹ năng cá nhân.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 59,
+    "skillName": "Tư Duy Phân Tích",
+    "skillDescription": "Khả năng phân tích các vấn đề phức tạp một cách rõ ràng.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 60,
+    "skillName": "Lắng Nghe Chủ Động",
+    "skillDescription": "Kỹ năng lắng nghe để hiểu và đáp ứng nhu cầu của người khác.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 61,
+    "skillName": "Sử Dụng Công Nghệ",
+    "skillDescription": "Khả năng sử dụng các công cụ và công nghệ hỗ trợ công việc.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 62,
+    "skillName": "Kỹ Năng Quan Sát",
+    "skillDescription": "Khả năng quan sát và nhận diện các chi tiết quan trọng.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 63,
+    "skillName": "Giám Sát Công Việc",
+    "skillDescription": "Kỹ năng giám sát và đánh giá hiệu quả công việc.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 64,
+    "skillName": "Tối Ưu Quy Trình",
+    "skillDescription": "Khả năng cải tiến và tối ưu các quy trình làm việc.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 65,
+    "skillName": "Quản Lý Rủi Ro",
+    "skillDescription": "Khả năng nhận diện và quản lý các rủi ro tiềm ẩn.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 66,
+    "skillName": "Tạo Động Lực",
+    "skillDescription": "Kỹ năng tạo động lực cho bản thân và đồng nghiệp.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 67,
+    "skillName": "Quản Lý Nguồn Lực",
+    "skillDescription": "Khả năng phân bổ nguồn lực một cách hiệu quả.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 68,
+    "skillName": "Giao Tiếp Liên Văn Hóa",
+    "skillDescription": "Kỹ năng giao tiếp và làm việc trong môi trường đa văn hóa.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 69,
+    "skillName": "Định Hướng Chiến Lược",
+    "skillDescription": "Khả năng định hướng và phát triển chiến lược dài hạn.",
+    "type": "UNSPECIFIC"
+  },
+  {
+    "id": 70,
+    "skillName": "Quản Lý Chất Lượng",
+    "skillDescription": "Kỹ năng giám sát và đảm bảo chất lượng công việc.",
+    "type": "UNSPECIFIC"
   }
 ]
 

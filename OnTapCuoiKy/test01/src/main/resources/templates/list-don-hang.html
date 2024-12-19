@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách đơn hàng</title>
+</head>
+<body>
+    <h1>SoMay-HotenSV-MSSV</h1>
+    
+    <!-- Hiển thị thông báo lỗi nếu có -->
+    <div th:if="${errorMessage}" style="color: red;">
+        <p th:text="${errorMessage}"></p>
+    </div>
+    
+    <div>
+        <form th:action="@{/don-hang/search}" method="get">
+            <input type="text" name="keyword" placeholder="Nhập mã đơn hàng hoặc tên cửa hàng..."/>
+            <button type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+    
+    <a th:href="@{/don-hang/add}">Thêm mới</a>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Tên khách hàng</th>
+                <th>Email</th>
+                <th>Ngày đặt hàng</th>
+                <th>Tên SP</th>
+                <th>Cửa hàng</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="donHang : ${donHangs}">
+                <td th:text="${donHang.maDonHang}"></td>
+                <td th:text="${donHang.tenKhachHang}"></td>
+                <td th:text="${donHang.email}"></td>
+                <td th:text="${#temporals.format(donHang.ngayDatHang, 'dd/MM/yyyy HH:mm:ss')}"></td>
+                <td th:text="${donHang.tenSp}"></td>
+                <td th:text="${donHang.cuaHang != null ? donHang.cuaHang.ten : ''}"></td>
+                <td>
+                    <a th:if="${donHang.trangThai == 0}" 
+                       th:href="@{/don-hang/delete/{id}(id=${donHang.id})}">Xóa</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 

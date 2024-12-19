@@ -24,7 +24,8 @@
     "negotiable": false,
     "salaryFrom": 8000000,
     "salaryTo": 15000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "BACKEND"
   },
   {
     "id": 2,
@@ -51,7 +52,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 3,
@@ -78,7 +80,8 @@
     "negotiable": false,
     "salaryFrom": 12000000,
     "salaryTo": 20000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "CYBER_SECURITY"
   },
   {
     "id": 4,
@@ -105,7 +108,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "CUSTOMER_SUPPORT"
   },
   {
     "id": 5,
@@ -132,7 +136,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "PROJECT_MANAGER"
   },
   {
     "id": 6,
@@ -159,7 +164,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "FRONTEND"
   },
   {
     "id": 7,
@@ -186,7 +192,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 30000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "DEVOPS"
   },
   {
     "id": 8,
@@ -213,7 +220,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "NETWORK"
   },
   {
     "id": 9,
@@ -240,7 +248,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "BUSINESS_ANALYST"
   },
   {
     "id": 10,
@@ -267,7 +276,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "TESTING"
   },
   {
     "id": 11,
@@ -294,7 +304,8 @@
     "negotiable": false,
     "salaryFrom": 9000000,
     "salaryTo": 18000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "MARKETING"
   },
   {
     "id": 12,
@@ -321,7 +332,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "MOBILE"
   },
   {
     "id": 13,
@@ -348,7 +360,8 @@
     "negotiable": false,
     "salaryFrom": 14000000,
     "salaryTo": 22000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "PRODUCT_MANAGER"
   },
   {
     "id": 14,
@@ -375,7 +388,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "CUSTOMER_SUPPORT"
   },
   {
     "id": 15,
@@ -402,7 +416,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "BACKEND"
   },
   {
     "id": 16,
@@ -429,7 +444,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "UI_UX"
   },
   {
     "id": 17,
@@ -456,7 +472,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "DATABASE"
   },
   {
     "id": 18,
@@ -483,7 +500,8 @@
     "negotiable": false,
     "salaryFrom": 14000000,
     "salaryTo": 22000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "BUSINESS_ANALYST"
   },
   {
     "id": 19,
@@ -510,7 +528,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "PRODUCT"
   },
   {
     "id": 20,
@@ -537,7 +556,8 @@
     "negotiable": false,
     "salaryFrom": 10000000,
     "salaryTo": 18000000,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "GRAPHIC"
   },
   {
     "id": 21,
@@ -564,7 +584,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "BACKEND"
   },
   {
     "id": 22,
@@ -591,7 +612,8 @@
     "negotiable": false,
     "salaryFrom": 20000000,
     "salaryTo": 30000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
   },
   {
     "id": 23,
@@ -618,7 +640,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "NETWORK"
   },
   {
     "id": 24,
@@ -645,7 +668,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "TECHNICAL_SUPPORT"
   },
   {
     "id": 25,
@@ -672,7 +696,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "DEVOPS"
   },
   {
     "id": 26,
@@ -699,7 +724,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 27,
@@ -726,7 +752,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "TESTING"
   },
   {
     "id": 28,
@@ -753,7 +780,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "TECHNICAL_SUPPORT"
   },
   {
     "id": 29,
@@ -780,7 +808,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "MANAGER"
   },
   {
     "id": 30,
@@ -807,7 +836,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "MANAGER"
   },
   {
     "id": 31,
@@ -834,7 +864,8 @@
     "negotiable": false,
     "salaryFrom": 14000000,
     "salaryTo": 22000000,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "FRONTEND"
   },
   {
     "id": 32,
@@ -861,7 +892,8 @@
     "negotiable": false,
     "salaryFrom": 13000000,
     "salaryTo": 21000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "LEADER"
   },
   {
     "id": 33,
@@ -888,7 +920,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
   },
   {
     "id": 34,
@@ -915,7 +948,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "PROJECT_MANAGER"
   },
   {
     "id": 35,
@@ -942,7 +976,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "DEVOPS"
   },
   {
     "id": 36,
@@ -969,7 +1004,8 @@
     "negotiable": false,
     "salaryFrom": 20000000,
     "salaryTo": 30000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
   },
   {
     "id": 37,
@@ -996,7 +1032,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "HR"
   },
   {
     "id": 38,
@@ -1023,7 +1060,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "FULLSTACK"
   },
   {
     "id": 39,
@@ -1050,7 +1088,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 40,
@@ -1077,7 +1116,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "MANAGER"
   },
   {
     "id": 41,
@@ -1110,7 +1150,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
   },
   {
     "id": 42,
@@ -1143,7 +1184,8 @@
     "negotiable": false,
     "salaryFrom": 10000000,
     "salaryTo": 18000000,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "GRAPHIC"
   },
   {
     "id": 43,
@@ -1182,7 +1224,8 @@
     "negotiable": false,
     "salaryFrom": 20000000,
     "salaryTo": 30000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
   },
   {
     "id": 44,
@@ -1221,7 +1264,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "HR"
   },
   {
     "id": 45,
@@ -1254,7 +1298,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "FULLSTACK"
   },
   {
     "id": 46,
@@ -1293,7 +1338,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 47,
@@ -1326,7 +1372,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "MANAGER"
   },
   {
     "id": 48,
@@ -1377,7 +1424,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "MANAGER"
   },
   {
     "id": 49,
@@ -1400,7 +1448,7 @@
       {
         "id": 113,
         "skillLevel": "INTERMEDIATE",
-        "moreInfo": "Khả năng làm việc dưới áp lực và đạt được mục tiêu.",
+        "moreInfo": "Kỹ năng làm việc dưới áp lực và đạt được mục tiêu.",
         "skill_id": 5
       }
     ],
@@ -1410,7 +1458,8 @@
     "negotiable": false,
     "salaryFrom": 13000000,
     "salaryTo": 21000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "LEADER"
   },
   {
     "id": 50,
@@ -1443,7 +1492,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
   },
   {
     "id": 51,
@@ -1476,7 +1526,8 @@
     "negotiable": false,
     "salaryFrom": 13000000,
     "salaryTo": 21000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "LEADER"
   },
   {
     "id": 52,
@@ -1515,7 +1566,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "PROJECT_MANAGER"
   },
   {
     "id": 53,
@@ -1548,7 +1600,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "DEVOPS"
   },
   {
     "id": 54,
@@ -1587,7 +1640,8 @@
     "negotiable": false,
     "salaryFrom": 17000000,
     "salaryTo": 25000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 55,
@@ -1620,7 +1674,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "TESTING"
   },
   {
     "id": 56,
@@ -1653,7 +1708,8 @@
     "negotiable": false,
     "salaryFrom": 14000000,
     "salaryTo": 22000000,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "FRONTEND"
   },
   {
     "id": 57,
@@ -1686,7 +1742,8 @@
     "negotiable": false,
     "salaryFrom": 13000000,
     "salaryTo": 21000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "LEADER"
   },
   {
     "id": 58,
@@ -1725,7 +1782,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "PROJECT_MANAGER"
   },
   {
     "id": 59,
@@ -1758,7 +1816,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "DEVOPS"
   },
   {
     "id": 60,
@@ -1809,7 +1868,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "DATA_ANALYST"
   },
   {
     "id": 61,
@@ -1848,7 +1908,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "TESTING"
   },
   {
     "id": 62,
@@ -1887,7 +1948,8 @@
     "negotiable": false,
     "salaryFrom": 14000000,
     "salaryTo": 22000000,
-    "requiredExperienceYears": 2
+    "requiredExperienceYears": 2,
+    "type": "FRONTEND"
   },
   {
     "id": 63,
@@ -1920,7 +1982,8 @@
     "negotiable": false,
     "salaryFrom": 13000000,
     "salaryTo": 21000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "LEADER"
   },
   {
     "id": 64,
@@ -1959,7 +2022,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
   },
   {
     "id": 65,
@@ -1998,7 +2062,8 @@
     "negotiable": false,
     "salaryFrom": 16000000,
     "salaryTo": 24000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "PROJECT_MANAGER"
   },
   {
     "id": 66,
@@ -2049,7 +2114,8 @@
     "negotiable": true,
     "salaryFrom": 0,
     "salaryTo": 0,
-    "requiredExperienceYears": 0
+    "requiredExperienceYears": 0,
+    "type": "DEVOPS"
   },
   {
     "id": 67,
@@ -2082,7 +2148,8 @@
     "negotiable": false,
     "salaryFrom": 20000000,
     "salaryTo": 30000000,
-    "requiredExperienceYears": 5
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
   },
   {
     "id": 68,
@@ -2121,7 +2188,8 @@
     "negotiable": false,
     "salaryFrom": 15000000,
     "salaryTo": 23000000,
-    "requiredExperienceYears": 3
+    "requiredExperienceYears": 3,
+    "type": "HR"
   },
   {
     "id": 69,
@@ -2160,7 +2228,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "FULLSTACK"
   },
   {
     "id": 70,
@@ -2211,7 +2280,8 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
   },
   {
     "id": 71,
@@ -2244,7 +2314,1207 @@
     "negotiable": false,
     "salaryFrom": 18000000,
     "salaryTo": 26000000,
-    "requiredExperienceYears": 4
+    "requiredExperienceYears": 4,
+    "type": "ARCHITECT"
+  },
+  {
+    "id": 72,
+    "name": "Lập Trình Viên Frontend",
+    "description": "Phát triển giao diện người dùng cho các ứng dụng web sử dụng React hoặc Angular.",
+    "company": 1,
+    "jobSkills": [
+      {
+        "id": 1001,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React hoặc Angular.",
+        "skill_id": 28
+      },
+      {
+        "id": 1002,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng sử dụng JavaScript và TypeScript.",
+        "skill_id": 6
+      },
+      {
+        "id": 1003,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng thiết kế responsive.",
+        "skill_id": 41
+      },
+      {
+        "id": 1004,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng sử dụng các công cụ thiết kế như Figma.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 3,
+    "type": "FRONTEND"
+  },
+  {
+    "id": 73,
+    "name": "Lập Trình Viên Backend",
+    "description": "Phát triển và duy trì các dịch vụ backend sử dụng Node.js hoặc Python.",
+    "company": 2,
+    "jobSkills": [
+      {
+        "id": 1005,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Node.js hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 1006,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý cơ sở dữ liệu.",
+        "skill_id": 18
+      },
+      {
+        "id": 1007,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 41
+      },
+      {
+        "id": 1008,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": true,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4,
+    "type": "BACKEND"
+  },
+  {
+    "id": 74,
+    "name": "Kỹ Sư DevOps",
+    "description": "Quản lý quy trình phát triển và triển khai phần mềm sử dụng các công cụ DevOps.",
+    "company": 3,
+    "jobSkills": [
+      {
+        "id": 1009,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Docker và Kubernetes.",
+        "skill_id": 32
+      },
+      {
+        "id": 1010,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng tự động hóa với Jenkins.",
+        "skill_id": 34
+      },
+      {
+        "id": 1011,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 41
+      },
+      {
+        "id": 1012,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-10",
+    "active": true,
+    "numberOfApplicants": 15,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 27000000,
+    "requiredExperienceYears": 5,
+    "type": "DEVOPS"
+  },
+  {
+    "id": 75,
+    "name": "Chuyên Viên Kiểm Thử Phần Mềm",
+    "description": "Thực hiện kiểm thử phần mềm để đảm bảo chất lượng và hiệu suất sản phẩm.",
+    "company": 4,
+    "jobSkills": [
+      {
+        "id": 1013,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Selenium và TestNG.",
+        "skill_id": 26
+      },
+      {
+        "id": 1014,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết kịch bản kiểm thử tự động.",
+        "skill_id": 28
+      },
+      {
+        "id": 1015,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 41
+      },
+      {
+        "id": 1016,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-05",
+    "active": true,
+    "numberOfApplicants": 20,
+    "negotiable": true,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 3,
+    "type": "TESTING"
+  },
+  {
+    "id": 76,
+    "name": "Quản Lý Dự Án",
+    "description": "Quản lý và giám sát tiến độ các dự án công nghệ thông tin.",
+    "company": 5,
+    "jobSkills": [
+      {
+        "id": 1017,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với phương pháp Agile và Scrum.",
+        "skill_id": 15
+      },
+      {
+        "id": 1018,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng lãnh đạo và quản lý nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 1019,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 41
+      },
+      {
+        "id": 1020,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng giao tiếp và thuyết trình.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 18,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5,
+    "type": "PROJECT_MANAGER"
+  },
+  {
+    "id": 77,
+    "name": "Chuyên Viên Phân Tích Dữ Liệu",
+    "description": "Phân tích và trực quan hóa dữ liệu để hỗ trợ quyết định kinh doanh.",
+    "company": 6,
+    "jobSkills": [
+      {
+        "id": 1021,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Sử dụng thành thạo Python và các thư viện như Pandas, NumPy.",
+        "skill_id": 4
+      },
+      {
+        "id": 1022,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau.",
+        "skill_id": 41
+      },
+      {
+        "id": 1023,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1024,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 15,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 25000000,
+    "requiredExperienceYears": 4,
+    "type": "DATA_ANALYST"
+  },
+  {
+    "id": 78,
+    "name": "Kỹ Sư Machine Learning",
+    "description": "Phát triển và triển khai các mô hình học máy để phân tích và dự đoán dữ liệu.",
+    "company": 7,
+    "jobSkills": [
+      {
+        "id": 1025,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 1026,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau.",
+        "skill_id": 41
+      },
+      {
+        "id": 1027,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1028,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5,
+    "type": "MACHINE_LEARNING"
+  },
+  {
+    "id": 79,
+    "name": "Chuyên Viên AI",
+    "description": "Phát triển và triển khai các giải pháp trí tuệ nhân tạo cho công ty.",
+    "company": 8,
+    "jobSkills": [
+      {
+        "id": 1029,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các thuật toán AI và ML.",
+        "skill_id": 4
+      },
+      {
+        "id": 1030,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Power BI.",
+        "skill_id": 41
+      },
+      {
+        "id": 1031,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1032,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 21000000,
+    "salaryTo": 31000000,
+    "requiredExperienceYears": 5,
+    "type": "AI"
+  },
+  {
+    "id": 80,
+    "name": "Nhân Viên Cloud Computing",
+    "description": "Thiết kế và quản lý các giải pháp đám mây sử dụng AWS, Azure hoặc Google Cloud.",
+    "company": 9,
+    "jobSkills": [
+      {
+        "id": 1033,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với AWS, Azure hoặc Google Cloud.",
+        "skill_id": 36
+      },
+      {
+        "id": 1034,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý hạ tầng đám mây.",
+        "skill_id": 41
+      },
+      {
+        "id": 1035,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1036,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 22000000,
+    "salaryTo": 32000000,
+    "requiredExperienceYears": 5,
+    "type": "CLOUD"
+  },
+  {
+    "id": 81,
+    "name": "Chuyên Viên Cyber Security",
+    "description": "Bảo vệ hệ thống mạng và dữ liệu của công ty khỏi các mối đe dọa.",
+    "company": 10,
+    "jobSkills": [
+      {
+        "id": 1037,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ bảo mật như Wireshark, Metasploit.",
+        "skill_id": 12
+      },
+      {
+        "id": 1038,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề bảo mật.",
+        "skill_id": 41
+      },
+      {
+        "id": 1039,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1040,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5,
+    "type": "CYBER_SECURITY"
+  },
+  {
+    "id": 82,
+    "name": "Nhân Viên Technical Support",
+    "description": "Cung cấp hỗ trợ kỹ thuật cho khách hàng về sản phẩm công nghệ.",
+    "company": 11,
+    "jobSkills": [
+      {
+        "id": 1041,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với hỗ trợ kỹ thuật và giải quyết vấn đề.",
+        "skill_id": 10
+      },
+      {
+        "id": 1042,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng giao tiếp hiệu quả.",
+        "skill_id": 41
+      },
+      {
+        "id": 1043,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1044,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 3,
+    "type": "TECHNICAL_SUPPORT"
+  },
+  {
+    "id": 83,
+    "name": "Chuyên Viên Marketing",
+    "description": "Phát triển và triển khai các chiến dịch marketing kỹ thuật số.",
+    "company": 12,
+    "jobSkills": [
+      {
+        "id": 1045,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với SEO và SEM.",
+        "skill_id": 33
+      },
+      {
+        "id": 1046,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích dữ liệu marketing.",
+        "skill_id": 41
+      },
+      {
+        "id": 1047,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1048,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4,
+    "type": "MARKETING"
+  },
+  {
+    "id": 84,
+    "name": "Nhân Viên Kiểm Thử Tự Động",
+    "description": "Phát triển và duy trì các kịch bản kiểm thử tự động để đảm bảo chất lượng phần mềm.",
+    "company": 13,
+    "jobSkills": [
+      {
+        "id": 1049,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Selenium và các công cụ kiểm thử tự động khác.",
+        "skill_id": 26
+      },
+      {
+        "id": 1050,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết mã kiểm thử tự động.",
+        "skill_id": 28
+      },
+      {
+        "id": 1051,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 41
+      },
+      {
+        "id": 1052,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 4,
+    "type": "TESTING"
+  },
+  {
+    "id": 85,
+    "name": "Lãnh Đạo Nhóm",
+    "description": "Quản lý và lãnh đạo nhóm làm việc để đạt được mục tiêu dự án.",
+    "company": 14,
+    "jobSkills": [
+      {
+        "id": 1053,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý và lãnh đạo nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 1054,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 41
+      },
+      {
+        "id": 1055,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng giao tiếp và thuyết trình.",
+        "skill_id": 42
+      },
+      {
+        "id": 1056,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-30",
+    "active": true,
+    "numberOfApplicants": 11,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4,
+    "type": "LEADER"
+  },
+  {
+    "id": 86,
+    "name": "Nhân Viên HR",
+    "description": "Quản lý các hoạt động nhân sự trong công ty, bao gồm tuyển dụng và đào tạo.",
+    "company": 15,
+    "jobSkills": [
+      {
+        "id": 1057,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý nhân sự và tuyển dụng.",
+        "skill_id": 21
+      },
+      {
+        "id": 1058,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng đàm phán và giao tiếp.",
+        "skill_id": 41
+      },
+      {
+        "id": 1059,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1060,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4,
+    "type": "HR"
+  },
+  {
+    "id": 87,
+    "name": "Chuyên Viên Phân Tích Data Science",
+    "description": "Phân tích dữ liệu lớn và xây dựng các mô hình dự đoán để hỗ trợ chiến lược kinh doanh.",
+    "company": 16,
+    "jobSkills": [
+      {
+        "id": 1061,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 1062,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau.",
+        "skill_id": 41
+      },
+      {
+        "id": 1063,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1064,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 21000000,
+    "salaryTo": 31000000,
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
+  },
+  {
+    "id": 88,
+    "name": "Kỹ Sư AI",
+    "description": "Phát triển và triển khai các giải pháp trí tuệ nhân tạo cho công ty.",
+    "company": 17,
+    "jobSkills": [
+      {
+        "id": 1065,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các thuật toán AI và ML.",
+        "skill_id": 4
+      },
+      {
+        "id": 1066,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Power BI.",
+        "skill_id": 41
+      },
+      {
+        "id": 1067,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1068,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 21000000,
+    "salaryTo": 31000000,
+    "requiredExperienceYears": 5,
+    "type": "AI"
+  },
+  {
+    "id": 89,
+    "name": "Nhân Viên Cloud Computing",
+    "description": "Thiết kế và quản lý các giải pháp đám mây sử dụng AWS, Azure hoặc Google Cloud.",
+    "company": 18,
+    "jobSkills": [
+      {
+        "id": 1069,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với AWS, Azure hoặc Google Cloud.",
+        "skill_id": 36
+      },
+      {
+        "id": 1070,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý hạ tầng đám mây.",
+        "skill_id": 41
+      },
+      {
+        "id": 1071,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1072,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 22000000,
+    "salaryTo": 32000000,
+    "requiredExperienceYears": 5,
+    "type": "CLOUD"
+  },
+  {
+    "id": 90,
+    "name": "Chuyên Viên Blockchain",
+    "description": "Phát triển và triển khai các ứng dụng blockchain cho công ty.",
+    "company": 19,
+    "jobSkills": [
+      {
+        "id": 1073,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với nền tảng blockchain như Ethereum.",
+        "skill_id": 36
+      },
+      {
+        "id": 1074,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý dữ liệu trên blockchain.",
+        "skill_id": 41
+      },
+      {
+        "id": 1075,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1076,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 19000000,
+    "salaryTo": 29000000,
+    "requiredExperienceYears": 4,
+    "type": "BLOCKCHAIN"
+  },
+  {
+    "id": 91,
+    "name": "Kỹ Sư Cyber Security",
+    "description": "Bảo vệ hệ thống mạng và dữ liệu của công ty khỏi các mối đe dọa.",
+    "company": 20,
+    "jobSkills": [
+      {
+        "id": 1077,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ bảo mật như Wireshark, Metasploit.",
+        "skill_id": 12
+      },
+      {
+        "id": 1078,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề bảo mật.",
+        "skill_id": 41
+      },
+      {
+        "id": 1079,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1080,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5,
+    "type": "CYBER_SECURITY"
+  },
+  {
+    "id": 92,
+    "name": "Nhân Viên Technical Support",
+    "description": "Cung cấp hỗ trợ kỹ thuật cho khách hàng về sản phẩm công nghệ.",
+    "company": 21,
+    "jobSkills": [
+      {
+        "id": 1081,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với hỗ trợ kỹ thuật và giải quyết vấn đề.",
+        "skill_id": 10
+      },
+      {
+        "id": 1082,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng giao tiếp hiệu quả.",
+        "skill_id": 41
+      },
+      {
+        "id": 1083,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1084,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 12,
+    "negotiable": false,
+    "salaryFrom": 14000000,
+    "salaryTo": 22000000,
+    "requiredExperienceYears": 3,
+    "type": "TECHNICAL_SUPPORT"
+  },
+  {
+    "id": 93,
+    "name": "Chuyên Viên Marketing",
+    "description": "Phát triển và triển khai các chiến dịch marketing kỹ thuật số.",
+    "company": 22,
+    "jobSkills": [
+      {
+        "id": 1045,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với SEO và SEM.",
+        "skill_id": 33
+      },
+      {
+        "id": 1046,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích dữ liệu marketing.",
+        "skill_id": 41
+      },
+      {
+        "id": 1047,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1048,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4,
+    "type": "MARKETING"
+  },
+  {
+    "id": 94,
+    "name": "Nhân Viên Kiểm Thử Tự Động",
+    "description": "Phát triển và duy trì các kịch bản kiểm thử tự động để đảm bảo chất lượng phần mềm.",
+    "company": 23,
+    "jobSkills": [
+      {
+        "id": 1049,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với Selenium và các công cụ kiểm thử tự động khác.",
+        "skill_id": 26
+      },
+      {
+        "id": 1050,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng viết mã kiểm thử tự động.",
+        "skill_id": 28
+      },
+      {
+        "id": 1051,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 41
+      },
+      {
+        "id": 1052,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-25",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 15000000,
+    "salaryTo": 23000000,
+    "requiredExperienceYears": 4,
+    "type": "TESTING"
+  },
+  {
+    "id": 95,
+    "name": "Lãnh Đạo Nhóm",
+    "description": "Quản lý và lãnh đạo nhóm làm việc để đạt được mục tiêu dự án.",
+    "company": 24,
+    "jobSkills": [
+      {
+        "id": 1053,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý và lãnh đạo nhóm.",
+        "skill_id": 11
+      },
+      {
+        "id": 1054,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và giải quyết vấn đề.",
+        "skill_id": 41
+      },
+      {
+        "id": 1055,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng giao tiếp và thuyết trình.",
+        "skill_id": 42
+      },
+      {
+        "id": 1056,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-30",
+    "active": true,
+    "numberOfApplicants": 11,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 4,
+    "type": "LEADER"
+  },
+  {
+    "id": 96,
+    "name": "Nhân Viên HR",
+    "description": "Quản lý các hoạt động nhân sự trong công ty, bao gồm tuyển dụng và đào tạo.",
+    "company": 25,
+    "jobSkills": [
+      {
+        "id": 1057,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với quản lý nhân sự và tuyển dụng.",
+        "skill_id": 21
+      },
+      {
+        "id": 1058,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng đàm phán và giao tiếp.",
+        "skill_id": 41
+      },
+      {
+        "id": 1059,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1060,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 17000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4,
+    "type": "HR"
+  },
+  {
+    "id": 97,
+    "name": "Chuyên Viên Phân Tích Data Science",
+    "description": "Phân tích dữ liệu lớn và xây dựng các mô hình dự đoán để hỗ trợ chiến lược kinh doanh.",
+    "company": 26,
+    "jobSkills": [
+      {
+        "id": 1061,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với Hadoop và Spark.",
+        "skill_id": 4
+      },
+      {
+        "id": 1062,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau.",
+        "skill_id": 41
+      },
+      {
+        "id": 1063,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1064,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 9,
+    "negotiable": false,
+    "salaryFrom": 21000000,
+    "salaryTo": 31000000,
+    "requiredExperienceYears": 5,
+    "type": "DATA_SCIENCE"
+  },
+  {
+    "id": 98,
+    "name": "Nhân Viên Phát Triển Fullstack",
+    "description": "Phát triển các ứng dụng web toàn diện từ frontend đến backend.",
+    "company": 27,
+    "jobSkills": [
+      {
+        "id": 1065,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với React và Node.js.",
+        "skill_id": 28
+      },
+      {
+        "id": 1066,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Kỹ năng viết mã sạch và hiệu quả.",
+        "skill_id": 6
+      },
+      {
+        "id": 1067,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý cơ sở dữ liệu và API.",
+        "skill_id": 41
+      },
+      {
+        "id": 1068,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-18",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 18000000,
+    "salaryTo": 26000000,
+    "requiredExperienceYears": 4,
+    "type": "FULLSTACK"
+  },
+  {
+    "id": 99,
+    "name": "Nhân Viên Phân Tích Business Intelligence",
+    "description": "Phân tích dữ liệu kinh doanh và cung cấp các báo cáo hỗ trợ quyết định.",
+    "company": 28,
+    "jobSkills": [
+      {
+        "id": 1069,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các công cụ BI như Power BI hoặc Tableau.",
+        "skill_id": 4
+      },
+      {
+        "id": 1070,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng phân tích và trực quan hóa dữ liệu.",
+        "skill_id": 41
+      },
+      {
+        "id": 1071,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Hiểu biết về các mô hình dữ liệu và cơ sở dữ liệu.",
+        "skill_id": 42
+      },
+      {
+        "id": 1072,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Khả năng làm việc với các bộ phận khác nhau trong công ty.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-15",
+    "active": true,
+    "numberOfApplicants": 10,
+    "negotiable": false,
+    "salaryFrom": 16000000,
+    "salaryTo": 24000000,
+    "requiredExperienceYears": 3,
+    "type": "BUSINESS_ANALYST"
+  },
+  {
+    "id": 100,
+    "name": "Kỹ Sư Machine Learning",
+    "description": "Phát triển và triển khai các mô hình học máy để phân tích và dự đoán dữ liệu.",
+    "company": 29,
+    "jobSkills": [
+      {
+        "id": 1073,
+        "skillLevel": "MASTER",
+        "moreInfo": "Kinh nghiệm với machine learning và deep learning.",
+        "skill_id": 16
+      },
+      {
+        "id": 1074,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Biết sử dụng các công cụ phân tích dữ liệu như R hoặc Python.",
+        "skill_id": 4
+      },
+      {
+        "id": 1075,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Tableau.",
+        "skill_id": 41
+      },
+      {
+        "id": 1076,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      }
+    ],
+    "deadline": "2024-12-22",
+    "active": true,
+    "numberOfApplicants": 7,
+    "negotiable": false,
+    "salaryFrom": 20000000,
+    "salaryTo": 30000000,
+    "requiredExperienceYears": 5,
+    "type": "MACHINE_LEARNING"
+  },
+  {
+    "id": 101,
+    "name": "Chuyên Viên AI",
+    "description": "Phát triển và triển khai các giải pháp trí tuệ nhân tạo cho công ty.",
+    "company": 30,
+    "jobSkills": [
+      {
+        "id": 1077,
+        "skillLevel": "PROFESSIONAL",
+        "moreInfo": "Kinh nghiệm với các thuật toán AI và ML.",
+        "skill_id": 4
+      },
+      {
+        "id": 1078,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng trực quan hóa dữ liệu với Power BI.",
+        "skill_id": 41
+      },
+      {
+        "id": 1079,
+        "skillLevel": "INTERMEDIATE",
+        "moreInfo": "Khả năng làm việc nhóm.",
+        "skill_id": 42
+      },
+      {
+        "id": 1080,
+        "skillLevel": "ADVANCED",
+        "moreInfo": "Kỹ năng quản lý thời gian.",
+        "skill_id": 43
+      }
+    ],
+    "deadline": "2024-12-20",
+    "active": true,
+    "numberOfApplicants": 8,
+    "negotiable": false,
+    "salaryFrom": 21000000,
+    "salaryTo": 31000000,
+    "requiredExperienceYears": 5,
+    "type": "AI"
   }
 ]
-

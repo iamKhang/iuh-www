@@ -1,145 +1,355 @@
 <!DOCTYPE html>
-<html
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:sec="http://www.w3.org/1999/xhtml"
->
-  <head>
-    <title>Thêm Job</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Đăng tin tuyển dụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
-      .btn-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
-      .template {
-        display: none;
-      }
+        .form-section {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            color: #1a237e;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #64b5f6;
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 4px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-add-skill {
+            background: #e3f2fd;
+            color: #1565c0;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add-skill:hover {
+            background: #1565c0;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-remove-skill {
+            color: #e57373;
+            background: none;
+            border: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-remove-skill:hover {
+            background: #ffebee;
+            color: #f44336;
+        }
+
+        .flatpickr-input {
+            background-color: white !important;
+        }
+        .date-input-container {
+            position: relative;
+        }
+        .date-input-container .input-group-text {
+            cursor: pointer;
+            background-color: transparent;
+            border-left: none;
+        }
+        .date-input-container .form-control {
+            border-right: none;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body class="bg-light">
     <div th:replace="fragments/header :: header"></div>
-    <div class="container mt-5">
-      <h2>Thêm Job Mới</h2>
-      <form th:action="@{/jobs/add}" th:object="${job}" method="post">
-        <!-- Thông tin công việc -->
-        <div class="form-group">
-          <label for="name">Tên Công Việc</label>
-          <input
-            type="text"
-            th:field="*{name}"
-            class="form-control"
-            placeholder="Tên công việc"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="description">Mô Tả Công Việc</label>
-          <textarea
-            th:field="*{description}"
-            class="form-control"
-            placeholder="Mô tả công việc"
-            required
-          ></textarea>
-        </div>
 
-        <!-- Kỹ năng công việc -->
-        <h4>Kỹ năng công việc</h4>
-        <div id="jobSkills">
-          <!-- This is the template for each JobSkill entry -->
-          <div class="form-row skill-item template">
-            <div class="form-group col-md-4">
-              <label for="skill">Kỹ năng</label>
-              <select
-                name="jobSkills[__index__].skill.id"
-                class="form-control"
-                disabled
-              >
-                <option
-                  th:each="skill : ${skills}"
-                  th:value="${skill.id}"
-                  th:text="${skill.skillName}"
-                >
-                  Kỹ năng
-                </option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="skillLevel">Cấp độ</label>
-              <select
-                name="jobSkills[__index__].skillLevel"
-                class="form-control"
-                disabled
-              >
-                <option value="BEGINNER">Beginner</option>
-                <option value="INTERMEDIATE">Intermediate</option>
-                <option value="PROFESSIONAL">Professional</option>
-                <option value="ADVANCED">Advanced</option>
-                <option value="MASTER">Master</option>
-              </select>
-            </div>
-            <div class="form-group col-md-3">
-              <label for="moreInfo">Thông tin thêm</label>
-              <input
-                type="text"
-                name="jobSkills[__index__].moreInfo"
-                class="form-control"
-                placeholder="Thông tin thêm"
-                disabled
-              />
-            </div>
-            <div class="form-group col-md-1 d-flex align-items-end">
-              <button
-                type="button"
-                class="btn btn-danger btn-sm"
-                onclick="removeElement(this)"
-              >
-                Xóa
-              </button>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn btn-secondary" onclick="addJobSkill()">
-          Thêm Kỹ Năng
-        </button>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Đăng tin tuyển dụng</h2>
 
-        <!-- Nút lưu -->
-        <div class="btn-center">
-          <button type="submit" class="btn btn-primary">Lưu Công Việc</button>
-        </div>
-      </form>
+        <form th:action="@{/jobs/post}" th:object="${job}" method="post" class="col-md-10 offset-md-1">
+            <!-- Thông tin cơ bản -->
+            <div class="form-section">
+                <h3 class="section-title">Thông tin cơ bản</h3>
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <label class="form-label required">Tiêu đề công việc</label>
+                        <input type="text" th:field="*{name}" class="form-control" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label required">Mô tả công việc</label>
+                        <textarea th:field="*{description}" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Loại công việc</label>
+                        <select th:field="*{type}" class="form-select" required>
+                            <option value="">Chọn loại công việc</option>
+                            <option th:each="type : ${jobTypes}"
+                                    th:value="${type}"
+                                    th:text="${type}">Type</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label required">Số năm kinh nghiệm yêu cầu</label>
+                        <input type="number" th:field="*{requiredExperienceYears}" 
+                               class="form-control" min="0" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thông tin lương -->
+            <div class="form-section">
+                <h3 class="section-title">Thông tin lương</h3>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" 
+                                   th:field="*{negotiable}" id="negotiableCheck"
+                                   onchange="toggleSalaryInputs()">
+                            <label class="form-check-label" for="negotiableCheck">
+                                Lương thỏa thuận
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label salary-label">Lương từ (VNĐ)</label>
+                        <input type="number" th:field="*{salaryFrom}" 
+                               class="form-control salary-input" 
+                               min="0" step="1000000">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label salary-label">Lương đến (VNĐ)</label>
+                        <input type="number" th:field="*{salaryTo}" 
+                               class="form-control salary-input" 
+                               min="0" step="1000000">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kỹ năng yêu cầu -->
+            <div class="form-section">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="section-title mb-0">Kỹ năng yêu cầu</h3>
+                    <button type="button" class="btn-add-skill" onclick="addSkill()">
+                        <i class="fas fa-plus me-2"></i>Thêm kỹ năng
+                    </button>
+                </div>
+                <div id="skillsContainer">
+                    <!-- Skill items will be added here -->
+                </div>
+            </div>
+
+            <!-- Thời hạn -->
+            <div class="form-section">
+                <h3 class="section-title">Thời hạn</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label required">Hạn nộp hồ sơ</label>
+                        <div class="date-input-container">
+                            <div class="input-group">
+                                <input type="text" 
+                                       name="deadlineStr" 
+                                       class="form-control datepicker" 
+                                       placeholder="dd/MM/yyyy"
+                                       required
+                                       autocomplete="off">
+                                <span class="input-group-text">
+                                    <i class="fas fa-calendar"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút đăng tin -->
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Đăng tin
+                </button>
+            </div>
+        </form>
     </div>
 
+    <!-- Template for skill item -->
+    <template id="skillTemplate">
+        <div class="skill-item">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <label class="form-label required">Kỹ năng</label>
+                    <select name="jobSkills[INDEX].skill.id" class="form-select" required>
+                        <option value="">Chọn kỹ năng</option>
+                        <option th:each="skill : ${skills}"
+                                th:value="${skill.id}"
+                                th:text="${skill.skillName}">Skill</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label required">Mức độ</label>
+                    <select name="jobSkills[INDEX].skillLevel" class="form-select" required>
+                        <option value="">Chọn mức độ</option>
+                        <option th:each="level : ${skillLevels}"
+                                th:value="${level}"
+                                th:text="${level}">Level</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Thông tin thêm</label>
+                    <input type="text" name="jobSkills[INDEX].moreInfo" class="form-control">
+                </div>
+                <div class="col-md-1 d-flex align-items-end">
+                    <button type="button" class="btn-remove-skill" onclick="removeSkill(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vn.js"></script>
     <script>
-      let skillIndex = 0;
+        let skillIndex = 0;
 
-      function addJobSkill() {
-        const jobSkills = document.getElementById("jobSkills");
-        const template = document.querySelector("#jobSkills .template");
-        const newSkill = template.cloneNode(true);
-        newSkill.classList.remove("template");
-        newSkill.style.display = ""; // Show the element
+        function addSkill() {
+            const container = document.getElementById('skillsContainer');
+            const template = document.getElementById('skillTemplate');
+            const skillItem = template.content.cloneNode(true);
+            
+            // Replace INDEX placeholder with actual index
+            skillItem.querySelectorAll('[name*="INDEX"]').forEach(element => {
+                element.name = element.name.replace('INDEX', skillIndex);
+            });
+            
+            container.appendChild(skillItem);
+            skillIndex++;
+        }
 
-        // Replace __index__ with the current skill index
-        Array.from(newSkill.querySelectorAll("select, input")).forEach(
-          (input) => {
-            input.name = input.name.replace("__index__", skillIndex);
-            input.disabled = false;
-          }
-        );
+        function removeSkill(button) {
+            button.closest('.skill-item').remove();
+        }
 
-        skillIndex++; // Increment the index for the next skill
-        jobSkills.appendChild(newSkill);
-      }
+        // Add first skill item by default
+        document.addEventListener('DOMContentLoaded', function() {
+            addSkill();
+        });
 
-      function removeElement(button) {
-        const item = button.closest(".form-row");
-        item.remove();
-      }
+        function toggleSalaryInputs() {
+            const negotiableCheck = document.getElementById('negotiableCheck');
+            const salaryInputs = document.querySelectorAll('.salary-input');
+            const salaryLabels = document.querySelectorAll('.salary-label');
+            
+            salaryInputs.forEach(input => {
+                input.disabled = negotiableCheck.checked;
+                if (negotiableCheck.checked) {
+                    input.value = ''; // Xóa giá trị khi disable
+                    input.required = false;
+                } else {
+                    input.required = true;
+                }
+            });
+            
+            salaryLabels.forEach(label => {
+                if (negotiableCheck.checked) {
+                    label.classList.remove('required');
+                } else {
+                    label.classList.add('required');
+                }
+            });
+        }
+
+        // Kiểm tra khi form submit
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const negotiableCheck = document.getElementById('negotiableCheck');
+            const salaryFrom = document.querySelector('[name="salaryFrom"]');
+            const salaryTo = document.querySelector('[name="salaryTo"]');
+            
+            if (!negotiableCheck.checked) {
+                // Validate mức lương khi không thỏa thuận
+                if (!salaryFrom.value || !salaryTo.value || 
+                    parseInt(salaryFrom.value) <= 0 || 
+                    parseInt(salaryTo.value) <= 0 || 
+                    parseInt(salaryFrom.value) > parseInt(salaryTo.value)) {
+                    e.preventDefault();
+                    alert('Vui lòng nhập mức lương hợp lệ');
+                }
+            }
+        });
+
+        // Gọi hàm khi trang load để set trạng thái ban đầu
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleSalaryInputs();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr(".datepicker", {
+                locale: "vn",
+                dateFormat: "d/m/Y",
+                minDate: "today",
+                disableMobile: true,
+                allowInput: true,
+                onChange: function(selectedDates, dateStr, instance) {
+                    // Validate date
+                    if (selectedDates[0]) {
+                        const selected = selectedDates[0];
+                        const today = new Date();
+                        if (selected < today) {
+                            instance.element.value = '';
+                            alert('Vui lòng chọn ngày trong tương lai');
+                        }
+                    }
+                }
+            });
+
+            // Mở datepicker khi click vào icon
+            document.querySelector('.input-group-text').addEventListener('click', function() {
+                this.previousElementSibling.focus();
+            });
+        });
+
+        // Thêm validation cho form submit
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const deadlineInput = document.querySelector('input[name="deadlineStr"]');
+            const deadlineValue = deadlineInput.value;
+            
+            if (!deadlineValue) {
+                e.preventDefault();
+                alert('Vui lòng chọn hạn nộp hồ sơ');
+                return;
+            }
+
+            const [day, month, year] = deadlineValue.split('/');
+            const deadline = new Date(year, month - 1, day);
+            const today = new Date();
+            
+            if (deadline < today) {
+                e.preventDefault();
+                alert('Hạn nộp hồ sơ phải là ngày trong tương lai');
+                return;
+            }
+        });
     </script>
-  </body>
+</body>
 </html>

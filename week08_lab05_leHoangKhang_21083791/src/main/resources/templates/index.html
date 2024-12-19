@@ -3,53 +3,349 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Application Dashboard</title>
+    <title>Job Portal Dashboard</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #3498db;
+        }
+
+        .stats-card {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .stats-number {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .stats-label {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .action-button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+
+        .job-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.3;
+            max-height: 2.6rem;
+        }
+
+        .company-name {
+            font-size: 0.9rem;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .company-logo {
+            width: 64px;
+            height: 64px;
+            min-width: 64px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .job-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: auto;
+        }
+
+        .job-meta-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-meta i {
+            width: 20px;
+            color: #888;
+            margin-right: 8px;
+        }
+
+        .job-meta-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .salary-tag {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .deadline-tag {
+            background-color: #fff3e0;
+            color: #ef6c00;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .section-header {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #1a237e, #0d47a1);
+        }
+    </style>
   </head>
   <body>
     <div th:replace="fragments/header :: header"></div>
-    <div class="container mt-5">
-      <h2 class="text-center">Welcome to the Application Dashboard</h2>
-      <div class="row mt-4">
-        <div class="col-md-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Candidates</h5>
-              <p class="card-text">View and manage candidates in the system.</p>
-              <a href="/candidates" class="btn btn-primary">View Candidates</a>
-              <a href="/candidates/add" class="btn btn-success"
-                >Add Candidate</a
-              >
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Welcome to Job Portal</h1>
+            <p class="lead mb-4">Kết nối ứng viên tài năng với cơ hội nghề nghiệp lý tưởng</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="/jobs" class="btn btn-light action-button">
+                    <i class="fas fa-search me-2"></i>Tìm việc làm
+                </a>
+                <a href="/jobs/add" class="btn btn-outline-light action-button">
+                    <i class="fas fa-plus me-2"></i>Đăng tin tuyển dụng
+                </a>
             </div>
-          </div>
         </div>
-        <div class="col-md-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Jobs</h5>
-              <p class="card-text">View job listings and post new jobs.</p>
-              <a href="/jobs" class="btn btn-primary">View Jobs</a>
-              <a href="/jobs/add" class="btn btn-success">Post Job</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Matching</h5>
-              <p class="card-text">
-                Match candidates with available job listings based on skills.
-              </p>
-              <a href="/match" class="btn btn-info">Match Candidates</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Quick Stats -->
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <div class="stats-card text-center">
+                    <i class="fas fa-briefcase feature-icon"></i>
+                    <div class="stats-number">500+</div>
+                    <div class="stats-label">Việc làm đang tuyển</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card text-center">
+                    <i class="fas fa-building feature-icon"></i>
+                    <div class="stats-number">200+</div>
+                    <div class="stats-label">Công ty đối tác</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card text-center">
+                    <i class="fas fa-users feature-icon"></i>
+                    <div class="stats-number">1000+</div>
+                    <div class="stats-label">Ứng viên tiềm năng</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card text-center">
+                    <i class="fas fa-handshake feature-icon"></i>
+                    <div class="stats-number">300+</div>
+                    <div class="stats-label">Tuyển dụng thành công</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <h2 class="section-title mb-4">Tính năng nổi bật</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-search-plus feature-icon"></i>
+                        <h3 class="h5 mb-3">Tìm kiếm thông minh</h3>
+                        <p class="text-muted">Tìm kiếm việc làm phù hợp với kỹ năng và mong muốn của bạn</p>
+                        <a href="/jobs" class="btn btn-outline-primary action-button">
+                            Xem việc làm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-tie feature-icon"></i>
+                        <h3 class="h5 mb-3">Quản lý hồ sơ</h3>
+                        <p class="text-muted">Tạo và quản lý hồ sơ chuyên nghiệp để thu hút nhà tuyển dụng</p>
+                        <a href="/candidates/updateprofile" class="btn btn-outline-primary action-button">
+                            Cập nhật hồ sơ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <h3 class="h5 mb-3">Phân tích & Thống kê</h3>
+                        <p class="text-muted">Theo dõi xu hướng thị trường và thống kê tuyển dụng</p>
+                        <a href="/statistics" class="btn btn-outline-primary action-button">
+                            Xem thống kê
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Jobs Section -->
+        <div class="container mb-5">
+            <h2 class="section-header">Việc làm mới nhất</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6" th:each="job : ${recentJobs}">
+                    <div class="card job-card">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex mb-3">
+                                <img th:src="${job.company.logoUrl}" 
+                                     class="company-logo me-3" 
+                                     th:onerror="this.src='https://placehold.co/64x64/e0e0e0/666666?text=' + ${#strings.substring(job.company.name,0,2)}"
+                                     th:alt="${job.company.name + ' logo'}"/>
+                                <div class="overflow-hidden">
+                                    <h5 class="job-title" th:text="${job.name}">Job Title</h5>
+                                    <p class="company-name mb-0" th:text="${job.company.name}">Company Name</p>
+                                </div>
+                            </div>
+
+                            <div class="job-meta">
+                                <div class="job-meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="job-meta-text" th:text="${job.company.address.city}">Location</span>
+                                </div>
+                                <div class="job-meta-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="job-meta-text" th:text="${job.type}">Job Type</span>
+                                </div>
+                                <div class="job-meta-item">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span class="job-meta-text" th:text="${job.requiredExperienceYears + ' năm kinh nghiệm'}">Experience</span>
+                                </div>
+                            </div>
+
+                            <div class="tags-container">
+                                <span class="salary-tag" th:if="${!job.negotiable}" 
+                                      th:text="${#numbers.formatDecimal(job.salaryFrom/1000000, 0, 'COMMA', 0, 'POINT')} + 'M - ' + 
+                                              ${#numbers.formatDecimal(job.salaryTo/1000000, 0, 'COMMA', 0, 'POINT')} + 'M'">
+                                    Salary
+                                </span>
+                                <span class="salary-tag" th:if="${job.negotiable}">Thương lượng</span>
+                                <span class="deadline-tag">
+                                    <i class="fas fa-clock me-1"></i>
+                                    <span th:text="${#temporals.format(job.deadline, 'dd/MM/yyyy')}">Deadline</span>
+                                </span>
+                            </div>
+
+                            <a th:href="@{/jobs/{id}(id=${job.id})}" class="btn btn-outline-primary mt-auto">
+                                <i class="fas fa-eye me-2"></i>Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="/jobs" class="btn btn-primary btn-lg">
+                    <i class="fas fa-search me-2"></i>Xem tất cả việc làm
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

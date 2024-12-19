@@ -26,4 +26,8 @@ public class CandidateService {
     public Candidate findByPhone(String phone) {
         return candidateRepository.findByPhone(phone);
     }
+
+    public Candidate findByEmail(String email) {
+        return candidateRepository.findByEmail(email);
+    }
 }

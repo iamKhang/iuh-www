@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chi tiết công việc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .job-header {
+            background: #f8f9fa;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .company-logo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .skill-badge {
+            background: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="fragments/header :: header"></div>
+
+    <div class="job-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 th:text="${job.name}" class="mb-3">Job Title</h1>
+                    <h4 class="text-muted" th:text="${job.company.name}">Company Name</h4>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div th:if="${successMessage}" class="alert alert-success">
+                        <span th:text="${successMessage}"></span>
+                    </div>
+                    <div th:if="${errorMessage}" class="alert alert-danger">
+                        <span th:text="${errorMessage}"></span>
+                    </div>
+                    
+                    <form th:if="${#authorization.expression('hasRole(''CANDIDATE'')') and !hasApplied}" 
+                          th:action="@{/jobs/{id}/apply(id=${job.id})}" method="post">
+                        <button type="submit" class="btn btn-primary btn-lg">Ứng tuyển ngay</button>
+                    </form>
+                    
+                    <button th:if="${#authorization.expression('hasRole(''CANDIDATE'')') and hasApplied}" 
+                            class="btn btn-secondary btn-lg" disabled>
+                        Đã ứng tuyển
+                    </button>
+                    
+                    <a href="/login" class="btn btn-primary btn-lg" 
+                       sec:authorize="!isAuthenticated()">
+                        Đăng nhập để ứng tuyển
+                    </a>
+                    
+                    <button class="btn btn-secondary btn-lg" disabled 
+                            sec:authorize="hasRole('EMPLOYER')">
+                        Bạn không thể ứng tuyển
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <!-- Thông tin chính -->
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3>Mô tả công việc</h3>
+                        <p th:text="${job.description}" class="mb-4">Job description</p>
+
+                        <h3>Yêu cầu kỹ năng</h3>
+                        <div class="mb-4">
+                            <div th:each="jobSkill : ${job.jobSkills}" class="skill-badge">
+                                <span th:text="${jobSkill.skill.skillName}">Skill name</span>
+                                <span class="text-muted" th:text="'(' + ${jobSkill.skillLevel} + ')'">Level</span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <p class="info-label">Kinh nghiệm yêu cầu:</p>
+                                <p th:text="${job.requiredExperienceYears + ' năm'}">3 years</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="info-label">Hạn nộp hồ sơ:</p>
+                                <p th:text="${#temporals.format(job.deadline, 'dd/MM/yyyy')}">Deadline</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="info-label">Mức lương:</p>
+                                <p th:if="${job.negotiable}">Thương lượng</p>
+                                <p th:unless="${job.negotiable}" 
+                                   th:text="${#numbers.formatDecimal(job.salaryFrom/1000000, 0, 'COMMA', 0, 'POINT')} + 'M - ' + 
+                                           ${#numbers.formatDecimal(job.salaryTo/1000000, 0, 'COMMA', 0, 'POINT')} + 'M VNĐ'">
+                                    Salary range
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="info-label">Loại công việc:</p>
+                                <p th:text="${job.type}">Job type</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thông tin công ty -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3>Thông tin công ty</h3>
+                        <h5 th:text="${job.company.name}" class="mb-3">Company name</h5>
+                        
+                        <p class="info-label">Giới thiệu:</p>
+                        <p th:text="${job.company.about}" class="mb-3">Company description</p>
+                        
+                        <p class="info-label">Website:</p>
+                        <p><a th:href="${job.company.webUrl}" th:text="${job.company.webUrl}" target="_blank">Website</a></p>
+                        
+                        <p class="info-label">Email:</p>
+                        <p th:text="${job.company.email}">Email</p>
+                        
+                        <p class="info-label">Điện thoại:</p>
+                        <p th:text="${job.company.phone}">Phone</p>
+                        
+                        <p class="info-label">Địa chỉ:</p>
+                        <p th:text="${job.company.address.number + ' ' + 
+                                    job.company.address.street + ', ' +
+                                    job.company.address.city + ', ' + 
+                                    job.company.address.country}">
+                            Address
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Thống kê -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Thống kê</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Số lượng ứng tuyển:</span>
+                            <span th:text="${job.numberOfApplicants}">0</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Trạng thái:</span>
+                            <span th:text="${job.active ? 'Đang tuyển' : 'Đã đóng'}" 
+                                  th:class="${job.active ? 'text-success' : 'text-danger'}">
+                                Status
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

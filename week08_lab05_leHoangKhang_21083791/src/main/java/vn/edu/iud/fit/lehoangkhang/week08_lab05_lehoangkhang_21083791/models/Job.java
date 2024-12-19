@@ -1,16 +1,24 @@
 package vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models;
 
-import jakarta.persistence.*;
+import java.time.LocalDate;
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.JobType;
-import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.ProgramSkillType;
-
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Getter
@@ -23,7 +31,7 @@ public class Job {
     private Long id;
     @Column(columnDefinition = "VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
     private String name;
-    @Column(columnDefinition = "VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
+    @Column(columnDefinition = "TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
     private String description;
     @ManyToOne
     @JoinColumn(name = "company_id")
@@ -31,7 +39,7 @@ public class Job {
     @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
     private List<JobSkill> jobSkills;
     private LocalDate deadline;
-
+    private LocalDate startDate;
     private boolean active;
     @Column(name = "number_of_applicants")
     private int numberOfApplicants;
@@ -42,9 +50,6 @@ public class Job {
     private double salaryTo;
     @Column(name = "required_experience_years")
     private int requiredExperienceYears;
-    @ElementCollection
-    @CollectionTable(name = "required_skills", joinColumns = @JoinColumn(name = "job_id"))
-    private Set<ProgramSkillType> requiredSkills;
     @Enumerated(EnumType.STRING)
     private JobType type;
 

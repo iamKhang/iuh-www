@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Quản lý tin tuyển dụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .job-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+        }
+
+        .status-active {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-inactive {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .deadline-badge {
+            background-color: #fff3e0;
+            color: #ef6c00;
+        }
+
+        .applicants-badge {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .btn-action {
+            padding: 0;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-action i {
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .btn-action:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div th:replace="fragments/header :: header"></div>
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Quản lý tin tuyển dụng</h2>
+            <a href="/employer/jobs/post" class="btn btn-primary">
+                <i class="fas fa-plus-circle me-2"></i>Đăng tin mới
+            </a>
+        </div>
+
+        <!-- Danh sách tin tuyển dụng -->
+        <div class="row">
+            <div class="col-12" th:each="job : ${jobs}">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="card-title mb-1" th:text="${job.name}">Job Title</h5>
+                                <p class="text-muted mb-2" th:text="${job.type}">Job Type</p>
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="status-badge" 
+                                          th:classappend="${job.active ? 'status-active' : 'status-inactive'}"
+                                          th:text="${job.active ? 'Đang tuyển' : 'Đã đóng'}">
+                                        Status
+                                    </span>
+                                    <span class="status-badge deadline-badge">
+                                        <i class="fas fa-clock me-1"></i>
+                                        Hết hạn: <span th:text="${#temporals.format(job.deadline, 'dd/MM/yyyy')}">Deadline</span>
+                                    </span>
+                                    <span class="status-badge applicants-badge">
+                                        <i class="fas fa-users me-1"></i>
+                                        <span th:text="${job.numberOfApplicants}">0</span> ứng viên
+                                    </span>
+                                </div>
+                                <div th:if="${!job.negotiable}">
+                                    <span class="text-muted">Mức lương: </span>
+                                    <span th:text="${#numbers.formatDecimal(job.salaryFrom/1000000, 0, 'COMMA', 0, 'POINT')} + 'M - ' + 
+                                                  ${#numbers.formatDecimal(job.salaryTo/1000000, 0, 'COMMA', 0, 'POINT')} + 'M VNĐ'">
+                                        Salary
+                                    </span>
+                                </div>
+                                <div th:if="${job.negotiable}">
+                                    <span class="text-muted">Mức lương: Thỏa thuận</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-2">Kỹ năng yêu cầu:</h6>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-dark" 
+                                          th:each="skill : ${job.jobSkills}"
+                                          th:text="${skill.skill.skillName + ' (' + skill.skillLevel + ')'}">
+                                        Skill
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 text-end">
+                                <a th:href="@{/employer/jobs/{id}(id=${job.id})}" 
+                                   class="btn btn-action btn-outline-primary me-2" 
+                                   title="Xem chi tiết">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a th:href="@{/employer/jobs/{id}/edit(id=${job.id})}" 
+                                   class="btn btn-action btn-outline-warning me-2"
+                                   title="Chỉnh sửa">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button class="btn btn-action btn-outline-danger" 
+                                        th:onclick="'toggleJobStatus(' + ${job.id} + ')'"
+                                        th:title="${job.active ? 'Đóng tin' : 'Mở lại tin'}">
+                                    <i class="fas" th:classappend="${job.active ? 'fa-lock' : 'fa-lock-open'}"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleJobStatus(jobId) {
+            if (confirm('Bạn có chắc chắn muốn thay đổi trạng thái tin tuyển dụng này?')) {
+                fetch(`/employer/jobs/${jobId}/toggle-status`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.reload();
+                    } else {
+                        alert('Có lỗi xảy ra khi thay đổi trạng thái.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Có lỗi xảy ra khi thay đổi trạng thái.');
+                });
+            }
+        }
+    </script>
+</body>
+</html> 

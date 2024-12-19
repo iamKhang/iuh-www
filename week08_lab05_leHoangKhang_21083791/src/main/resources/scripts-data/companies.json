@@ -6,6 +6,7 @@
     "email": "contact@technova.com",
     "phone": "8005551234",
     "webUrl": "https://www.technova.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=TN",
     "address": {
       "id": 101,
       "country": "United States",
@@ -23,6 +24,7 @@
     "email": "info@innovatech.ai",
     "phone": "2079460958",
     "webUrl": "https://www.innovatech.ai",
+    "logoUrl": "https://placehold.co/80x80/4CAF50/ffffff?text=IT",
     "address": {
       "id": 102,
       "country": "United Kingdom",
@@ -40,6 +42,7 @@
     "email": "support@globalsoft.com",
     "phone": "2125557890",
     "webUrl": "https://www.globalsoft.com",
+    "logoUrl": "https://placehold.co/80x80/FFA500/ffffff?text=GS",
     "address": {
       "id": 103,
       "country": "Canada",
@@ -57,6 +60,7 @@
     "email": "security@cybersecure.io",
     "phone": "4930123456",
     "webUrl": "https://www.cybersecure.io",
+    "logoUrl": "https://placehold.co/80x80/E91E63/ffffff?text=CS",
     "address": {
       "id": 104,
       "country": "Germany",
@@ -74,6 +78,7 @@
     "email": "hello@nextgenrobotics.com",
     "phone": "81312345678",
     "webUrl": "https://www.nextgenrobotics.com",
+    "logoUrl": "https://placehold.co/80x80/9C27B0/ffffff?text=NGR",
     "address": {
       "id": 105,
       "country": "Japan",
@@ -91,6 +96,7 @@
     "email": "sales@alphadatasystems.com",
     "phone": "61212345678",
     "webUrl": "https://www.alphadatasystems.com",
+    "logoUrl": "https://placehold.co/80x80/3F51B5/ffffff?text=ADS",
     "address": {
       "id": 106,
       "country": "Australia",
@@ -108,6 +114,7 @@
     "email": "contact@ecotechinnovations.org",
     "phone": "33123456789",
     "webUrl": "https://www.ecotechinnovations.org",
+    "logoUrl": "https://placehold.co/80x80/8BC34A/ffffff?text=ETI",
     "address": {
       "id": 107,
       "country": "France",
@@ -125,6 +132,7 @@
     "email": "info@quantumleap.com",
     "phone": "16505552345",
     "webUrl": "https://www.quantumleap.com",
+    "logoUrl": "https://placehold.co/80x80/FF5722/ffffff?text=QLC",
     "address": {
       "id": 108,
       "country": "United States",
@@ -142,6 +150,7 @@
     "email": "support@biotechsolutions.com",
     "phone": "4989123456",
     "webUrl": "https://www.biotechsolutions.com",
+    "logoUrl": "https://placehold.co/80x80/795548/ffffff?text=BTS",
     "address": {
       "id": 109,
       "country": "Germany",
@@ -159,6 +168,7 @@
     "email": "info@skynetsystems.com",
     "phone": "14155556789",
     "webUrl": "https://www.skynetsystems.com",
+    "logoUrl": "https://placehold.co/80x80/607D8B/ffffff?text=SNS",
     "address": {
       "id": 110,
       "country": "United States",
@@ -176,6 +186,7 @@
     "email": "contact@aerotechdynamics.com",
     "phone": "34911234567",
     "webUrl": "https://www.aerotechdynamics.com",
+    "logoUrl": "https://placehold.co/80x80/F44336/ffffff?text=ATD",
     "address": {
       "id": 111,
       "country": "Spain",
@@ -193,6 +204,7 @@
     "email": "sales@datawaveanalytics.com",
     "phone": "16175553456",
     "webUrl": "https://www.datawaveanalytics.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=DWA",
     "address": {
       "id": 112,
       "country": "United States",
@@ -210,6 +222,7 @@
     "email": "info@netfusiontech.com",
     "phone": "13035554567",
     "webUrl": "https://www.netfusiontech.com",
+    "logoUrl": "https://placehold.co/80x80/4CAF50/ffffff?text=NFT",
     "address": {
       "id": 113,
       "country": "United States",
@@ -227,6 +240,7 @@
     "email": "support@smarthomeinnov.com",
     "phone": "6398765432",
     "webUrl": "https://www.smarthomeinnov.com",
+    "logoUrl": "https://placehold.co/80x80/FFEB3B/ffffff?text=SHI",
     "address": {
       "id": 114,
       "country": "Australia",
@@ -244,6 +258,7 @@
     "email": "info@vrlabs.com",
     "phone": "14085555678",
     "webUrl": "https://www.vrlabs.com",
+    "logoUrl": "https://placehold.co/80x80/9E9E9E/ffffff?text=VRL",
     "address": {
       "id": 115,
       "country": "United States",
@@ -261,6 +276,7 @@
     "email": "contact@fintechinnovators.com",
     "phone": "442076543210",
     "webUrl": "https://www.fintechinnovators.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=FTI",
     "address": {
       "id": 116,
       "country": "United Kingdom",
@@ -278,6 +294,7 @@
     "email": "info@greentechenergy.com",
     "phone": "4989654321",
     "webUrl": "https://www.greentechenergy.com",
+    "logoUrl": "https://placehold.co/80x80/8BC34A/ffffff?text=GTE",
     "address": {
       "id": 117,
       "country": "Germany",
@@ -295,6 +312,7 @@
     "email": "support@healthtechsystems.com",
     "phone": "13125556789",
     "webUrl": "https://www.healthtechsystems.com",
+    "logoUrl": "https://placehold.co/80x80/E91E63/ffffff?text=HTS",
     "address": {
       "id": 118,
       "country": "United States",
@@ -312,6 +330,7 @@
     "email": "info@autodrive.tech",
     "phone": "497111123456",
     "webUrl": "https://www.autodrive.tech",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=ADT",
     "address": {
       "id": 119,
       "country": "Germany",
@@ -329,6 +348,7 @@
     "email": "contact@edutechglobal.com",
     "phone": "16175557890",
     "webUrl": "https://www.edutechglobal.com",
+    "logoUrl": "https://placehold.co/80x80/8BC34A/ffffff?text=ETG",
     "address": {
       "id": 120,
       "country": "United States",
@@ -346,6 +366,7 @@
     "email": "info@nanotechindustries.com",
     "phone": "16505558901",
     "webUrl": "https://www.nanotechindustries.com",
+    "logoUrl": "https://placehold.co/80x80/FF5722/ffffff?text=NTI",
     "address": {
       "id": 121,
       "country": "United States",
@@ -363,6 +384,7 @@
     "email": "contact@spacexplore.com",
     "phone": "13105559012",
     "webUrl": "https://www.spacexplore.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=SX",
     "address": {
       "id": 122,
       "country": "United States",
@@ -380,6 +402,7 @@
     "email": "support@medtechsolutions.com",
     "phone": "12125550123",
     "webUrl": "https://www.medtechsolutions.com",
+    "logoUrl": "https://placehold.co/80x80/E91E63/ffffff?text=MTS",
     "address": {
       "id": 123,
       "country": "United States",
@@ -397,6 +420,7 @@
     "email": "info@agritechinnovators.com",
     "phone": "441615553456",
     "webUrl": "https://www.agritechinnovators.com",
+    "logoUrl": "https://placehold.co/80x80/8BC34A/ffffff?text=AGI",
     "address": {
       "id": 124,
       "country": "United Kingdom",
@@ -414,6 +438,7 @@
     "email": "contact@logitechsystems.com",
     "phone": "13035554567",
     "webUrl": "https://www.logitechsystems.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=LTS",
     "address": {
       "id": 125,
       "country": "United States",
@@ -431,6 +456,7 @@
     "email": "info@finservetech.com",
     "phone": "12125555678",
     "webUrl": "https://www.finservetech.com",
+    "logoUrl": "https://placehold.co/80x80/FFEB3B/ffffff?text=FST",
     "address": {
       "id": 126,
       "country": "United States",
@@ -448,6 +474,7 @@
     "email": "contact@smartcitysolutions.com",
     "phone": "4930987654",
     "webUrl": "https://www.smartcitysolutions.com",
+    "logoUrl": "https://placehold.co/80x80/4CAF50/ffffff?text=SCS",
     "address": {
       "id": 127,
       "country": "Germany",
@@ -465,6 +492,7 @@
     "email": "info@ecowaretech.com",
     "phone": "61712345678",
     "webUrl": "https://www.ecowaretech.com",
+    "logoUrl": "https://placehold.co/80x80/8BC34A/ffffff?text=EWT",
     "address": {
       "id": 128,
       "country": "Australia",
@@ -482,6 +510,7 @@
     "email": "contact@aihorizons.com",
     "phone": "16505556789",
     "webUrl": "https://www.aihorizons.com",
+    "logoUrl": "https://placehold.co/80x80/FF5722/ffffff?text=AIH",
     "address": {
       "id": 129,
       "country": "United States",
@@ -499,6 +528,7 @@
     "email": "support@virtualedge.com",
     "phone": "14085557890",
     "webUrl": "https://www.virtualedge.com",
+    "logoUrl": "https://placehold.co/80x80/2196F3/ffffff?text=VET",
     "address": {
       "id": 130,
       "country": "United States",

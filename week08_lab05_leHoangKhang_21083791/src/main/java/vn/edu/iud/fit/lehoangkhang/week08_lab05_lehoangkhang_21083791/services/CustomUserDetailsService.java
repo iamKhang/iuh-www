@@ -5,8 +5,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.enums.AccountRole;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.Account;
 import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.repositories.AccountRepository;
+import vn.edu.iud.fit.lehoangkhang.week08_lab05_lehoangkhang_21083791.models.CustomUserDetails;
 
 import java.util.Collections;
 import java.util.List;
@@ -15,23 +17,26 @@ import java.util.List;
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
-    private AccountRepository accountRepository;  // Repository để tìm tài khoản
+    private AccountRepository accountRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String phone) throws UsernameNotFoundException {
-        Account account = accountRepository.findAccountByPhone(phone)
-                .orElseThrow(() -> new UsernameNotFoundException("Không tìm thấy tài khoản"));
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Account account = accountRepository.findByCandidate_EmailOrCompany_Email(username, username)
+            .orElseThrow(() -> new UsernameNotFoundException("Không tìm thấy tài khoản"));
 
-        // Tạo danh sách quyền từ vai trò của Account
         List<GrantedAuthority> authorities = Collections.singletonList(
-                new SimpleGrantedAuthority("ROLE_" + account.getRole().name())
+            new SimpleGrantedAuthority("ROLE_" + account.getRole().name())
         );
 
-        // Chuyển đổi thành đối tượng UserDetails
-        return new org.springframework.security.core.userdetails.User(
-                account.getCandidate().getPhone(),
-                account.getPassword(),
-                authorities
+        System.out.println("User role: " + account.getRole().name());
+
+        return new CustomUserDetails(
+            username,
+            account.getPassword(),
+            authorities,
+            account.getDisplayName(),
+            account.getRole() == AccountRole.CANDIDATE ? account.getCandidate().getAvatarUrl() : null,
+            account.getRole() == AccountRole.EMPLOYER ? account.getCompany().getLogoUrl() : null
         );
     }
 }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Book</title>
+</head>
+<body>
+
+
+<div style="text-align: center; background-color: coral; padding:  10px 0">
+    <p style="text-align: center; font-weight: bold; font-size: 30px">
+        21083791 - LE HOANG KHANG
+    </p>
+</div>
+
+<form method="POST" th:action="@{/books/add}" th:object="${book}">
+    <div>
+
+    </div>
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" required th:field="*{title}">
+    <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required th:field="*{author}">
+    </div>
+
+    <div>
+        <label for="publisher">Publisher</label>
+        <input type="datetime-local" id="publisher" name="publisher" required th:field="*{published}">
+    </div>
+
+    <div>
+        <label for="pages">Pages</label>
+        <input type="number" id="pages" name="pages" required th:field="*{pages}">
+    </div>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
