@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách nhân viên</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="bg-dark text-white p-3 mb-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-10">
+                    <h4>21083791 - Lê Hoàng Khang - Final review</h4>
+                    <small>Last updated: 18/12/2024</small>
+                </div>
+                <div class="col-md-2">
+                    <form th:action="@{/logout}" method="post">
+                        <button type="submit" class="btn btn-outline-light">Đăng xuất</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Danh sách nhân viên</h2>
+        
+        <!-- Search Form -->
+        <form th:action="@{/employees/search}" method="get" class="mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <select name="departmentId" class="form-select">
+                        <option value="">Chọn phòng ban</option>
+                        <option th:each="dept : ${departments}"
+                                th:value="${dept.id}"
+                                th:text="${dept.name}"
+                                th:selected="${dept.id == selectedDepartmentId}"></option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" name="employeeCode" 
+                           class="form-control" 
+                           placeholder="Mã nhân viên"
+                           th:value="${searchEmployeeCode}">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                    <a th:href="@{/employees/add}" 
+                       onclick="return checkAdminRole(event)"
+                       class="btn btn-success">Thêm mới</a>
+                </div>
+            </div>
+        </form>
+
+        <!-- Employee Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Mã NV</th>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Số điện thoại</th>
+                    <th>Giới tính</th>
+                    <th>Email</th>
+                    <th>Phòng ban</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="employee : ${employees}">
+                    <td th:text="${employee.employeeCode}"></td>
+                    <td th:text="${employee.fullName}"></td>
+                    <td th:text="${#temporals.format(employee.dateOfBirth, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${employee.phoneNumber}"></td>
+                    <td th:text="${employee.gender ? 'Nam' : 'Nữ'}"></td>
+                    <td th:text="${employee.email}"></td>
+                    <td th:text="${employee.department.name}"></td>
+                    <td>
+                        <a th:href="@{/employees/edit/{id}(id=${employee.id})}" 
+                           onclick="return checkAdminRole(event)"
+                           class="btn btn-warning btn-sm">Sửa</a>
+                        <a th:href="@{/employees/delete/{id}(id=${employee.id})}" 
+                           onclick="return checkAdminRole(event)"
+                           class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:inline="javascript">
+    function checkAdminRole(event) {
+        /*<![CDATA[*/
+        var isAdmin = [[${#authorization.expression('hasRole(''ADMIN'')')}]];
+        if (!isAdmin) {
+            event.preventDefault();
+            alert('Bạn cần đăng nhập với tài khoản Admin để thực hiện chức năng này!');
+            return false;
+        }
+        return true;
+        /*]]>*/
+    }
+    </script>
+</body>
+</html> 
