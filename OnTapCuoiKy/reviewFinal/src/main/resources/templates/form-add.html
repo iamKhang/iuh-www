@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu</title>
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+        }
+
+        .form-error {
+            color: red;
+        }
+
+        .label {
+            width: 100px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        select {
+            width: 200px;
+
+        }
+
+        form {
+            border: 1px solid black;
+            width: 300px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: green; text-align: center; padding: 20px 0">
+    <p style="font-weight: bold; color: #cccccc; font-size: 20px">
+        26 - 21083791 - Le Hoang Khang
+    </p>
+</div>
+<a th:href="@{/}">
+    < Trang chu
+</a>
+<form th:action="@{/student/add}" method="post" th:object="${student}">
+    <label>
+        THÊM THONG TIN SINH VIEN
+    </label>
+    <div class="form-group">
+        <label class="label">
+            Ho ten sinh vien:
+        </label>
+        <input type="text" th:field="*{fullName}" class="form-input"/>
+    </div>
+    <p th:errors="*{fullName}" class="form-error"></p>
+    <div class="form-group">
+        <label class="label">
+            Email
+        </label>
+        <input type="text" th:field="*{email}" class="form-input"/>
+    </div>
+    <p th:errors="*{email}" class="form-error"></p>
+    <div class="form-group">
+        <label class="label">
+            Ngay sinh:
+        </label>
+        <input type="date" th:field="*{dob}" class="form-input"/>
+    </div>
+    <p th:errors="*{dob}" class="form-error"></p>
+    <div class="form-group">
+        <label class="label">
+            So dien thoai:
+        </label>
+        <input type="text" th:field="*{numberPhone}" class="form-input"/>
+    </div>
+    <p th:errors="*{numberPhone}" class="form-error"></p>
+    <div class="form-group">
+        <label class="label">
+            Chon lop hoc
+        </label>
+        <select th:field="*{clazz.id}">
+            <!--            <option th:value="">-&#45;&#45;Chon lop hoc-&#45;&#45;</option>-->
+            <option th:each="clazz : ${classes}" th:value="${clazz.id}" th:text="${clazz.clazzName}"></option>
+        </select>
+    </div>
+    <!--        <p th:errors="*{fullName}" class="form-error"></p>-->
+    <div style="display: flex; justify-content: center; align-items: center">
+
+        <button style="align-items: center; background-color: #fff; padding: 4px 8px; margin-top: 30px " type="submit">
+            Them sinh vien
+        </button>
+    </div>
+</form>
+
+</body>
+</html>

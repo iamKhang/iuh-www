@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu</title>
+    <style>
+        table {
+            collapse: collapse;
+            border-collapse: collapse;
+
+        }
+        table th{
+            background-color: #ccc;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color: green; text-align: center; padding: 20px 0">
+    <p style="font-weight: bold; color: #cccccc; font-size: 20px">
+        26 - 21083791 - Le Hoang Khang
+    </p>
+</div>
+<a th:href="@{/student/add}" style="padding: 5px 10px; background-color: aquamarine; font-size: 14px; font-weight: bold; margin: 10px 0; display: block; width: 100px; text-decoration: none">
+    Them sinh vien
+</a>
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Fullname</th>
+        <th>Date of birth</th>
+        <th>Email</th>
+        <th>Number phone</th>
+        <th>Class</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student:${students}">
+        <td th:text="${student.id}"></td>
+        <td th:text="${student.code}"></td>
+        <td th:text="${student.fullName}"></td>
+        <td th:text="${student.dob}"></td>
+        <td th:text="${student.email}"></td>
+        <td th:text="${student.numberPhone}"></td>
+        <td th:text="${student.clazz.clazzName}"></td>
+        <td>
+            <a style="color: red" th:href="@{/student/delete/{id} (id=${student.id})} ">
+                Xoa
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
