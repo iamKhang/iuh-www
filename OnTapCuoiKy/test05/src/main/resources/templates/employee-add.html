@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Them nhan vien</title>
+    <style>
+        th, td {
+            padding: 10px 20px;
+            border: 1px black solid;
+        }
+
+        table {
+            border: 1px black;
+            border-collapse: collapse;
+        }
+
+        label{
+            width: 90px;
+        }
+
+        .form-group{
+            display: flex;
+            /*justify-content: center;*/
+            align-items: center;
+            height: 30px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div style="padding: 20px 0; background-color: aqua; display: flex; justify-content: center; align-items: center">
+    <p style="font-size: larger; font-weight: bold">
+        21083791 - Le Hoang Khang - Review Final 06
+    </p>
+</div>
+<form th:action="@{/employee/add}" method="post" th:object="${employee}">
+
+    <div class="form-group">
+        <label>Full name:</label>
+        <input th:field="*{fullName}"/>
+        <small style="color: red" th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}"/>
+    </div>
+    <div class="form-group">
+        <label>Date of birth:</label>
+        <input type="date" th:field="*{dob}"/>
+        <small style="color: red" th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}"/>
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="text" th:field="*{email}"/>
+        <small style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"/>
+    </div>
+    <div class="form-group">
+        <label>Gender:</label>
+       <select th:field="*{gender}">
+           <option th:value="true" selected >Male</option>
+           <option th:value="false">Female</option>
+       </select>
+        <small style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"/>
+    </div>
+    <div class="form-group">
+        <label>Department:</label>
+        <select th:field="*{department.id}">
+            <option th:each="department : ${departments}" th:text="${department.name}" th:value="${department.id}" ></option>
+        </select>
+        <small style="color: red" th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}"/>
+    </div>
+
+    <button type="submit">
+        Them nhan vien
+    </button>
+</form>
+
+</body>
+</html>

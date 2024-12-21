@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu</title>
+    <link rel="styleshee" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0 10px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .form-lable{
+            width: 50px;
+        }
+        .form-group{
+            margin: 3px 0;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<header style="padding: 10px 0; text-align: center; background-color: aquamarine">
+    17 - Le Hoang Khang - 21083791
+</header>
+<div style="padding: 10px 0; display: flex; justify-content: center; align-items: center">
+</div>
+
+<form th:action="@{/books}" method="post" class="form-control" th:object="${book}">
+    <div class="form-group" style="display: flex">
+        <label class="form-lable">
+            Title
+        </label>
+        <input class="form-control" th:field="*{title}" type="text">
+    </div>
+    <div class="form-group">
+        <label class="form-lable">
+            Author
+        </label>
+        <input class="form-control" th:field="*{author}" type="text">
+    </div>
+    <div class="form-group" style="display: flex;  margin: 10px 0; align-items: center; gap: 10px">
+        <label class="form-lable">
+            Date
+        </label>
+        <input class="form-control" th:field="*{date}" type="date">
+        <p th:errors="*{date}"></p>
+    </div>
+    <div class="form-group">
+        <label class="form-lable">
+            Publisher
+        </label>
+        <select th:field="*{publisher}">
+            <option value="">Select a publisher</option>
+            <option th:each="publisher : ${publishers}" th:value="${publisher.id}" th:text="${publisher.name}"/>
+        </select>
+    </div>
+<button type="submit" class="btn btn-primary">
+    Submit
+</button>
+</form>
+</body>
+</html>

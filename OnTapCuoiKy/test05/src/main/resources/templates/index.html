@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu</title>
+    <style>
+        th, td {
+            padding: 10px 20px;
+            border: 1px black solid;
+        }
+
+        table {
+            border: 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<div style="padding: 20px 0; background-color: aqua; display: flex; justify-content: center; align-items: center">
+    <p style="font-size: larger; font-weight: bold">
+        21083791 - Le Hoang Khang - Review Final 06
+    </p>
+</div>
+
+<a th:href="@{/employee/add}">
+    Them nhan vien
+</a>
+<table>
+    <thead>
+    <tr>
+        <td>
+            ID
+        </td>
+        <td>
+            Code
+        </td>
+        <td>
+            Full name
+        </td>
+        <td>
+            Date of birth
+        </td>
+        <td>
+            Email
+        </td>
+        <td>
+            Gender
+        </td>
+        <td>
+            Department
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${employees}">
+        <td th:text="${employee.id}"></td>
+        <td th:text="${employee.code}"/>
+        <td th:text="${employee.fullName}"/>
+        <td th:text="${employee.dob}"/>
+        <td th:text="${employee.email}"/>
+        <td th:if="${employee.gender}">
+            Male
+        </td>
+        <td th:if="${!employee.gender}">
+            Female
+        </td>
+
+
+        <td th:text="${employee.department.name}"/>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

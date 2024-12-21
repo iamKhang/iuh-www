@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu</title>
+    <link rel="styleshee" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0 10px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<header style="padding: 10px 0; text-align: center; background-color: aquamarine">
+    17 - Le Hoang Khang - 21083791
+</header>
+<a th:href="@{/books/add}">
+    Them sach moi
+</a>
+<div style="padding: 10px 0; display: flex; justify-content: center; align-items: center">
+
+    <table>
+        <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                ISBN
+            </th>
+            <th>
+                Publisher
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book:${books}">
+            <td th:text="${book.id}"/>
+            <td th:text="${book.title}"/>
+            <td th:text="${book.author}"/>
+            <td th:text="${book.date}"/>
+            <td th:text="${book.isbn}"/>
+            <td th:text="${book.publisher.name}"/>
+            <td>
+                <a th:href="@{/books/delete/{id} (id=${book.id})}">
+                    Delete
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
